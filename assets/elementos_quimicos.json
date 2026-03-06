@@ -1,0 +1,828 @@
+[
+  {
+    "z": 1,
+    "n": "Hidrógeno",
+    "s": "H",
+    "cc": "1s1",
+    "cr": "1s1"
+  },
+  {
+    "z": 2,
+    "n": "Helio",
+    "s": "He",
+    "cc": "1s2",
+    "cr": "1s2"
+  },
+  {
+    "z": 3,
+    "n": "Litio",
+    "s": "Li",
+    "cc": "1s2 2s1",
+    "cr": "[He] 2s1"
+  },
+  {
+    "z": 4,
+    "n": "Berilio",
+    "s": "Be",
+    "cc": "1s2 2s2",
+    "cr": "[He] 2s2"
+  },
+  {
+    "z": 5,
+    "n": "Boro",
+    "s": "B",
+    "cc": "1s2 2s2 2p1",
+    "cr": "[He] 2s2 2p1"
+  },
+  {
+    "z": 6,
+    "n": "Carbono",
+    "s": "C",
+    "cc": "1s2 2s2 2p2",
+    "cr": "[He] 2s2 2p2"
+  },
+  {
+    "z": 7,
+    "n": "Nitrógeno",
+    "s": "N",
+    "cc": "1s2 2s2 2p3",
+    "cr": "[He] 2s2 2p3"
+  },
+  {
+    "z": 8,
+    "n": "Oxígeno",
+    "s": "O",
+    "cc": "1s2 2s2 2p4",
+    "cr": "[He] 2s2 2p4"
+  },
+  {
+    "z": 9,
+    "n": "Flúor",
+    "s": "F",
+    "cc": "1s2 2s2 2p5",
+    "cr": "[He] 2s2 2p5"
+  },
+  {
+    "z": 10,
+    "n": "Neón",
+    "s": "Ne",
+    "cc": "1s2 2s2 2p6",
+    "cr": "[He] 2s2 2p6"
+  },
+  {
+    "z": 11,
+    "n": "Sodio",
+    "s": "Na",
+    "cc": "1s2 2s2 2p6 3s1",
+    "cr": "[Ne] 3s1"
+  },
+  {
+    "z": 12,
+    "n": "Magnesio",
+    "s": "Mg",
+    "cc": "1s2 2s2 2p6 3s2",
+    "cr": "[Ne] 3s2"
+  },
+  {
+    "z": 13,
+    "n": "Aluminio",
+    "s": "Al",
+    "cc": "1s2 2s2 2p6 3s2 3p1",
+    "cr": "[Ne] 3s2 3p1"
+  },
+  {
+    "z": 14,
+    "n": "Silicio",
+    "s": "Si",
+    "cc": "1s2 2s2 2p6 3s2 3p2",
+    "cr": "[Ne] 3s2 3p2"
+  },
+  {
+    "z": 15,
+    "n": "Fósforo",
+    "s": "P",
+    "cc": "1s2 2s2 2p6 3s2 3p3",
+    "cr": "[Ne] 3s2 3p3"
+  },
+  {
+    "z": 16,
+    "n": "Azufre",
+    "s": "S",
+    "cc": "1s2 2s2 2p6 3s2 3p4",
+    "cr": "[Ne] 3s2 3p4"
+  },
+  {
+    "z": 17,
+    "n": "Cloro",
+    "s": "Cl",
+    "cc": "1s2 2s2 2p6 3s2 3p5",
+    "cr": "[Ne] 3s2 3p5"
+  },
+  {
+    "z": 18,
+    "n": "Argón",
+    "s": "Ar",
+    "cc": "1s2 2s2 2p6 3s2 3p6",
+    "cr": "[Ne] 3s2 3p6"
+  },
+  {
+    "z": 19,
+    "n": "Potasio",
+    "s": "K",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s1",
+    "cr": "[Ar] 4s1"
+  },
+  {
+    "z": 20,
+    "n": "Calcio",
+    "s": "Ca",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2",
+    "cr": "[Ar] 4s2"
+  },
+  {
+    "z": 21,
+    "n": "Escandio",
+    "s": "Sc",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d1",
+    "cr": "[Ar] 4s2 3d1"
+  },
+  {
+    "z": 22,
+    "n": "Titanio",
+    "s": "Ti",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d2",
+    "cr": "[Ar] 4s2 3d2"
+  },
+  {
+    "z": 23,
+    "n": "Vanadio",
+    "s": "V",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d3",
+    "cr": "[Ar] 4s2 3d3"
+  },
+  {
+    "z": 24,
+    "n": "Cromo",
+    "s": "Cr",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d4",
+    "cr": "[Ar] 4s2 3d4"
+  },
+  {
+    "z": 25,
+    "n": "Manganeso",
+    "s": "Mn",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d5",
+    "cr": "[Ar] 4s2 3d5"
+  },
+  {
+    "z": 26,
+    "n": "Hierro",
+    "s": "Fe",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d6",
+    "cr": "[Ar] 4s2 3d6"
+  },
+  {
+    "z": 27,
+    "n": "Cobalto",
+    "s": "Co",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d7",
+    "cr": "[Ar] 4s2 3d7"
+  },
+  {
+    "z": 28,
+    "n": "Níquel",
+    "s": "Ni",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d8",
+    "cr": "[Ar] 4s2 3d8"
+  },
+  {
+    "z": 29,
+    "n": "Cobre",
+    "s": "Cu",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d9",
+    "cr": "[Ar] 4s2 3d9"
+  },
+  {
+    "z": 30,
+    "n": "Zinc",
+    "s": "Zn",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d10",
+    "cr": "[Ar] 4s2 3d10"
+  },
+  {
+    "z": 31,
+    "n": "Galio",
+    "s": "Ga",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p1",
+    "cr": "[Ar] 4s2 3d10 4p1"
+  },
+  {
+    "z": 32,
+    "n": "Germanio",
+    "s": "Ge",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p2",
+    "cr": "[Ar] 4s2 3d10 4p2"
+  },
+  {
+    "z": 33,
+    "n": "Arsénico",
+    "s": "As",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p3",
+    "cr": "[Ar] 4s2 3d10 4p3"
+  },
+  {
+    "z": 34,
+    "n": "Selenio",
+    "s": "Se",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p4",
+    "cr": "[Ar] 4s2 3d10 4p4"
+  },
+  {
+    "z": 35,
+    "n": "Bromo",
+    "s": "Br",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p5",
+    "cr": "[Ar] 4s2 3d10 4p5"
+  },
+  {
+    "z": 36,
+    "n": "Kriptón",
+    "s": "Kr",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6",
+    "cr": "[Ar] 4s2 3d10 4p6"
+  },
+  {
+    "z": 37,
+    "n": "Rubidio",
+    "s": "Rb",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s1",
+    "cr": "[Kr] 5s1"
+  },
+  {
+    "z": 38,
+    "n": "Estroncio",
+    "s": "Sr",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2",
+    "cr": "[Kr] 5s2"
+  },
+  {
+    "z": 39,
+    "n": "Itrio",
+    "s": "Y",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d1",
+    "cr": "[Kr] 5s2 4d1"
+  },
+  {
+    "z": 40,
+    "n": "Circonio",
+    "s": "Zr",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d2",
+    "cr": "[Kr] 5s2 4d2"
+  },
+  {
+    "z": 41,
+    "n": "Niobio",
+    "s": "Nb",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d3",
+    "cr": "[Kr] 5s2 4d3"
+  },
+  {
+    "z": 42,
+    "n": "Molibdeno",
+    "s": "Mo",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d4",
+    "cr": "[Kr] 5s2 4d4"
+  },
+  {
+    "z": 43,
+    "n": "Tecnecio",
+    "s": "Tc",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d5",
+    "cr": "[Kr] 5s2 4d5"
+  },
+  {
+    "z": 44,
+    "n": "Rutenio",
+    "s": "Ru",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d6",
+    "cr": "[Kr] 5s2 4d6"
+  },
+  {
+    "z": 45,
+    "n": "Rodio",
+    "s": "Rh",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d7",
+    "cr": "[Kr] 5s2 4d7"
+  },
+  {
+    "z": 46,
+    "n": "Paladio",
+    "s": "Pd",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d8",
+    "cr": "[Kr] 5s2 4d8"
+  },
+  {
+    "z": 47,
+    "n": "Plata",
+    "s": "Ag",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d9",
+    "cr": "[Kr] 5s2 4d9"
+  },
+  {
+    "z": 48,
+    "n": "Cadmio",
+    "s": "Cd",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10",
+    "cr": "[Kr] 5s2 4d10"
+  },
+  {
+    "z": 49,
+    "n": "Indio",
+    "s": "In",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p1",
+    "cr": "[Kr] 5s2 4d10 5p1"
+  },
+  {
+    "z": 50,
+    "n": "Estaño",
+    "s": "Sn",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p2",
+    "cr": "[Kr] 5s2 4d10 5p2"
+  },
+  {
+    "z": 51,
+    "n": "Antimonio",
+    "s": "Sb",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p3",
+    "cr": "[Kr] 5s2 4d10 5p3"
+  },
+  {
+    "z": 52,
+    "n": "Telurio",
+    "s": "Te",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p4",
+    "cr": "[Kr] 5s2 4d10 5p4"
+  },
+  {
+    "z": 53,
+    "n": "Yodo",
+    "s": "I",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p5",
+    "cr": "[Kr] 5s2 4d10 5p5"
+  },
+  {
+    "z": 54,
+    "n": "Xenón",
+    "s": "Xe",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6",
+    "cr": "[Kr] 5s2 4d10 5p6"
+  },
+  {
+    "z": 55,
+    "n": "Cesio",
+    "s": "Cs",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s1",
+    "cr": "[Xe] 6s1"
+  },
+  {
+    "z": 56,
+    "n": "Bario",
+    "s": "Ba",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2",
+    "cr": "[Xe] 6s2"
+  },
+  {
+    "z": 57,
+    "n": "Lantano",
+    "s": "La",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 5d1",
+    "cr": "[Xe] 6s2 5d1"
+  },
+  {
+    "z": 58,
+    "n": "Cerio",
+    "s": "Ce",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f1 5d1",
+    "cr": "[Xe] 6s2 4f1 5d1"
+  },
+  {
+    "z": 59,
+    "n": "Praseodimio",
+    "s": "Pr",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f3",
+    "cr": "[Xe] 6s2 4f3"
+  },
+  {
+    "z": 60,
+    "n": "Neodimio",
+    "s": "Nd",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f4",
+    "cr": "[Xe] 6s2 4f4"
+  },
+  {
+    "z": 61,
+    "n": "Prometio",
+    "s": "Pm",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f5",
+    "cr": "[Xe] 6s2 4f5"
+  },
+  {
+    "z": 62,
+    "n": "Samario",
+    "s": "Sm",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f6",
+    "cr": "[Xe] 6s2 4f6"
+  },
+  {
+    "z": 63,
+    "n": "Europio",
+    "s": "Eu",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f7",
+    "cr": "[Xe] 6s2 4f7"
+  },
+  {
+    "z": 64,
+    "n": "Gadolinio",
+    "s": "Gd",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f7 5d1",
+    "cr": "[Xe] 6s2 4f7 5d1"
+  },
+  {
+    "z": 65,
+    "n": "Terbio",
+    "s": "Tb",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f9",
+    "cr": "[Xe] 6s2 4f9"
+  },
+  {
+    "z": 66,
+    "n": "Disprosio",
+    "s": "Dy",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f10",
+    "cr": "[Xe] 6s2 4f10"
+  },
+  {
+    "z": 67,
+    "n": "Holmio",
+    "s": "Ho",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f11",
+    "cr": "[Xe] 6s2 4f11"
+  },
+  {
+    "z": 68,
+    "n": "Erbio",
+    "s": "Er",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f12",
+    "cr": "[Xe] 6s2 4f12"
+  },
+  {
+    "z": 69,
+    "n": "Tulio",
+    "s": "Tm",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f13",
+    "cr": "[Xe] 6s2 4f13"
+  },
+  {
+    "z": 70,
+    "n": "Iterbio",
+    "s": "Yb",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14",
+    "cr": "[Xe] 6s2 4f14"
+  },
+  {
+    "z": 71,
+    "n": "Lutecio",
+    "s": "Lu",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d1",
+    "cr": "[Xe] 6s2 4f14 5d1"
+  },
+  {
+    "z": 72,
+    "n": "Hafnio",
+    "s": "Hf",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d2",
+    "cr": "[Xe] 6s2 4f14 5d2"
+  },
+  {
+    "z": 73,
+    "n": "Tántalo",
+    "s": "Ta",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d3",
+    "cr": "[Xe] 6s2 4f14 5d3"
+  },
+  {
+    "z": 74,
+    "n": "Wolframio",
+    "s": "W",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d4",
+    "cr": "[Xe] 6s2 4f14 5d4"
+  },
+  {
+    "z": 75,
+    "n": "Renio",
+    "s": "Re",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d5",
+    "cr": "[Xe] 6s2 4f14 5d5"
+  },
+  {
+    "z": 76,
+    "n": "Osmio",
+    "s": "Os",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d6",
+    "cr": "[Xe] 6s2 4f14 5d6"
+  },
+  {
+    "z": 77,
+    "n": "Iridio",
+    "s": "Ir",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d7",
+    "cr": "[Xe] 6s2 4f14 5d7"
+  },
+  {
+    "z": 78,
+    "n": "Platino",
+    "s": "Pt",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d8",
+    "cr": "[Xe] 6s2 4f14 5d8"
+  },
+  {
+    "z": 79,
+    "n": "Oro",
+    "s": "Au",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d9",
+    "cr": "[Xe] 6s2 4f14 5d9"
+  },
+  {
+    "z": 80,
+    "n": "Mercurio",
+    "s": "Hg",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10",
+    "cr": "[Xe] 6s2 4f14 5d10"
+  },
+  {
+    "z": 81,
+    "n": "Talio",
+    "s": "Tl",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p1",
+    "cr": "[Xe] 6s2 4f14 5d10 6p1"
+  },
+  {
+    "z": 82,
+    "n": "Plomo",
+    "s": "Pb",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p2",
+    "cr": "[Xe] 6s2 4f14 5d10 6p2"
+  },
+  {
+    "z": 83,
+    "n": "Bismuto",
+    "s": "Bi",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p3",
+    "cr": "[Xe] 6s2 4f14 5d10 6p3"
+  },
+  {
+    "z": 84,
+    "n": "Polonio",
+    "s": "Po",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p4",
+    "cr": "[Xe] 6s2 4f14 5d10 6p4"
+  },
+  {
+    "z": 85,
+    "n": "Astato",
+    "s": "At",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p5",
+    "cr": "[Xe] 6s2 4f14 5d10 6p5"
+  },
+  {
+    "z": 86,
+    "n": "Radón",
+    "s": "Rn",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6",
+    "cr": "[Xe] 6s2 4f14 5d10 6p6"
+  },
+  {
+    "z": 87,
+    "n": "Francio",
+    "s": "Fr",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s1",
+    "cr": "[Rn] 7s1"
+  },
+  {
+    "z": 88,
+    "n": "Radio",
+    "s": "Ra",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2",
+    "cr": "[Rn] 7s2"
+  },
+  {
+    "z": 89,
+    "n": "Actinio",
+    "s": "Ac",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 6d1",
+    "cr": "[Rn] 7s2 6d1"
+  },
+  {
+    "z": 90,
+    "n": "Torio",
+    "s": "Th",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 6d2",
+    "cr": "[Rn] 7s2 6d2"
+  },
+  {
+    "z": 91,
+    "n": "Protactinio",
+    "s": "Pa",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 5f2 6d1",
+    "cr": "[Rn] 7s2 5f2 6d1"
+  },
+  {
+    "z": 92,
+    "n": "Uranio",
+    "s": "U",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 5f3 6d1",
+    "cr": "[Rn] 7s2 5f3 6d1"
+  },
+  {
+    "z": 93,
+    "n": "Neptunio",
+    "s": "Np",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 5f4 6d1",
+    "cr": "[Rn] 7s2 5f4 6d1"
+  },
+  {
+    "z": 94,
+    "n": "Plutonio",
+    "s": "Pu",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 5f6",
+    "cr": "[Rn] 7s2 5f6"
+  },
+  {
+    "z": 95,
+    "n": "Americio",
+    "s": "Am",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 5f7",
+    "cr": "[Rn] 7s2 5f7"
+  },
+  {
+    "z": 96,
+    "n": "Curio",
+    "s": "Cm",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 5f7 6d1",
+    "cr": "[Rn] 7s2 5f7 6d1"
+  },
+  {
+    "z": 97,
+    "n": "Berkelio",
+    "s": "Bk",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 5f9",
+    "cr": "[Rn] 7s2 5f9"
+  },
+  {
+    "z": 98,
+    "n": "Californio",
+    "s": "Cf",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 5f10",
+    "cr": "[Rn] 7s2 5f10"
+  },
+  {
+    "z": 99,
+    "n": "Einstenio",
+    "s": "Es",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 5f11",
+    "cr": "[Rn] 7s2 5f11"
+  },
+  {
+    "z": 100,
+    "n": "Fermio",
+    "s": "Fm",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 5f12",
+    "cr": "[Rn] 7s2 5f12"
+  },
+  {
+    "z": 101,
+    "n": "Mendelevio",
+    "s": "Md",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 5f13",
+    "cr": "[Rn] 7s2 5f13"
+  },
+  {
+    "z": 102,
+    "n": "Nobelio",
+    "s": "No",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 5f14",
+    "cr": "[Rn] 7s2 5f14"
+  },
+  {
+    "z": 103,
+    "n": "Lawrencio",
+    "s": "Lr",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 5f14 6d1",
+    "cr": "[Rn] 7s2 5f14 6d1"
+  },
+  {
+    "z": 104,
+    "n": "Rutherfordio",
+    "s": "Rf",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 5f14 6d2",
+    "cr": "[Rn] 7s2 5f14 6d2"
+  },
+  {
+    "z": 105,
+    "n": "Dubnio",
+    "s": "Db",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 5f14 6d3",
+    "cr": "[Rn] 7s2 5f14 6d3"
+  },
+  {
+    "z": 106,
+    "n": "Seaborgio",
+    "s": "Sg",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 5f14 6d4",
+    "cr": "[Rn] 7s2 5f14 6d4"
+  },
+  {
+    "z": 107,
+    "n": "Bohrio",
+    "s": "Bh",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 5f14 6d5",
+    "cr": "[Rn] 7s2 5f14 6d5"
+  },
+  {
+    "z": 108,
+    "n": "Hassio",
+    "s": "Hs",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 5f14 6d6",
+    "cr": "[Rn] 7s2 5f14 6d6"
+  },
+  {
+    "z": 109,
+    "n": "Meitnerio",
+    "s": "Mt",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 5f14 6d7",
+    "cr": "[Rn] 7s2 5f14 6d7"
+  },
+  {
+    "z": 110,
+    "n": "Darmstadtio",
+    "s": "Ds",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 5f14 6d8",
+    "cr": "[Rn] 7s2 5f14 6d8"
+  },
+  {
+    "z": 111,
+    "n": "Roentgenio",
+    "s": "Rg",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 5f14 6d9",
+    "cr": "[Rn] 7s2 5f14 6d9"
+  },
+  {
+    "z": 112,
+    "n": "Copernicio",
+    "s": "Cn",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 5f14 6d10",
+    "cr": "[Rn] 7s2 5f14 6d10"
+  },
+  {
+    "z": 113,
+    "n": "Nihonio",
+    "s": "Nh",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 5f14 6d10 7p1",
+    "cr": "[Rn] 7s2 5f14 6d10 7p1"
+  },
+  {
+    "z": 114,
+    "n": "Flerovio",
+    "s": "Fl",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 5f14 6d10 7p2",
+    "cr": "[Rn] 7s2 5f14 6d10 7p2"
+  },
+  {
+    "z": 115,
+    "n": "Moscovio",
+    "s": "Mc",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 5f14 6d10 7p3",
+    "cr": "[Rn] 7s2 5f14 6d10 7p3"
+  },
+  {
+    "z": 116,
+    "n": "Livermorio",
+    "s": "Lv",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 5f14 6d10 7p4",
+    "cr": "[Rn] 7s2 5f14 6d10 7p4"
+  },
+  {
+    "z": 117,
+    "n": "Teneso",
+    "s": "Ts",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 5f14 6d10 7p5",
+    "cr": "[Rn] 7s2 5f14 6d10 7p5"
+  },
+  {
+    "z": 118,
+    "n": "Oganesón",
+    "s": "Og",
+    "cc": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 5f14 6d10 7p6",
+    "cr": "[Rn] 7s2 5f14 6d10 7p6"
+  }
+]
