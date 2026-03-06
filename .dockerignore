@@ -1,0 +1,22 @@
+# Dependencies
+.dart_tool/
+.pub-cache/
+.pub/
+
+# Build outputs (usamos el Flutter builder del Dockerfile)
+build/
+
+# IDE
+.idea/
+.vscode/
+
+# Git
+.git/
+.gitignore
+
+# Tests
+test/
+
+# OS
+.DS_Store
+Thumbs.db

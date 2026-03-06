@@ -1,0 +1,10 @@
+services:
+  quimica-web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    # Coolify gestiona el proxy y expone el puerto por su cuenta.
+    # Solo declaramos el puerto interno para que Coolify lo detecte.
+    expose:
+      - "80"
+    restart: unless-stopped
