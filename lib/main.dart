@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_platform_widgets/flutter_platform_widgets.dart';
+import 'package:quimica/aufbau.dart';
 import 'package:quimica/elemento.dart';
 import 'package:quimica/globals.dart';
 import 'package:quimica/leer_json.dart';
@@ -67,6 +68,15 @@ class _MainPageState extends State<MainPage> {
             onPressed: () => Navigator.push(
               context,
               MaterialPageRoute(builder: (_) => TablaPeriodica()),
+            ),
+          ),
+          IconButton(
+            icon: const Icon(Icons.layers),
+            tooltip: 'Principio de Aufbau',
+            color: Colors.white,
+            onPressed: () => Navigator.push(
+              context,
+              MaterialPageRoute(builder: (_) => Aufbau()),
             ),
           ),
         ],

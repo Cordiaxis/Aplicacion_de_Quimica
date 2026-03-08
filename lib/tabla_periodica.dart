@@ -2,25 +2,24 @@ import 'package:flutter/material.dart';
 import 'package:quimica/elemento.dart';
 import 'package:quimica/leer_json.dart';
 
-
 Color colorElemento(int z) {
-// Esta funcion es para los colores de los elementos
+  // Esta funcion es para los colores de los elementos
 
   // Hidrogeno
   if (z == 1) return const Color(0xFFE74C3C);
-  
+
   // Gases nobles
   if ([2, 10, 18, 36, 54, 86, 118].contains(z)) return const Color(0xFF8E44AD);
-  
+
   // Metales alcalinos
   if ([3, 11, 19, 37, 55, 87].contains(z)) return const Color(0xFFE67E22);
-  
+
   // Metales alcalinotérreos
   if ([4, 12, 20, 38, 56, 88].contains(z)) return const Color(0xFFD4AC0D);
-  
+
   // Lantánidos
   if (z >= 57 && z <= 71) return const Color(0xFF27AE60);
-  
+
   // Actínidos
   if (z >= 89 && z <= 103) return const Color(0xFF1ABC9C);
   if ((z >= 21 && z <= 30) ||
@@ -59,7 +58,6 @@ String categoriaElemento(int z) {
 }
 
 void mostrarDetalleElemento(BuildContext context, Elemento el) {
-
   // Este es el sliding bar del elemento
   final color = colorElemento(el.z);
   showModalBottomSheet(
@@ -211,7 +209,6 @@ class _TablaPeriodicaState extends State<TablaPeriodica> {
     }
   }
 
-  // Delegamos a las funciones de nivel superior
   Color _colorCategoria(int z) => colorElemento(z);
   String _nombreCategoria(int z) => categoriaElemento(z);
 
@@ -616,24 +613,33 @@ class _TablaPeriodicaState extends State<TablaPeriodica> {
                         ...List.generate(cols, (ci) {
                           final col = ci + 1;
                           if (row == 8) {
-                            return const SizedBox(width: cellW, height: cellH * 0.3);
+                            return const SizedBox(
+                              width: cellW,
+                              height: cellH * 0.3,
+                            );
                           }
                           if (row == 6 && col == 3) {
+                            // Es la celda de los lanquimidos
                             return _placeholderCell(
                               '57–71\nLa→Lu',
                               const Color(0xFF27AE60),
                             );
                           }
                           if (row == 7 && col == 3) {
+                            // Es la celda de los actinidos
                             return _placeholderCell(
                               '89–103\nAc→Lr',
                               const Color(0xFF1ABC9C),
                             );
                           }
                           final z = posMap[(row, col)];
-                          if (z == null) {return _emptyCell();}
+                          if (z == null) {
+                            return _emptyCell();
+                          }
                           final el = _byZ(z);
-                          if (el == null) {return _emptyCell();}
+                          if (el == null) {
+                            return _emptyCell();
+                          }
                           return _cell(el);
                         }),
                       ],
