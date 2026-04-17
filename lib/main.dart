@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_platform_widgets/flutter_platform_widgets.dart';
-import 'package:quimica/aufbau.dart';
-import 'package:quimica/elemento.dart';
-import 'package:quimica/globals.dart';
-import 'package:quimica/leer_json.dart';
-import 'package:quimica/tabla_periodica.dart';
+import 'package:quimica/screen/aufbau.dart';
+import 'package:quimica/screen/creditos.dart';
+import 'package:quimica/tools/elemento.dart';
+import 'package:quimica/tools/globals.dart';
+import 'package:quimica/json/leer_json.dart';
+import 'package:quimica/screen/tabla_periodica.dart';
 
 void main() {
   runApp(const MyApp());
@@ -76,7 +77,16 @@ class _MainPageState extends State<MainPage> {
             color: Colors.white,
             onPressed: () => Navigator.push(
               context,
-              MaterialPageRoute(builder: (_) => Aufbau()),
+              MaterialPageRoute(builder: (_) => const Aufbau()),
+            ),
+          ),
+          IconButton(
+            icon: const Icon(Icons.info),
+            tooltip: 'Créditos',
+            color: Colors.white,
+            onPressed: () => Navigator.push(
+              context,
+              MaterialPageRoute(builder: (_) => const Creditos()),
             ),
           ),
         ],
@@ -274,6 +284,13 @@ class _MainPageState extends State<MainPage> {
                   s: el.s,
                   cc: el.cc,
                   cr: el.cr,
+                  grupo: el.grupo,
+                  periodo: el.periodo,
+                  familia: el.familia,
+                  estado: el.estado,
+                  origen: el.origen,  
+                  oxidacion: el.oxidacion,
+                  propiedades: el.propiedades,
                 ),
                 if (index < filtrados.length - 1)
                   Divider(

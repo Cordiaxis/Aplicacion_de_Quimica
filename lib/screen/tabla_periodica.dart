@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:quimica/elemento.dart';
-import 'package:quimica/leer_json.dart';
+import 'package:quimica/tools/elemento.dart';
+import 'package:quimica/json/leer_json.dart';
 
 Color colorElemento(int z) {
   // Esta funcion es para los colores de los elementos
@@ -141,11 +141,25 @@ void mostrarDetalleElemento(BuildContext context, Elemento el) {
               ),
             ],
           ),
-          const SizedBox(height: 20),
-          _infoRow('N.º atómico', el.z.toString()),
-          _infoRow('Símbolo', el.s),
-          _infoRow('Config. compacta', el.cr),
-          _infoRow('Config. completa', el.cc),
+          const SizedBox(height: 10),
+          SingleChildScrollView(
+            scrollDirection: Axis.vertical,
+            child: Column(
+              children: [
+                _infoRow('N.º atómico', el.z.toString()),
+                _infoRow('Símbolo', el.s),
+                _infoRow('Config. compacta', el.cr),
+                _infoRow('Config. completa', el.cc),
+                _infoRow('Números de oxidación', el.oxidacion),
+                _infoRow('Familia', el.familia),
+                _infoRow('Grupo', el.grupo),
+                _infoRow('Periodo', el.periodo.toString()),
+                _infoRow('Estado', el.estado),
+                _infoRow('Origen', el.origen),
+                _infoRow('Propiedades', el.propiedades),
+              ],
+            ),
+          ),
           const SizedBox(height: 8),
         ],
       ),
@@ -183,7 +197,20 @@ Widget _infoRow(String label, String value) {
 
 class TablaPeriodica extends StatefulWidget {
   TablaPeriodica({super.key, this.el});
-  late Elemento? el = Elemento(z: 0, n: '', s: '', cc: '', cr: '');
+  late Elemento? el = Elemento(
+    z: 0,
+    n: '',
+    s: '',
+    cc: '',
+    cr: '',
+    grupo: '',
+    periodo: 0,
+    familia: '',
+    estado: '',
+    origen: '',
+    oxidacion: '',
+    propiedades: '',
+  );
 
   @override
   State<TablaPeriodica> createState() => _TablaPeriodicaState();
@@ -503,10 +530,24 @@ class _TablaPeriodicaState extends State<TablaPeriodica> {
               ],
             ),
             const SizedBox(height: 20),
-            _infoRow('N.º atómico', el.z.toString()),
-            _infoRow('Símbolo', el.s),
-            _infoRow('Config. reducida', el.cr),
-            _infoRow('Config. completa', el.cc),
+            SingleChildScrollView(
+            scrollDirection: Axis.vertical,
+            child: Column(
+              children: [
+                _infoRow('N.º atómico', el.z.toString()),
+                _infoRow('Símbolo', el.s),
+                _infoRow('Config. compacta', el.cr),
+                _infoRow('Config. completa', el.cc),
+                _infoRow('Nums. de oxidación', el.oxidacion),
+                _infoRow('Familia', el.familia),
+                _infoRow('Grupo', el.grupo),
+                _infoRow('Periodo', el.periodo.toString()),
+                _infoRow('Estado', el.estado),
+                _infoRow('Origen', el.origen),
+                _infoRow('Propiedades', el.propiedades),
+              ],
+            ),
+          ),
             const SizedBox(height: 8),
           ],
         ),
@@ -521,7 +562,7 @@ class _TablaPeriodicaState extends State<TablaPeriodica> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           SizedBox(
-            width: 130,
+            width: 140,
             child: Text(
               label,
               style: const TextStyle(

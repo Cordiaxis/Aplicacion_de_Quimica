@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_platform_widgets/flutter_platform_widgets.dart';
-import 'package:quimica/globals.dart';
-import 'package:quimica/tabla_periodica.dart';
+import 'package:quimica/tools/globals.dart';
+import 'package:quimica/screen/tabla_periodica.dart';
 
 class Elemento {
   late int z;
@@ -9,6 +9,13 @@ class Elemento {
   late String s;
   late String cc;
   late String cr;
+  late String grupo;
+  late int periodo;
+  late String familia;
+  late String estado;
+  late String origen;
+  late String oxidacion;
+  late String propiedades;
 
   Elemento.fromJson(Map<String, dynamic> json) {
     z = json['z'];
@@ -16,6 +23,13 @@ class Elemento {
     s = json['s'];
     cc = json['cc'];
     cr = json['cr'];
+    grupo = json['grupo'];
+    periodo = json['periodo'];
+    familia = json['familia'];
+    estado = json['estado'];
+    origen = json['origen'];
+    oxidacion = json['oxidacion'];
+    propiedades = json['propiedades'];
   }
 
   Elemento({
@@ -24,6 +38,13 @@ class Elemento {
     required this.s,
     required this.cc,
     required this.cr,
+    required this.grupo,
+    required this.periodo,
+    required this.familia,
+    required this.estado,
+    required this.origen,
+    required this.oxidacion,
+    required this.propiedades,
   });
 }
 
@@ -34,10 +55,30 @@ Widget buildElementoItem({
   required String s,
   required String cc,
   required String cr,
+  required String grupo,
+  required int periodo,
+  required String familia,
+  required String estado,
+  required String origen,
+  required String oxidacion,
+  required String propiedades,
 }) {
   return PlatformListTile(
     onTap: () {
-      final el = Elemento(z: z, n: n, s: s, cc: cc, cr: cr);
+      final el = Elemento(
+        z: z,
+        n: n,
+        s: s,
+        cc: cc,
+        cr: cr,
+        grupo: grupo,
+        periodo: periodo,
+        familia: familia,
+        estado: estado,
+        origen: origen,
+        oxidacion: oxidacion,
+        propiedades: propiedades,
+      );
       mostrarDetalleElemento(context, el);
     },
     leading: Container(
