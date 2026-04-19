@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_platform_widgets/flutter_platform_widgets.dart';
 import 'package:quimica/tools/globals.dart';
-import 'package:quimica/screen/tabla_periodica.dart';
 
 class Elemento {
   late int z;
@@ -13,6 +12,7 @@ class Elemento {
   late int periodo;
   late String familia;
   late String estado;
+  late String descripcion;
   late String origen;
   late String oxidacion;
   late String propiedades;
@@ -27,6 +27,7 @@ class Elemento {
     periodo = json['periodo'];
     familia = json['familia'];
     estado = json['estado'];
+    descripcion = json['descripcion'];
     origen = json['origen'];
     oxidacion = json['oxidacion'];
     propiedades = json['propiedades'];
@@ -42,6 +43,7 @@ class Elemento {
     required this.periodo,
     required this.familia,
     required this.estado,
+    required this.descripcion,
     required this.origen,
     required this.oxidacion,
     required this.propiedades,
@@ -59,6 +61,7 @@ Widget buildElementoItem({
   required int periodo,
   required String familia,
   required String estado,
+  required String descripcion,
   required String origen,
   required String oxidacion,
   required String propiedades,
@@ -75,6 +78,7 @@ Widget buildElementoItem({
         periodo: periodo,
         familia: familia,
         estado: estado,
+        descripcion: descripcion,
         origen: origen,
         oxidacion: oxidacion,
         propiedades: propiedades,
@@ -93,7 +97,7 @@ Widget buildElementoItem({
       n,
       style: TextStyle(
         fontWeight: FontWeight.w600,
-        color: darkMode ? Colors.white : Color(0xFF374151),
+        color: darkMode ? Colors.white : const Color(0xFF374151),
       ),
     ),
     trailing: Container(

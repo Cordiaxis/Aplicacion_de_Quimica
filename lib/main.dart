@@ -1,3 +1,4 @@
+import 'package:another_flutter_splash_screen/another_flutter_splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_platform_widgets/flutter_platform_widgets.dart';
 import 'package:quimica/screen/aufbau.dart';
@@ -19,12 +20,25 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return PlatformProvider(
       builder: (context) => MaterialApp(
-        title: 'Flutter Demo',
+        title: 'Química',
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         ),
-        home: const MainPage(),
+        home: FlutterSplashScreen.gif(
+          gifPath: 'assets/logosc.gif',
+          gifWidth: 269,
+          gifHeight: 474,
+          backgroundColor: const Color.fromARGB(255, 255, 255, 255),
+          nextScreen: const MainPage(),
+          duration: const Duration(milliseconds: 3400),
+          onInit: () async {
+            debugPrint("onInit");
+          },
+          onEnd: () async {
+            debugPrint("onEnd 1");
+          },
+        ),
       ),
     );
   }
@@ -288,7 +302,8 @@ class _MainPageState extends State<MainPage> {
                   periodo: el.periodo,
                   familia: el.familia,
                   estado: el.estado,
-                  origen: el.origen,  
+                  descripcion: el.descripcion,
+                  origen: el.origen,
                   oxidacion: el.oxidacion,
                   propiedades: el.propiedades,
                 ),

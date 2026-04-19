@@ -13,6 +13,8 @@ dependencies:
   flutter_platform_widgets: ^9.0.0
 
   cupertino_icons: ^1.0.8
+  url_launcher: ^6.3.2
+  another_flutter_splash_screen: ^1.2.1
 
 dev_dependencies:
   flutter_test:
@@ -23,9 +25,9 @@ dev_dependencies:
 flutter_launcher_icons:
   android: "launcher_icon"
   ios: true
-  image_path: "assets/quimica.png"
+  image_path: "assets/logo.png"
   adaptive_icon_background: "#1a2332"
-  adaptive_icon_foreground: "assets/quimica.png"
+  adaptive_icon_foreground: "assets/logo.png"
 
 flutter:
   uses-material-design: true
