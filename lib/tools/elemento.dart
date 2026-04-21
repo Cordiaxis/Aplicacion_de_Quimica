@@ -16,6 +16,9 @@ class Elemento {
   late String origen;
   late String oxidacion;
   late String propiedades;
+  late String abundancia;
+  late String produccion;
+  late String extraccion;
 
   Elemento.fromJson(Map<String, dynamic> json) {
     z = json['z'];
@@ -31,6 +34,9 @@ class Elemento {
     origen = json['origen'];
     oxidacion = json['oxidacion'];
     propiedades = json['propiedades'];
+    abundancia = json['abundancia'];
+    produccion = json['produccion'];
+    extraccion = json['extraccion'];
   }
 
   Elemento({
@@ -47,6 +53,9 @@ class Elemento {
     required this.origen,
     required this.oxidacion,
     required this.propiedades,
+    required this.abundancia,
+    required this.produccion,
+    required this.extraccion,
   });
 }
 
@@ -65,6 +74,9 @@ Widget buildElementoItem({
   required String origen,
   required String oxidacion,
   required String propiedades,
+  required String abundancia,
+  required String produccion,
+  required String extraccion,
 }) {
   return PlatformListTile(
     onTap: () {
@@ -82,6 +94,9 @@ Widget buildElementoItem({
         origen: origen,
         oxidacion: oxidacion,
         propiedades: propiedades,
+        abundancia: abundancia,
+        produccion: produccion,
+        extraccion: extraccion,
       );
       mostrarDetalleElemento(context, el);
     },

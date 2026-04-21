@@ -9,11 +9,13 @@
     "periodo": 1,
     "familia": "No metal",
     "estado": "Gas",
-    "origen": "Elemento más abundante del universo. En la Tierra se encuentra en el agua y materia orgánica.",
-    "propiedades": "Altamente inflamable, reacciona con la mayoría de los elementos para formar compuestos como el agua.",
+    "origen": "Agua y materia orgánica.",
+    "propiedades": "Altamente inflamable, forma agua y compuestos orgánicos.",
     "oxidacion": "+1, -1",
-    "extraccion": "A nivel mundial mediante reformado con vapor de gas natural y electrólisis del agua.",
-    "descripcion": "El elemento más simple y abundante del universo conocido; es el principal combustible que hace brillar a las estrellas."
+    "extraccion": "Reformado de gas natural y electrólisis del agua.",
+    "abundancia": "1400 ppm",
+    "produccion": "Global",
+    "descripcion": "El elemento más abundante del universo, principal combustible de las estrellas."
   },
   {
     "z": 2,
@@ -25,11 +27,13 @@
     "periodo": 1,
     "familia": "Gas noble",
     "estado": "Gas",
-    "origen": "Se extrae principalmente del gas natural. También se produce en el sol por fusión nuclear.",
-    "propiedades": "Completamente inerte, no inflamable, es el segundo elemento más ligero.",
+    "origen": "Subproducto del gas natural.",
+    "propiedades": "Completamente inerte, muy ligero.",
     "oxidacion": "0",
-    "extraccion": "Principalmente extraído de pozos de gas natural en EE. UU., Qatar y Argelia.",
-    "descripcion": "Gas noble muy ligero, mundialmente conocido por su uso en globos y su capacidad vital para enfriar imanes superconductores (como los de resonancia magnética)."
+    "extraccion": "Destilación fraccionada de gas natural.",
+    "abundancia": "0.008 ppm",
+    "produccion": "EE. UU., Qatar, Argelia",
+    "descripcion": "Gas inerte vital para globos y refrigeración de imanes superconductores."
   },
   {
     "z": 3,
@@ -41,11 +45,13 @@
     "periodo": 2,
     "familia": "Metal alcalino",
     "estado": "Sólido",
-    "origen": "Se extrae de minerales como la espodumena y de salmueras naturales.",
-    "propiedades": "Es el metal más ligero, reacciona vigorosamente con el agua y se usa extensamente en baterías.",
+    "origen": "Salares y pegmatitas.",
+    "propiedades": "Metal más ligero, muy reactivo.",
     "oxidacion": "+1",
-    "extraccion": "Extraído de salares y rocas pegmatitas; principales productores: Australia, Chile, China y Argentina.",
-    "descripcion": "El metal sólido más ligero de la tabla periódica, esencial hoy en día para alimentar el mundo móvil gracias a las baterías recargables."
+    "extraccion": "Evaporación de salmueras y minería de roca dura.",
+    "abundancia": "20 ppm",
+    "produccion": "Australia, Chile, China, Argentina",
+    "descripcion": "Pilar de la transición energética moderna gracias a las baterías recargables."
   },
   {
     "z": 4,
@@ -57,11 +63,13 @@
     "periodo": 2,
     "familia": "Metal alcalinotérreo",
     "estado": "Sólido",
-    "origen": "Se encuentra en minerales como el berilo y la esmeralda.",
-    "propiedades": "Metal muy duro pero quebradizo, es tóxico y se usa en aleaciones aeroespaciales.",
+    "origen": "Minerales como berilo y esmeralda.",
+    "propiedades": "Muy duro, ligero pero tóxico (beriliosis).",
     "oxidacion": "+2",
-    "extraccion": "Minería de berilo y bertrandita, dominada por EE. UU., seguido por China y Kazajistán.",
-    "descripcion": "Metal increíblemente ligero, rígido y transparente a los rayos X, crucial en satélites y naves espaciales, pero cuyo polvo es altamente tóxico."
+    "extraccion": "Minería a cielo abierto y procesamiento químico.",
+    "abundancia": "2.8 ppm",
+    "produccion": "EE. UU., China, Kazajistán",
+    "descripcion": "Metal transparente a los rayos X, crucial en satélites y naves espaciales."
   },
   {
     "z": 5,
@@ -73,11 +81,13 @@
     "periodo": 2,
     "familia": "Metaloide",
     "estado": "Sólido",
-    "origen": "Se encuentra principalmente en depósitos de bórax naturales.",
-    "propiedades": "Duro y mal conductor a temperatura ambiente, importante en la industria del vidrio y agricultura.",
+    "origen": "Depósitos de bórax naturales.",
+    "propiedades": "Duro, mal conductor térmico a temperatura ambiente.",
     "oxidacion": "+3",
-    "extraccion": "Extracción de yacimientos de bórax, liderada abrumadoramente por Turquía, EE. UU. y Rusia.",
-    "descripcion": "Metaloide oscuro indispensable para la agricultura (como nutriente de plantas) y para crear vidrios resistentes al calor intenso, como el famoso Pyrex."
+    "extraccion": "Minería y refinamiento de bórax.",
+    "abundancia": "10 ppm",
+    "produccion": "Turquía, EE. UU., Rusia, Chile",
+    "descripcion": "Esencial para el desarrollo de plantas y para la creación de vidrio Pyrex termorresistente."
   },
   {
     "z": 6,
@@ -89,11 +99,13 @@
     "periodo": 2,
     "familia": "No metal",
     "estado": "Sólido",
-    "origen": "Se encuentra puro como grafito o diamante, y combinado en toda la materia orgánica y CO2.",
-    "propiedades": "Base de la química orgánica y de la vida, capaz de formar inmensas cadenas de polímeros.",
+    "origen": "Materia orgánica, carbón, diamantes.",
+    "propiedades": "Base de la vida, forma cadenas complejas.",
     "oxidacion": "-4, +2, +4",
-    "extraccion": "Minas de carbón a nivel mundial; minería de grafito (China, India) y minas de diamantes (Rusia, África).",
-    "descripcion": "El pilar indiscutible de toda vida conocida en la Tierra, capaz de unirse a sí mismo para formar desde suave grafito hasta diamantes indestructibles."
+    "extraccion": "Minería de carbón, grafito y diamantes.",
+    "abundancia": "200 ppm",
+    "produccion": "China, India, EE. UU. (carbón/grafito)",
+    "descripcion": "El pilar indiscutible de toda la vida biológica y de la química orgánica."
   },
   {
     "z": 7,
@@ -105,11 +117,13 @@
     "periodo": 2,
     "familia": "No metal",
     "estado": "Gas",
-    "origen": "Constituye el 78% de la atmósfera terrestre.",
-    "propiedades": "Gas diatómico inerte en condiciones normales, crucial para aminoácidos y fertilizantes.",
-    "oxidacion": "-3, -2, -1, +1, +2, +3, +4, +5",
-    "extraccion": "Se obtiene industrialmente a nivel mundial mediante la destilación fraccionada del aire líquido.",
-    "descripcion": "Gas invisible que compone casi el 80% del aire que respiramos y es un ingrediente absolutamente esencial para fabricar el ADN y las proteínas."
+    "origen": "Atmósfera terrestre (78%).",
+    "propiedades": "Gas inerte, esencial para ADN y proteínas.",
+    "oxidacion": "-3, +3, +5",
+    "extraccion": "Destilación fraccionada del aire líquido.",
+    "abundancia": "19 ppm (Corteza), 78% (Aire)",
+    "produccion": "Global",
+    "descripcion": "Componente principal del aire que respiramos y de todos los fertilizantes agrícolas."
   },
   {
     "z": 8,
@@ -121,11 +135,13 @@
     "periodo": 2,
     "familia": "No metal",
     "estado": "Gas",
-    "origen": "Forma el 21% de la atmósfera y es el elemento más abundante en la corteza terrestre (en minerales y agua).",
-    "propiedades": "Altamente reactivo (oxidante), esencial para la respiración celular y la combustión.",
-    "oxidacion": "-2, -1",
-    "extraccion": "Se extrae a gran escala globalmente a través de la destilación del aire o electrólisis del agua.",
-    "descripcion": "El elemento vital para la respiración aeróbica de animales y humanos, además de ser el componente elemental más abundante de la corteza terrestre."
+    "origen": "Atmósfera, agua y minerales.",
+    "propiedades": "Altamente reactivo y comburente.",
+    "oxidacion": "-2",
+    "extraccion": "Destilación del aire, electrólisis del agua.",
+    "abundancia": "461,000 ppm (46.1%)",
+    "produccion": "Global",
+    "descripcion": "El elemento más abundante de la Tierra, vital para la respiración y la combustión."
   },
   {
     "z": 9,
@@ -137,11 +153,13 @@
     "periodo": 2,
     "familia": "Halógeno",
     "estado": "Gas",
-    "origen": "Se obtiene de minerales como la fluorita o la criolita.",
-    "propiedades": "Es el elemento más electronegativo y reactivo, ataca incluso al vidrio.",
+    "origen": "Minerales de fluorita.",
+    "propiedades": "Gas amarillo, el elemento más reactivo y electronegativo.",
     "oxidacion": "-1",
-    "extraccion": "A partir de minas de fluorita, siendo los principales productores China, México y Mongolia.",
-    "descripcion": "Un gas amarillo pálido y letalmente reactivo en su forma pura, famoso por sus iones que ayudan a fortalecer el esmalte dental contra las caries."
+    "extraccion": "Minería de fluorita y electrólisis.",
+    "abundancia": "585 ppm",
+    "produccion": "China, México, Mongolia",
+    "descripcion": "Conocido en forma de iones por prevenir la caries dental y por fabricar teflón."
   },
   {
     "z": 10,
@@ -153,11 +171,13 @@
     "periodo": 2,
     "familia": "Gas noble",
     "estado": "Gas",
-    "origen": "Se obtiene por destilación fraccionada del aire líquido.",
-    "propiedades": "Totalmente inerte, brilla con un color rojizo/anaranjado característico al aplicar electricidad.",
+    "origen": "Trazas en la atmósfera terrestre.",
+    "propiedades": "Totalmente inerte, brilla rojizo/anaranjado con electricidad.",
     "oxidacion": "0",
-    "extraccion": "Capturado a nivel mundial en plantas industriales criogénicas por destilación del aire.",
-    "descripcion": "Un gas noble inerte que revolucionó la publicidad en el siglo XX gracias a su vibrante e inconfundible luz roja-anaranjada al ser electrificado."
+    "extraccion": "Destilación fraccionada del aire líquido.",
+    "abundancia": "0.005 ppm",
+    "produccion": "Global (Plantas criogénicas)",
+    "descripcion": "El gas icónico que revolucionó la iluminación publicitaria con su brillante luz roja."
   },
   {
     "z": 11,
@@ -169,11 +189,13 @@
     "periodo": 3,
     "familia": "Metal alcalino",
     "estado": "Sólido",
-    "origen": "Abundante en el mar (como cloruro de sodio) y en depósitos de halita.",
-    "propiedades": "Metal blando y muy reactivo que oxida rápido en aire y reacciona violentamente con el agua.",
+    "origen": "Agua de mar y sal de roca (halita).",
+    "propiedades": "Blando, reactivo, explota en agua.",
     "oxidacion": "+1",
-    "extraccion": "Evaporación de agua de mar y minas de sal (halita) a nivel mundial; destacan China y EE. UU.",
-    "descripcion": "Metal brillante tan blando que puede cortarse con cuchillo; al combinarse con cloro forma la imprescindible sal de mesa."
+    "extraccion": "Electrólisis de sal fundida o evaporación.",
+    "abundancia": "23,600 ppm",
+    "produccion": "China, EE. UU., India",
+    "descripcion": "Componente clave de la sal de mesa y vital para la transmisión nerviosa."
   },
   {
     "z": 12,
@@ -185,11 +207,13 @@
     "periodo": 3,
     "familia": "Metal alcalinotérreo",
     "estado": "Sólido",
-    "origen": "Se extrae de minerales como dolomita y magnesita, y del agua de mar.",
-    "propiedades": "Arde con una brillante luz blanca, muy usado en aleaciones ligeras.",
+    "origen": "Minerales y agua de mar.",
+    "propiedades": "Arde con luz blanca brillante, muy ligero.",
     "oxidacion": "+2",
-    "extraccion": "Extracción de magnesita y evaporación de salmueras; China domina el mercado absoluto, seguido de Rusia.",
-    "descripcion": "Metal ligero clave en la producción de aleaciones estructurales, famoso por arder con una luz blanca deslumbrante y ser el centro de la molécula de clorofila."
+    "extraccion": "Electrólisis de sales de magnesio, minería de dolomita.",
+    "abundancia": "23,300 ppm",
+    "produccion": "China, Rusia, Turquía",
+    "descripcion": "El átomo central de la molécula de clorofila y base de aleaciones ultra ligeras."
   },
   {
     "z": 13,
@@ -201,11 +225,13 @@
     "periodo": 3,
     "familia": "Metal del bloque p",
     "estado": "Sólido",
-    "origen": "Se obtiene principalmente de la bauxita.",
-    "propiedades": "Metal ligero, no magnético, altamente resistente a la corrosión por su capa de óxido.",
+    "origen": "Bauxita.",
+    "propiedades": "Ligero, resistente a la corrosión.",
     "oxidacion": "+3",
-    "extraccion": "Minería de bauxita (Australia, Guinea, Brasil) y refinerías electrolíticas dominadas por China.",
-    "descripcion": "El metal más abundante de la corteza, sumamente ligero y reciclable, omnipresente hoy en la aeronáutica, latas de refresco y papel de plata."
+    "extraccion": "Proceso Bayer y electrólisis (Proceso Hall-Héroult).",
+    "abundancia": "82,300 ppm",
+    "produccion": "China, India, Rusia",
+    "descripcion": "El metal más abundante en la corteza, vital para la aviación y embalaje."
   },
   {
     "z": 14,
@@ -217,11 +243,13 @@
     "periodo": 3,
     "familia": "Metaloide",
     "estado": "Sólido",
-    "origen": "Muy abundante en forma de arena (sílice) y silicatos en la corteza terrestre.",
-    "propiedades": "Semiconductor clave para toda la industria de la electrónica y la informática.",
+    "origen": "Arena (sílice) y cuarzo.",
+    "propiedades": "Semiconductor cristalino oscuro.",
     "oxidacion": "-4, +2, +4",
-    "extraccion": "A partir de la reducción de cuarzo y arena rica en sílice. China produce la gran mayoría global.",
-    "descripcion": "El rey de los semiconductores, un brillante metaloide extraído de la arena que actúa como el corazón físico de computadoras, móviles y toda la era digital."
+    "extraccion": "Reducción térmica de sílice con carbono.",
+    "abundancia": "282,000 ppm",
+    "produccion": "China, Rusia, Noruega",
+    "descripcion": "El rey de los semiconductores, corazón físico de toda computadora moderna."
   },
   {
     "z": 15,
@@ -233,11 +261,13 @@
     "periodo": 3,
     "familia": "No metal",
     "estado": "Sólido",
-    "origen": "Se obtiene de minerales de fosfato.",
-    "propiedades": "Presenta alotropía (blanco, rojo, negro); el fósforo blanco es muy reactivo e inflamable.",
+    "origen": "Roca fosfórica.",
+    "propiedades": "Reacciona al oxígeno emitiendo luz (variante blanca).",
     "oxidacion": "-3, +3, +5",
-    "extraccion": "Minería de roca fosfórica extraída extensivamente en China, Marruecos y EE. UU.",
-    "descripcion": "Elemento que literalmente significa 'portador de luz', es un componente vital para la vida celular (ATP, ADN) y la industria de fertilizantes."
+    "extraccion": "Minería a cielo abierto de fosfatos.",
+    "abundancia": "1,050 ppm",
+    "produccion": "China, Marruecos, EE. UU.",
+    "descripcion": "Crucial para los huesos, el ADN y la manufactura masiva de fertilizantes."
   },
   {
     "z": 16,
@@ -249,11 +279,13 @@
     "periodo": 3,
     "familia": "No metal",
     "estado": "Sólido",
-    "origen": "Se encuentra nativo en regiones volcánicas o en minerales como pirita y galena.",
-    "propiedades": "Sólido amarillo que forma compuestos de olores fuertes, vital en la industria (ácido sulfúrico).",
+    "origen": "Volcanes y subproducto del petróleo.",
+    "propiedades": "Sólido amarillo, compuestos de olor acre.",
     "oxidacion": "-2, +2, +4, +6",
-    "extraccion": "Recuperado como subproducto de la refinación de petróleo y gas natural (Proceso Claus); China y EE. UU.",
-    "descripcion": "Sólido de vibrante color amarillo (el clásico 'piedra azufre' bíblico) que es indispensable para fabricar ácido sulfúrico, el producto químico más usado mundialmente."
+    "extraccion": "Recuperación industrial (Proceso Claus) de combustibles.",
+    "abundancia": "350 ppm",
+    "produccion": "China, EE. UU., Rusia",
+    "descripcion": "Ingrediente base del ácido sulfúrico, el producto químico industrial más usado del mundo."
   },
   {
     "z": 17,
@@ -265,11 +297,13 @@
     "periodo": 3,
     "familia": "Halógeno",
     "estado": "Gas",
-    "origen": "Principalmente de la sal del agua de mar (NaCl).",
-    "propiedades": "Gas amarillo verdoso, muy tóxico e irritante, usado como poderoso oxidante y desinfectante.",
+    "origen": "Cloruro de sodio en el mar.",
+    "propiedades": "Gas amarillo-verdoso, oxidante fuerte y tóxico.",
     "oxidacion": "-1, +1, +3, +5, +7",
-    "extraccion": "Obtenido globalmente mediante la electrólisis industrial de salmueras de cloruro de sodio.",
-    "descripcion": "Un gas denso y tóxico en la naturaleza, pero domado en la modernidad como el desinfectante de agua más crucial y base del plástico PVC."
+    "extraccion": "Electrólisis de salmueras (cloro-álcali).",
+    "abundancia": "145 ppm",
+    "produccion": "China, EE. UU., Alemania",
+    "descripcion": "El desinfectante de agua más crucial y base de plásticos como el PVC."
   },
   {
     "z": 18,
@@ -281,11 +315,13 @@
     "periodo": 3,
     "familia": "Gas noble",
     "estado": "Gas",
-    "origen": "Tercer gas más abundante en la atmósfera terrestre, extraído por destilación.",
-    "propiedades": "Gas inerte, muy usado para proporcionar atmósferas protectoras en soldaduras.",
+    "origen": "Atmósfera terrestre.",
+    "propiedades": "Gas noble inerte.",
     "oxidacion": "0",
-    "extraccion": "Extracción mundial continua mediante plantas de separación fraccionada de aire líquido.",
-    "descripcion": "El gas noble más abundante de la atmósfera, cuya pereza química (inercia) lo hace perfecto para proteger filamentos de bombillas y soldaduras."
+    "extraccion": "Destilación del aire.",
+    "abundancia": "3.5 ppm (Corteza), 0.93% (Aire)",
+    "produccion": "Global",
+    "descripcion": "Gas de protección indispensable en las soldaduras y bombillas para evitar la oxidación."
   },
   {
     "z": 19,
@@ -297,11 +333,13 @@
     "periodo": 4,
     "familia": "Metal alcalino",
     "estado": "Sólido",
-    "origen": "Minerales como silvina o carnalita.",
-    "propiedades": "Metal blando que reacciona explosivamente con el agua; fundamental para el sistema nervioso.",
+    "origen": "Minerales de potasa (silvina).",
+    "propiedades": "Arde con llama lila, explota en agua.",
     "oxidacion": "+1",
-    "extraccion": "Minas profundas de sales de potasa; mayores productores son Canadá, Rusia y Bielorrusia.",
-    "descripcion": "Metal sumamente reactivo al entrar en contacto con el agua; como ión, es absolutamente vital para la transmisión de impulsos nerviosos en nuestro cuerpo."
+    "extraccion": "Minería subterránea profunda.",
+    "abundancia": "20,900 ppm",
+    "produccion": "Canadá, Rusia, Bielorrusia",
+    "descripcion": "Nutriente esencial para el sistema nervioso humano y fertilizantes agrícolas."
   },
   {
     "z": 20,
@@ -313,11 +351,13 @@
     "periodo": 4,
     "familia": "Metal alcalinotérreo",
     "estado": "Sólido",
-    "origen": "Abundante en calizas (carbonato de calcio), yeso y fluorita.",
-    "propiedades": "Vital para los seres vivos (huesos, dientes) y muy utilizado en la industria cementera.",
+    "origen": "Calizas, yeso, fluorita.",
+    "propiedades": "Metal reactivo gris plateado.",
     "oxidacion": "+2",
-    "extraccion": "Canteras a cielo abierto de piedra caliza, mármol y yeso en casi todos los países del mundo.",
-    "descripcion": "Famoso por ser el bloque estructural de los esqueletos y los dientes, es además un pilar de la construcción moderna a través del cemento."
+    "extraccion": "Canteras de piedra caliza y electrólisis.",
+    "abundancia": "41,500 ppm",
+    "produccion": "China, EE. UU., India",
+    "descripcion": "Pilar estructural de los huesos biológicos y del cemento en la construcción moderna."
   },
   {
     "z": 21,
@@ -329,11 +369,13 @@
     "periodo": 4,
     "familia": "Metal de transición",
     "estado": "Sólido",
-    "origen": "En minerales raros de Escandinavia y como subproducto en la extracción de uranio.",
-    "propiedades": "Metal ligero, se usa principalmente para aleaciones de alto rendimiento con aluminio.",
+    "origen": "Minerales raros de uranio y tierras raras.",
+    "propiedades": "Metal ligero, eleva la fuerza de aleaciones.",
     "oxidacion": "+3",
-    "extraccion": "Subproducto del procesamiento de uranio y tierras raras, obtenido principalmente en China, Rusia y Ucrania.",
-    "descripcion": "Metal muy disperso en la corteza terrestre; añadirlo al aluminio crea aleaciones formidables usadas en cazas de combate y bates de béisbol de alta gama."
+    "extraccion": "Subproducto del refinado de uranio o titanio.",
+    "abundancia": "22 ppm",
+    "produccion": "China, Rusia, Filipinas",
+    "descripcion": "Añadido al aluminio crea aleaciones increíblemente fuertes para aviones y equipos deportivos."
   },
   {
     "z": 22,
@@ -345,11 +387,13 @@
     "periodo": 4,
     "familia": "Metal de transición",
     "estado": "Sólido",
-    "origen": "Se encuentra en minerales como rutilo e ilmenita.",
-    "propiedades": "Extremadamente resistente a la corrosión y con la mayor proporción dureza-densidad.",
-    "oxidacion": "+2, +3, +4",
-    "extraccion": "Extracción de arenas ricas en ilmenita y rutilo; líderes son China, Australia y Sudáfrica.",
-    "descripcion": "Metal legendario por su ratio fuerza-peso superior e inmunidad a la corrosión oceánica y corporal, amado por la industria espacial y ortopédica."
+    "origen": "Rutilo e ilmenita.",
+    "propiedades": "La mejor relación dureza-peso, no se oxida fácilmente.",
+    "oxidacion": "+4",
+    "extraccion": "Proceso Kroll a partir de arenas pesadas.",
+    "abundancia": "5,650 ppm",
+    "produccion": "China, Japón, Rusia",
+    "descripcion": "Inmune a la corrosión oceánica y corporal, ideal para prótesis y naves espaciales."
   },
   {
     "z": 23,
@@ -361,11 +405,13 @@
     "periodo": 4,
     "familia": "Metal de transición",
     "estado": "Sólido",
-    "origen": "De minerales como la vanadinita y patronita.",
-    "propiedades": "Forma compuestos de hermosos colores, usado para endurecer el acero.",
-    "oxidacion": "+2, +3, +4, +5",
-    "extraccion": "Principalmente se recupera de la escoria de fundición de acero; mayores productores China, Rusia y Sudáfrica.",
-    "descripcion": "Nombrado por la diosa nórdica de la belleza gracias a sus sales multicolores, es un metal esencial para endurecer herramientas de acero y chasis vehiculares."
+    "origen": "Minerales vanadinita y patronita.",
+    "propiedades": "Endurece metales, forma sales de colores.",
+    "oxidacion": "+5, +4, +3, +2",
+    "extraccion": "Recuperado de la escoria siderúrgica.",
+    "abundancia": "120 ppm",
+    "produccion": "China, Rusia, Sudáfrica",
+    "descripcion": "Metal esencial que añade resistencia extrema contra impactos al acero de chasis."
   },
   {
     "z": 24,
@@ -377,11 +423,13 @@
     "periodo": 4,
     "familia": "Metal de transición",
     "estado": "Sólido",
-    "origen": "Se extrae de la cromita.",
-    "propiedades": "Muy resistente al deslustre, principal componente del acero inoxidable.",
+    "origen": "Mineral cromita.",
+    "propiedades": "Resistente a la corrosión, muy brillante pulido.",
     "oxidacion": "+2, +3, +6",
-    "extraccion": "Minería de cromita, industria fuertemente dominada por Sudáfrica, seguida de Kazajistán e India.",
-    "descripcion": "Conocido por su pulido ultrabrillante y resistencia al óxido, es el ingrediente mágico que convierte al hierro normal en acero inoxidable."
+    "extraccion": "Minería a cielo abierto de cromita.",
+    "abundancia": "102 ppm",
+    "produccion": "Sudáfrica, Kazajistán, India",
+    "descripcion": "El ingrediente mágico que otorga al hierro su propiedad de acero inoxidable."
   },
   {
     "z": 25,
@@ -393,11 +441,13 @@
     "periodo": 4,
     "familia": "Metal de transición",
     "estado": "Sólido",
-    "origen": "Abundante en pirolusita y en nódulos marinos.",
-    "propiedades": "Esencial para la producción de hierro y acero, y altamente oxidante en algunos estados.",
+    "origen": "Pirolusita.",
+    "propiedades": "Duro y quebradizo, oxidador fuerte.",
     "oxidacion": "+2, +3, +4, +6, +7",
-    "extraccion": "Minas de pirolusita a cielo abierto. Los países productores líderes son Sudáfrica, Australia y China.",
-    "descripcion": "Un metal gris-blanco muy quebradizo que es absolutamente irreemplazable para endurecer el acero y purificar el hierro de oxígeno y azufre."
+    "extraccion": "Minería convencional de minerales oxidados.",
+    "abundancia": "950 ppm",
+    "produccion": "Sudáfrica, Australia, China",
+    "descripcion": "Absolutamente irreemplazable en la metalurgia para purificar y fortalecer el acero comercial."
   },
   {
     "z": 26,
@@ -409,11 +459,13 @@
     "periodo": 4,
     "familia": "Metal de transición",
     "estado": "Sólido",
-    "origen": "Muy abundante en la Tierra, extraído de magnetita y hematita.",
-    "propiedades": "Metal ferromagnético, base del acero y vital para el transporte de oxígeno en la sangre.",
-    "oxidacion": "+2, +3, +6",
-    "extraccion": "Masiva minería a cielo abierto de hematita/magnetita; colosos productores son Australia, Brasil y China.",
-    "descripcion": "La columna vertebral de la civilización humana a través del acero, responsable además de transportar el oxígeno en el torrente sanguíneo mediante la hemoglobina."
+    "origen": "Magnetita, hematita.",
+    "propiedades": "Ferromagnético, se oxida (herrumbre) al aire.",
+    "oxidacion": "+2, +3",
+    "extraccion": "Altos hornos siderúrgicos, gran escala.",
+    "abundancia": "56,300 ppm",
+    "produccion": "Australia, Brasil, China",
+    "descripcion": "Base de toda infraestructura moderna (acero) y núcleo de la hemoglobina en la sangre."
   },
   {
     "z": 27,
@@ -425,11 +477,13 @@
     "periodo": 4,
     "familia": "Metal de transición",
     "estado": "Sólido",
-    "origen": "Se obtiene como subproducto de la minería de níquel y cobre.",
-    "propiedades": "Ferromagnético, usado en imanes fuertes, baterías de litio y pigmentos azules.",
+    "origen": "Asociado a minerales de cobre y níquel.",
+    "propiedades": "Ferromagnético, colorea vidrios de azul.",
     "oxidacion": "+2, +3",
-    "extraccion": "Subproducto de cobre/níquel. La República Democrática del Congo (RDC) extrae más del 70% mundial.",
-    "descripcion": "Famoso en la antigüedad por dotar a los vidrios de un azul profundo; hoy es crucial como cátodo en la mayoría de baterías recargables de litio."
+    "extraccion": "Subproducto del refinado de cobre y níquel.",
+    "abundancia": "25 ppm",
+    "produccion": "RDC, Rusia, Australia",
+    "descripcion": "Vital en la fabricación actual de baterías de iones de litio de alta durabilidad."
   },
   {
     "z": 28,
@@ -441,11 +495,13 @@
     "periodo": 4,
     "familia": "Metal de transición",
     "estado": "Sólido",
-    "origen": "En minerales como la pentlandita y en meteoritos.",
-    "propiedades": "Resistente a la corrosión, ferromagnético, usado extensivamente en aleaciones y monedas.",
-    "oxidacion": "+2, +3",
-    "extraccion": "Se extrae de depósitos de laterita y sulfuros; líderes mundiales son Indonesia, Filipinas y Rusia.",
-    "descripcion": "Metal de brillo plateado y altamente magnético, aliado inseparable del hierro en el acero inoxidable y muy utilizado en las monedas de uso corriente."
+    "origen": "Pentlandita y meteoritos.",
+    "propiedades": "Resistente a la corrosión, magnético.",
+    "oxidacion": "+2",
+    "extraccion": "Procesado de menas de sulfuros y lateritas.",
+    "abundancia": "84 ppm",
+    "produccion": "Indonesia, Filipinas, Rusia",
+    "descripcion": "Aliado indispensable del cromo para crear acero inoxidable y usado extensamente en monedas."
   },
   {
     "z": 29,
@@ -457,11 +513,13 @@
     "periodo": 4,
     "familia": "Metal de transición",
     "estado": "Sólido",
-    "origen": "A veces nativo, pero usualmente de sulfuros como calcopirita.",
-    "propiedades": "Excelente conductor eléctrico y térmico, color rojizo, base del bronce y latón.",
+    "origen": "Calcopirita y estado nativo.",
+    "propiedades": "Excelente conductor eléctrico, maleable.",
     "oxidacion": "+1, +2",
-    "extraccion": "Enormes minas de pórfidos cupríferos (mayormente a cielo abierto); Chile es el máximo productor, seguido de Perú.",
-    "descripcion": "El metal rojizo de la antigüedad; su suprema conductividad eléctrica lo hace el cableado base de casi toda la infraestructura energética del mundo."
+    "extraccion": "Grandes minas de pórfidos a cielo abierto.",
+    "abundancia": "60 ppm",
+    "produccion": "Chile, Perú, China",
+    "descripcion": "El cableado del mundo moderno; su suprema conductividad electrifica la infraestructura global."
   },
   {
     "z": 30,
@@ -473,11 +531,13 @@
     "periodo": 4,
     "familia": "Metal de transición",
     "estado": "Sólido",
-    "origen": "El mineral más común es la esfalerita (blenda de zinc).",
-    "propiedades": "Usado para galvanizar acero y protegerlo de la corrosión.",
+    "origen": "Esfalerita.",
+    "propiedades": "Punto de ebullición bajo, anticorrosivo.",
     "oxidacion": "+2",
-    "extraccion": "Extracción subterránea y a cielo abierto de esfalerita; China, Perú y Australia son los principales países.",
-    "descripcion": "El héroe no reconocido de la industria, utilizado principalmente como revestimiento sacrificial (galvanización) para evitar que el acero y hierro se oxiden."
+    "extraccion": "Flotación, tostación y electrólisis.",
+    "abundancia": "70 ppm",
+    "produccion": "China, Perú, Australia",
+    "descripcion": "El escudo de la industria: galvaniza el acero para evitar que se oxide."
   },
   {
     "z": 31,
@@ -489,11 +549,13 @@
     "periodo": 4,
     "familia": "Metal del bloque p",
     "estado": "Sólido",
-    "origen": "Se obtiene como subproducto de la bauxita y del zinc.",
-    "propiedades": "Se derrite en la mano (29.7°C), muy usado en semiconductores (Arseniuro de galio).",
+    "origen": "Trazas en bauxita y zinc.",
+    "propiedades": "Se funde con el calor corporal humano.",
     "oxidacion": "+3",
-    "extraccion": "Se recupera refinando bauxita o minerales de zinc; China domina monopolizando más del 90% de la producción.",
-    "descripcion": "Un metal que puede fundirse en el calor de una mano humana; sus compuestos emiten luz, formando el corazón de la tecnología LED."
+    "extraccion": "Subproducto del refinado de aluminio (bauxita).",
+    "abundancia": "19 ppm",
+    "produccion": "China, Rusia, Japón",
+    "descripcion": "Crucial para semiconductores avanzados, láseres y el brillante corazón de las luces LED."
   },
   {
     "z": 32,
@@ -505,11 +567,13 @@
     "periodo": 4,
     "familia": "Metaloide",
     "estado": "Sólido",
-    "origen": "De minerales raros o como subproducto del zinc y carbón.",
-    "propiedades": "Importante material semiconductor y para fibras ópticas e infrarrojos.",
-    "oxidacion": "+2, +4",
-    "extraccion": "Subproducto extraído de cenizas de carbón y minerales de zinc; principalmente en China, Rusia y EE. UU.",
-    "descripcion": "Un metaloide gris brillante que dio luz al primer transistor sólido y hoy es vital para cables de fibra óptica y visión nocturna infrarroja."
+    "origen": "Cenizas de carbón y minerales de zinc.",
+    "propiedades": "Semiconductor brillante.",
+    "oxidacion": "+4, +2",
+    "extraccion": "Tratamiento químico de residuos de zinc.",
+    "abundancia": "1.5 ppm",
+    "produccion": "China, Rusia, EE. UU.",
+    "descripcion": "Hizo posible el primer transistor de la historia; hoy es vital para fibra óptica."
   },
   {
     "z": 33,
@@ -521,11 +585,13 @@
     "periodo": 4,
     "familia": "Metaloide",
     "estado": "Sólido",
-    "origen": "En minerales como la arsenopirita.",
-    "propiedades": "Notoriamente tóxico, sublima al calentarse, usado en aleaciones y pesticidas.",
+    "origen": "Minerales de arsenopirita.",
+    "propiedades": "Muy tóxico, sublima fácilmente.",
     "oxidacion": "-3, +3, +5",
-    "extraccion": "Se recupera del polvo de fundición en el procesamiento de minerales de cobre y oro; China y Marruecos lideran.",
-    "descripcion": "A lo largo de la historia fue tristemente célebre como el 'Rey de los venenos'; ahora es estrictamente manipulado para fabricar láseres y semiconductores."
+    "extraccion": "Atrapado del polvo de fundición de cobre.",
+    "abundancia": "1.8 ppm",
+    "produccion": "China, Marruecos, Rusia",
+    "descripcion": "El famoso veneno histórico; hoy es confinado a la fabricación de circuitos semiconductores especiales."
   },
   {
     "z": 34,
@@ -537,11 +603,13 @@
     "periodo": 4,
     "familia": "No metal",
     "estado": "Sólido",
-    "origen": "Subproducto del refinado del cobre.",
-    "propiedades": "Fotomaterial, su conductividad aumenta con la luz, esencial en pequeñas trazas.",
+    "origen": "Residuos de refinación de cobre.",
+    "propiedades": "Fotoconductor (conduce mejor con luz).",
     "oxidacion": "-2, +4, +6",
-    "extraccion": "Extracción a partir de los lodos anódicos sobrantes en la refinación electrolítica del cobre (Japón, Rusia, Alemania).",
-    "descripcion": "No metal con notables propiedades fotovoltaicas (conduce mejor la electricidad si hay luz) muy útil en fotocopiadoras, y un nutriente vital en dosis muy bajas."
+    "extraccion": "Lodos anódicos del cobre.",
+    "abundancia": "0.05 ppm",
+    "produccion": "Japón, Alemania, Bélgica",
+    "descripcion": "No metal fundamental en fotocopiadoras y un micronutriente esencial biológicamente."
   },
   {
     "z": 35,
@@ -553,11 +621,13 @@
     "periodo": 4,
     "familia": "Halógeno",
     "estado": "Líquido",
-    "origen": "Se extrae de salmueras naturales ricas en bromuros.",
-    "propiedades": "Uno de los dos únicos elementos líquidos a temperatura ambiente. Muy volátil y tóxico.",
-    "oxidacion": "-1, +1, +3, +4, +5",
-    "extraccion": "Bombeo de salmueras subterráneas y aguas concentradas del Mar Muerto; Israel, Jordania y EE. UU. dominan.",
-    "descripcion": "Junto al mercurio, es el único elemento líquido a temperatura ambiente; un denso fluido marrón-rojizo sofocante usado extensamente como retardante de fuego."
+    "origen": "Salmueras naturales y el Mar Muerto.",
+    "propiedades": "Líquido rojizo, denso y tóxico.",
+    "oxidacion": "-1, +1, +5",
+    "extraccion": "Desplazamiento con gas cloro de salmueras.",
+    "abundancia": "2.4 ppm",
+    "produccion": "Israel, Jordania, EE. UU.",
+    "descripcion": "Uno de los dos únicos elementos líquidos; usado globalmente como retardante de llamas."
   },
   {
     "z": 36,
@@ -569,11 +639,13 @@
     "periodo": 4,
     "familia": "Gas noble",
     "estado": "Gas",
-    "origen": "Extraído del aire líquido fraccionado.",
-    "propiedades": "Inerte, se utiliza en lámparas fluorescentes y flashes fotográficos.",
+    "origen": "Atmósfera.",
+    "propiedades": "Gas inerte, emite luz blanca intensa.",
     "oxidacion": "0",
-    "extraccion": "Aislado industrialmente en todo el mundo a partir de la destilación fraccionada de aire.",
-    "descripcion": "El gas 'oculto' de la atmósfera; emite una luz deslumbrante blanquecina, por lo que es la elección predilecta para flashes de fotografía fotográfica profesionales."
+    "extraccion": "Destilación fraccionada de aire.",
+    "abundancia": "0.0001 ppm",
+    "produccion": "Global",
+    "descripcion": "Gas noble predilecto para aislar térmicamente cristales y para potentes flashes de fotografía."
   },
   {
     "z": 37,
@@ -585,11 +657,13 @@
     "periodo": 5,
     "familia": "Metal alcalino",
     "estado": "Sólido",
-    "origen": "Se obtiene de minerales de litio y potasio (como la lepidolita).",
-    "propiedades": "Altamente reactivo, se inflama espontáneamente al aire.",
+    "origen": "Lepidolita.",
+    "propiedades": "Se inflama en el aire, muy blando.",
     "oxidacion": "+1",
-    "extraccion": "Procesado como subproducto de la minería del litio y del cesio; principales extracciones en Canadá y Zimbabue.",
-    "descripcion": "Metal tan reactivo que debe guardarse aislado del oxígeno; sus átomos son usados extensivamente para los precisos experimentos de enfriamiento láser cuántico."
+    "extraccion": "Subproducto del refinado de litio.",
+    "abundancia": "90 ppm",
+    "produccion": "Canadá, Zimbabue, Namibia",
+    "descripcion": "Altamente reactivo, es utilizado en investigación cuántica y relojes atómicos secundarios."
   },
   {
     "z": 38,
@@ -602,10 +676,12 @@
     "familia": "Metal alcalinotérreo",
     "estado": "Sólido",
     "origen": "Celestina y estroncianita.",
-    "propiedades": "Químicamente similar al calcio, arde con una llama roja intensa.",
+    "propiedades": "Reacciona con agua, arde rojo vivo.",
     "oxidacion": "+2",
-    "extraccion": "Minería superficial y subterránea del mineral celestina; extraído mayormente en España, China y México.",
-    "descripcion": "Hermano pesado del calcio, cuya firma indiscutible es el color rojo carmesí brillante que añade a los fuegos artificiales y luces de bengala."
+    "extraccion": "Minería superficial de celestina.",
+    "abundancia": "370 ppm",
+    "produccion": "España, China, México",
+    "descripcion": "El elemento responsable del inconfundible color rojo brillante en los fuegos artificiales."
   },
   {
     "z": 39,
@@ -617,11 +693,13 @@
     "periodo": 5,
     "familia": "Metal de transición",
     "estado": "Sólido",
-    "origen": "Asociado a minerales de tierras raras como monacita.",
-    "propiedades": "A menudo clasificado con los lantánidos, usado en fósforos rojos para pantallas.",
+    "origen": "Arenas de monacita.",
+    "propiedades": "Primera tierra rara, forma cristales sintéticos.",
     "oxidacion": "+3",
-    "extraccion": "Procesado de arenas de monacita y xenotima; dominado por China con operaciones también en Australia y EE. UU.",
-    "descripcion": "El primer elemento raro encontrado en el pueblo sueco de Ytterby; en estado de óxido se emplea masivamente para hacer pantallas LED y fósforos blancos y rojos."
+    "extraccion": "Separación química de tierras raras.",
+    "abundancia": "33 ppm",
+    "produccion": "China, Australia, EE. UU.",
+    "descripcion": "Crucial para los fósforos rojos de las pantallas y láseres de corte médico."
   },
   {
     "z": 40,
@@ -633,11 +711,13 @@
     "periodo": 5,
     "familia": "Metal de transición",
     "estado": "Sólido",
-    "origen": "Se obtiene principalmente del circón.",
-    "propiedades": "Alta resistencia a la corrosión, no absorbe neutrones, vital en reactores nucleares.",
+    "origen": "Arenas de circón.",
+    "propiedades": "Anticorrosivo extremo, no absorbe neutrones.",
     "oxidacion": "+4",
-    "extraccion": "Extracción y lavado de arenas pesadas de circón; la mayor parte proviene de Australia, Sudáfrica y China.",
-    "descripcion": "Metal hiper-resistente a altas temperaturas; su cristal derivado, la 'circonita cúbica', es el imitante sintético más popular del diamante."
+    "extraccion": "Lavado de arenas y cloración.",
+    "abundancia": "165 ppm",
+    "produccion": "Australia, Sudáfrica, China",
+    "descripcion": "Cubre las barras de combustible en reactores atómicos y su óxido imita a los diamantes."
   },
   {
     "z": 41,
@@ -649,11 +729,13 @@
     "periodo": 5,
     "familia": "Metal de transición",
     "estado": "Sólido",
-    "origen": "Extraído principalmente del mineral columbita.",
-    "propiedades": "Propiedades superconductoras a bajas temperaturas, se usa en acero de alta resistencia.",
-    "oxidacion": "+3, +5",
-    "extraccion": "Minería a gran escala de pirocloro. Brasil domina casi totalmente el monopolio mundial, seguido de Canadá.",
-    "descripcion": "Metal indispensable para tuberías de grandes infraestructuras, un diminuto porcentaje de niobio fortalece monumentalmente cualquier puente o chasis de acero."
+    "origen": "Pirocloro y columbita.",
+    "propiedades": "Superconductor, aumenta dureza del acero.",
+    "oxidacion": "+5",
+    "extraccion": "Minería a cielo abierto.",
+    "abundancia": "20 ppm",
+    "produccion": "Brasil, Canadá",
+    "descripcion": "Agregarlo en porcentajes minúsculos hace al acero indestructible para grandes puentes y rascacielos."
   },
   {
     "z": 42,
@@ -665,11 +747,13 @@
     "periodo": 5,
     "familia": "Metal de transición",
     "estado": "Sólido",
-    "origen": "De la molibdenita.",
-    "propiedades": "Soporta temperaturas extremas sin dilatarse, usado en aleaciones duras.",
+    "origen": "Molibdenita.",
+    "propiedades": "Altísimo punto de fusión, lubricante en polvo.",
     "oxidacion": "+4, +6",
-    "extraccion": "Minería directa de molibdenita o como subproducto del cobre; líderes China, Chile y EE. UU.",
-    "descripcion": "Metal de muy alta fusión fundamental en aleaciones para motores blindados; además, es un bioelemento clave para enzimas que procesan el nitrógeno y azufre."
+    "extraccion": "Flotación directa o de minas de cobre.",
+    "abundancia": "1.2 ppm",
+    "produccion": "China, Chile, EE. UU.",
+    "descripcion": "Vital en aleaciones estructurales de motores blindados y un bioelemento esencial celular."
   },
   {
     "z": 43,
@@ -681,11 +765,13 @@
     "periodo": 5,
     "familia": "Metal de transición",
     "estado": "Sólido",
-    "origen": "El primer elemento producido artificialmente; subproducto nuclear.",
-    "propiedades": "Radiactivo, su isótopo Tc-99m es crucial en pruebas médicas por imágenes.",
-    "oxidacion": "+4, +6, +7",
-    "extraccion": "Sintético; no se extrae de minas. Recuperado del combustible de uranio gastado en reactores nucleares.",
-    "descripcion": "El primer elemento de la historia sintetizado artificialmente ('tecnecio' deriva de artificial en griego), es hoy la herramienta líder mundial de la imaginería médica nuclear."
+    "origen": "Reactores nucleares (producto de fisión).",
+    "propiedades": "Radiactivo puro.",
+    "oxidacion": "+7",
+    "extraccion": "Procesado químico de residuos atómicos.",
+    "abundancia": "Trazas",
+    "produccion": "Reactores de investigación (Global)",
+    "descripcion": "El primer elemento creado artificialmente; es la herramienta estelar mundial en diagnósticos médicos."
   },
   {
     "z": 44,
@@ -697,11 +783,13 @@
     "periodo": 5,
     "familia": "Metal de transición",
     "estado": "Sólido",
-    "origen": "Se halla junto al platino en los Urales y en América.",
-    "propiedades": "Metal muy duro que no se oxida, actúa como buen catalizador.",
-    "oxidacion": "+2, +3, +4, +6, +8",
-    "extraccion": "Separación química compleja de minerales de platino; dominado por Sudáfrica, Rusia y Zimbabue.",
-    "descripcion": "Un extraño y duro metal del grupo del platino que, en ligeras trazas, triplica la durabilidad y conductividad del titanio o platino puros."
+    "origen": "Menas de platino.",
+    "propiedades": "Metal inerte y endurecedor excepcional.",
+    "oxidacion": "+3, +4, +8",
+    "extraccion": "Refinado complejo de platinoides.",
+    "abundancia": "0.001 ppm",
+    "produccion": "Sudáfrica, Rusia",
+    "descripcion": "Endurecedor clave de contactos eléctricos de platino en dispositivos de microelectrónica."
   },
   {
     "z": 45,
@@ -713,11 +801,13 @@
     "periodo": 5,
     "familia": "Metal de transición",
     "estado": "Sólido",
-    "origen": "En minas de platino y subproducto del níquel.",
-    "propiedades": "Uno de los metales más raros y caros, clave en catalizadores de coches.",
-    "oxidacion": "+2, +3, +4",
-    "extraccion": "Subproducto extremadamente valioso en la minería de platino y níquel (Sudáfrica, Rusia, Canadá).",
-    "descripcion": "Considerado rutinariamente el metal precioso natural más caro del mundo, insustituible para limpiar las toxinas de las emisiones de los automóviles modernos."
+    "origen": "Menas de platino y níquel.",
+    "propiedades": "Altamente inerte y extremadamente caro.",
+    "oxidacion": "+3",
+    "extraccion": "Subproducto del platino.",
+    "abundancia": "0.001 ppm",
+    "produccion": "Sudáfrica, Rusia, Canadá",
+    "descripcion": "De los metales más caros del mundo, insustituible para catalizadores de automóviles."
   },
   {
     "z": 46,
@@ -729,11 +819,13 @@
     "periodo": 5,
     "familia": "Metal de transición",
     "estado": "Sólido",
-    "origen": "Minas de metales del grupo del platino.",
-    "propiedades": "Puede absorber enormes cantidades de hidrógeno gaseoso, valioso en joyería y catalizadores.",
+    "origen": "Menas de metales del grupo platino.",
+    "propiedades": "Absorbe inmensas cantidades de hidrógeno.",
     "oxidacion": "+2, +4",
-    "extraccion": "Principalmente de minas de níquel-cobre (Rusia) y vetas de platino (Sudáfrica y EE. UU.).",
-    "descripcion": "Un metal blanco deslumbrante con una peculiar habilidad: cual esponja cósmica, puede absorber hasta 900 veces su propio volumen en gas hidrógeno."
+    "extraccion": "Minería primaria de sulfuros de níquel.",
+    "abundancia": "0.015 ppm",
+    "produccion": "Rusia, Sudáfrica, Canadá",
+    "descripcion": "Metal precioso blanco, indispensable para reducir toxinas en los tubos de escape."
   },
   {
     "z": 47,
@@ -745,11 +837,13 @@
     "periodo": 5,
     "familia": "Metal de transición",
     "estado": "Sólido",
-    "origen": "Nativa o en minerales como la argentita; de minería propia o subproducto.",
-    "propiedades": "Tiene la mayor conductividad eléctrica, térmica y óptica (reflectancia) de todos los metales.",
+    "origen": "Mineral argentita y nativo.",
+    "propiedades": "La mayor conductividad eléctrica y óptica natural.",
     "oxidacion": "+1",
-    "extraccion": "Minas de plata primaria y como coproducto de minas de plomo/zinc/oro; México, Perú y China lideran.",
-    "descripcion": "Apreciada como moneda histórica y ornamento, su verdadero superpoder recae en poseer la conductividad eléctrica y reflectividad lumínica más altas conocidas."
+    "extraccion": "Minas y subproducto del plomo/cobre.",
+    "abundancia": "0.075 ppm",
+    "produccion": "México, Perú, China",
+    "descripcion": "El mejor conductor del mundo, usado en electrónica de alta gama y panelería solar."
   },
   {
     "z": 48,
@@ -761,11 +855,13 @@
     "periodo": 5,
     "familia": "Metal de transición",
     "estado": "Sólido",
-    "origen": "Subproducto de la minería, fundición y refinamiento del zinc.",
-    "propiedades": "Metal blando, altamente tóxico, antes muy usado en baterías recargables (Ni-Cd).",
+    "origen": "Esfalerita (mineral de zinc).",
+    "propiedades": "Metal blando, altamente tóxico.",
     "oxidacion": "+2",
-    "extraccion": "Recuperado casi enteramente de los vapores y lodos en las fundiciones de zinc (China, Corea del Sur, Japón).",
-    "descripcion": "Metal sumamente tóxico que fue adorado en el pasado por ofrecer vivaces pigmentos amarillos/rojos a la pintura al óleo, y revolucionó las primeras baterías recargables."
+    "extraccion": "Capturado de los polvos de fundición de zinc.",
+    "abundancia": "0.15 ppm",
+    "produccion": "China, Corea del Sur, Japón",
+    "descripcion": "Tóxico metal que alimentó la primera generación de baterías recargables domésticas (Ni-Cd)."
   },
   {
     "z": 49,
@@ -777,11 +873,13 @@
     "periodo": 5,
     "familia": "Metal del bloque p",
     "estado": "Sólido",
-    "origen": "Se recupera de la tostación de minerales de zinc.",
-    "propiedades": "Metal extremadamente blando, clave para hacer pantallas LCD táctiles (Óxido de indio y estaño).",
+    "origen": "Trazas en menas de zinc.",
+    "propiedades": "Extremadamente blando.",
     "oxidacion": "+3",
-    "extraccion": "Residuos de la fundición de zinc y plomo; procesado casi en su totalidad en Asia (China, Corea del Sur).",
-    "descripcion": "Es tan blando que puedes masticarlo como chicle; aleado, crea la fina capa conductora transparente de todas las pantallas táctiles y smartphones que tocamos hoy."
+    "extraccion": "Refinado electrolítico de escoria de zinc.",
+    "abundancia": "0.25 ppm",
+    "produccion": "China, Corea del Sur, Canadá",
+    "descripcion": "El revestimiento invisible que hace posible que la pantalla de tu móvil sea táctil."
   },
   {
     "z": 50,
@@ -793,11 +891,13 @@
     "periodo": 5,
     "familia": "Metal del bloque p",
     "estado": "Sólido",
-    "origen": "Extraído del mineral casiterita.",
-    "propiedades": "No se oxida fácilmente al aire, se usa para soldaduras de electrónica y aleaciones (bronce).",
+    "origen": "Casiterita.",
+    "propiedades": "Maleable, antioxidante y soldable.",
     "oxidacion": "+2, +4",
-    "extraccion": "Minería de placer y vetas subterráneas de casiterita; China, Indonesia y Myanmar son líderes.",
-    "descripcion": "Metal fundamental en la Edad de Bronce. Hoy en día, sufre de 'peste del estaño' si hace demasiado frío, pero une las conexiones de la placa base de tu ordenador."
+    "extraccion": "Minería de veta y dragado de arenas.",
+    "abundancia": "2.3 ppm",
+    "produccion": "China, Indonesia, Myanmar",
+    "descripcion": "Metal de la era de bronce, hoy sirve para soldar físicamente los microchips modernos."
   },
   {
     "z": 51,
@@ -809,11 +909,13 @@
     "periodo": 5,
     "familia": "Metaloide",
     "estado": "Sólido",
-    "origen": "De la estibina, principalmente en China.",
-    "propiedades": "Quebradizo, se usa como retardante de llamas y endurecedor del plomo en baterías.",
-    "oxidacion": "-3, +3, +5",
-    "extraccion": "Minas de estibina procesada mediante calor; fuertemente controlada por minas chinas, rusas y tayikas.",
-    "descripcion": "Metaloide denso y quebradizo, históricamente el maquillaje de ojos oscuro de los faraones egipcios; hoy forma materiales retardantes contra incendios en colchones."
+    "origen": "Estibina.",
+    "propiedades": "Frágil, quebradizo, se expande al congelarse.",
+    "oxidacion": "+3, +5",
+    "extraccion": "Tostación de minerales y fundición.",
+    "abundancia": "0.2 ppm",
+    "produccion": "China, Rusia, Tayikistán",
+    "descripcion": "Metaloide clave como retardante de fuego en plásticos y textiles para el hogar."
   },
   {
     "z": 52,
@@ -825,11 +927,13 @@
     "periodo": 5,
     "familia": "Metaloide",
     "estado": "Sólido",
-    "origen": "Subproducto del cobre comercial.",
-    "propiedades": "Semiconductor levemente tóxico, con propiedades termoeléctricas y ópticas.",
+    "origen": "Lodos del refinado de cobre.",
+    "propiedades": "Tóxico, semiconductor plateado.",
     "oxidacion": "-2, +4, +6",
-    "extraccion": "Obtenido purificando los lodos anódicos producidos en el refinado electrolítico de cobre (EE. UU., Japón).",
-    "descripcion": "Metaloide raro de tono plateado, conocido por darte un peculiar aliento a ajo si te expones a él; fundamental para aleaciones termoeléctricas que producen frío sin partes móviles."
+    "extraccion": "Procesado químico anódico de cobre.",
+    "abundancia": "0.001 ppm",
+    "produccion": "EE. UU., Japón, Canadá",
+    "descripcion": "Elemento de olor a ajo; utilizado en aleaciones que permiten generar frío sin motores."
   },
   {
     "z": 53,
@@ -841,11 +945,13 @@
     "periodo": 5,
     "familia": "Halógeno",
     "estado": "Sólido",
-    "origen": "De salmueras y caliches en Chile.",
-    "propiedades": "Sólido negro violáceo que sublima a gas púrpura, esencial para la glándula tiroides.",
+    "origen": "Caliches de nitrato y salmueras.",
+    "propiedades": "Sublima emitiendo gas púrpura antiséptico.",
     "oxidacion": "-1, +1, +5, +7",
-    "extraccion": "Extracción química del caliche en el norte de Chile (líder mundial) y de salmueras de petróleo/gas en Japón y EE. UU.",
-    "descripcion": "Sólido negro y de lustre metálico que, al ser calentado, se evapora en un seductor y antiséptico humo violeta. Vital para la glándula tiroides."
+    "extraccion": "Lixiviación y purificación de aguas ricas.",
+    "abundancia": "0.45 ppm",
+    "produccion": "Chile, Japón, EE. UU.",
+    "descripcion": "Vital desinfectante natural, su carencia en humanos produce afecciones en la glándula tiroides."
   },
   {
     "z": 54,
@@ -857,11 +963,13 @@
     "periodo": 5,
     "familia": "Gas noble",
     "estado": "Gas",
-    "origen": "Destilación fraccionada de aire líquido.",
-    "propiedades": "Gas noble pesado; se puede obligar a reaccionar, usado en faros de alta intensidad y anestesia.",
+    "origen": "Atmósfera.",
+    "propiedades": "Gas inerte muy pesado.",
     "oxidacion": "0",
-    "extraccion": "Separación del oxígeno líquido en plantas fraccionadoras de aire mundiales.",
-    "descripcion": "Un gas noble increíblemente pesado con asombrosas propiedades biológicas: usado desde potentes faros de proyección estelar hasta avanzadas anestesias generales sin efectos secundarios."
+    "extraccion": "Destilación criogénica continua del aire.",
+    "abundancia": "0.00003 ppm",
+    "produccion": "Global",
+    "descripcion": "Un gas noble denso, preferido como propelente en naves espaciales iónicas."
   },
   {
     "z": 55,
@@ -873,11 +981,13 @@
     "periodo": 6,
     "familia": "Metal alcalino",
     "estado": "Sólido",
-    "origen": "Del mineral polucita.",
-    "propiedades": "Metal dorado líquido a temperatura apenas cálida (28°C), reactividad explosiva con agua, rige los relojes atómicos.",
+    "origen": "Mineral polucita.",
+    "propiedades": "Líquido en días calurosos, explota con agua.",
     "oxidacion": "+1",
-    "extraccion": "Minería de polucita. La mina Tanco (Canadá) tiene la mayor reserva mundial, junto a Zimbabue y Namibia.",
-    "descripcion": "Metal sumamente peligroso (estalla al contacto con el hielo) e increíblemente preciso, el vaivén atómico del Cesio define exactamente cuánto dura un segundo globalmente."
+    "extraccion": "Ataque ácido y lavado químico de polucita.",
+    "abundancia": "3 ppm",
+    "produccion": "Canadá, Zimbabue",
+    "descripcion": "Su preciso vaivén atómico dicta oficial y exactamente cuánto dura cada segundo del mundo."
   },
   {
     "z": 56,
@@ -889,11 +999,13 @@
     "periodo": 6,
     "familia": "Metal alcalinotérreo",
     "estado": "Sólido",
-    "origen": "Extraído de barita y witerita.",
-    "propiedades": "Reacciona con oxígeno fácilmente, tóxico, los medios de contraste de bario se usan en rayos X estomacales.",
+    "origen": "Mineral barita.",
+    "propiedades": "Denso y altamente tóxico.",
     "oxidacion": "+2",
-    "extraccion": "Minería comercial de sulfato de bario (barita). China lidera ampliamente, seguida de India y Marruecos.",
-    "descripcion": "Metal alcalinotérreo denso que da la coloración verde pálida a la pirotecnia; bebible en radiografías (como papilla de sulfato de bario) al absorber fuertemente los rayos X."
+    "extraccion": "Minería abierta y trituración de barita.",
+    "abundancia": "425 ppm",
+    "produccion": "China, India, Marruecos",
+    "descripcion": "En forma líquida opaca, bloquea los rayos X para tomar fotografías del sistema digestivo."
   },
   {
     "z": 57,
@@ -905,11 +1017,13 @@
     "periodo": 6,
     "familia": "Lantánido",
     "estado": "Sólido",
-    "origen": "Minerales de tierras raras monacita y bastnasita.",
-    "propiedades": "Metal blando que da nombre a los Lantánidos, se usa en lentes de cámaras de alta gama.",
+    "origen": "Arenas raras monacita y bastnasita.",
+    "propiedades": "Maleable, reacciona oxidándose rápido.",
     "oxidacion": "+3",
-    "extraccion": "Minería y refinación de arenas de tierras raras; gran monopolio global centrado en China continental y EE. UU. (Mina Mountain Pass).",
-    "descripcion": "El padre de los 'lantánidos'; un metal que se corroe en el aire rápido y se implementa en lentes de óptica refractiva (cámaras de cine y telescopios)."
+    "extraccion": "Separación de tierras raras mediante ácidos.",
+    "abundancia": "39 ppm",
+    "produccion": "China, EE. UU., Australia",
+    "descripcion": "Elemento que mejora la refracción del cristal para lentes de cámaras y telescopios caros."
   },
   {
     "z": 58,
@@ -921,11 +1035,13 @@
     "periodo": 6,
     "familia": "Lantánido",
     "estado": "Sólido",
-    "origen": "El lantánido más abundante; en minerales de tierras raras.",
-    "propiedades": "Se oxida lentamente, usado en los encendedores comunes (ferrocerio) y limpieza de vidrios.",
+    "origen": "Minerales raras.",
+    "propiedades": "La tierra rara más común, despide chispas.",
     "oxidacion": "+3, +4",
-    "extraccion": "Separación de bastnasita y monacita. Procesado y extraído primariamente en complejos mineros de China.",
-    "descripcion": "La tierra rara más común de todas; famoso por su piroforicidad extrema: se enciende al friccionarse vigorosamente, formando la chispa de los encendedores de bolsillo."
+    "extraccion": "Procesamiento de bastnasita.",
+    "abundancia": "66 ppm",
+    "produccion": "China, Australia, EE. UU.",
+    "descripcion": "Es el metal pirofórico principal usado como 'piedra' para dar la chispa a los mecheros."
   },
   {
     "z": 59,
@@ -937,11 +1053,13 @@
     "periodo": 6,
     "familia": "Lantánido",
     "estado": "Sólido",
-    "origen": "Minerales de tierras raras.",
-    "propiedades": "Forma sales verdes, usado en aleaciones especiales de aviones y gafas de soldador.",
-    "oxidacion": "+3, +4",
-    "extraccion": "Minas de metales de tierras raras (China y Australia), se requiere solvente complejo para separarlo del neodimio.",
-    "descripcion": "Elemento conocido por formar hermosos y exóticos compuestos de color verde; se usa en vidrios de las máscaras de los soldadores para proteger la vista de los rayos solares."
+    "origen": "Monacita y bastnasita.",
+    "propiedades": "Forma fuertes compuestos verdosos.",
+    "oxidacion": "+3",
+    "extraccion": "Separación solvente en plantas raras.",
+    "abundancia": "9.2 ppm",
+    "produccion": "China, Australia",
+    "descripcion": "Colorea vidrios de protección usados por soldadores y fortalece aleaciones aeroespaciales."
   },
   {
     "z": 60,
@@ -953,11 +1071,13 @@
     "periodo": 6,
     "familia": "Lantánido",
     "estado": "Sólido",
-    "origen": "En minerales monacita y bastnasita.",
-    "propiedades": "Base de los imanes permanentes más potentes conocidos, usados en turbinas y discos duros.",
+    "origen": "Menas de tierras raras.",
+    "propiedades": "Creación de magnetismo supremo.",
     "oxidacion": "+3",
-    "extraccion": "Extraído estratégicamente en China (que exporta globalmente), EE. UU. y Australia de minerales de tierras raras.",
-    "descripcion": "El titán del magnetismo: al fundirse con hierro y boro se convierte en los imanes más increíblemente fuertes del planeta, vitales para audífonos, motores eléctricos y turbinas."
+    "extraccion": "Cristalización fraccionada a gran escala.",
+    "abundancia": "41 ppm",
+    "produccion": "China, EE. UU., Australia",
+    "descripcion": "El corazón de los imanes permanentes más potentes del planeta, clave para motores limpios."
   },
   {
     "z": 61,
@@ -969,11 +1089,13 @@
     "periodo": 6,
     "familia": "Lantánido",
     "estado": "Sólido",
-    "origen": "Sintético (subproducto en reactores nucleares); muy raras trazas en la naturaleza.",
-    "propiedades": "Completamente radiactivo, utilizado como fuente de energía luminiscente.",
+    "origen": "Sintético en reactores.",
+    "propiedades": "Altamente radiactivo, sin isótopos estables.",
     "oxidacion": "+3",
-    "extraccion": "Sintético. Se recupera artificialmente bombardeando uranio o procesando los subproductos de fisión nuclear.",
-    "descripcion": "La oveja negra de los lantánidos; es el único elemento de la serie carente de isótopos estables y emite un brillo continuo por su alta radiactividad radiactiva."
+    "extraccion": "Separado de la fisión nuclear del uranio.",
+    "abundancia": "Trazas",
+    "produccion": "Reactores en EE. UU. y Rusia",
+    "descripcion": "El único lantánido totalmente radiactivo; sus átomos emiten luz en paneles oscuros."
   },
   {
     "z": 62,
@@ -985,11 +1107,13 @@
     "periodo": 6,
     "familia": "Lantánido",
     "estado": "Sólido",
-    "origen": "Minerales de tierras raras.",
-    "propiedades": "Usado en imanes que pueden soportar altísimas temperaturas y en medicamentos contra el cáncer.",
-    "oxidacion": "+2, +3",
-    "extraccion": "Minería de arenas de monacita (China, India, Brasil) mediante técnicas de intercambio iónico.",
-    "descripcion": "Primer elemento químico de la historia nombrado en honor a una persona (un oficial de mina ruso); sus aleaciones magnéticas no se inmutan con temperaturas abrasadoras."
+    "origen": "Minerales raros.",
+    "propiedades": "Magnetismo estable al calor abrasador.",
+    "oxidacion": "+3, +2",
+    "extraccion": "Técnicas de intercambio iónico.",
+    "abundancia": "7 ppm",
+    "produccion": "China, India, Brasil",
+    "descripcion": "Forma imanes robustos capaces de operar en altas temperaturas sin perder su fuerza magnética."
   },
   {
     "z": 63,
@@ -1002,10 +1126,12 @@
     "familia": "Lantánido",
     "estado": "Sólido",
     "origen": "Minerales de tierras raras.",
-    "propiedades": "El lantánido más reactivo, provee los fósforos rojos a las pantallas de TV clásicas y LEDs.",
+    "propiedades": "Lantánido más reactivo, extremadamente fluorescente.",
     "oxidacion": "+2, +3",
-    "extraccion": "Separación muy costosa a partir de minerales de tierras raras operada principalmente en la industria de China.",
-    "descripcion": "La estrella de las pantallas modernas; aporta el intenso color fosforescente rojo/azul a los televisores y protege los billetes del Euro con su brillo antifalsificación."
+    "extraccion": "Depuración química especializada.",
+    "abundancia": "2 ppm",
+    "produccion": "China",
+    "descripcion": "Aporta los luminosos píxeles rojos y azules a las modernas pantallas de televisión."
   },
   {
     "z": 64,
@@ -1018,10 +1144,12 @@
     "familia": "Lantánido",
     "estado": "Sólido",
     "origen": "Minerales de tierras raras.",
-    "propiedades": "Gran capturador de neutrones; se usa como agente de contraste para Resonancia Magnética (RM).",
+    "propiedades": "Potente absorbedor de neutrones.",
     "oxidacion": "+3",
-    "extraccion": "Procesamiento de gadolinita, monacita y arcillas iónicas en el sur de China.",
-    "descripcion": "Un metal fuertemente magnético únicamente en días congelados; en medicina, su forma iónica recorre nuestras venas mejorando el contraste de las imágenes de Resonancia Magnética."
+    "extraccion": "Intercambio iónico en refinerías.",
+    "abundancia": "6.2 ppm",
+    "produccion": "China",
+    "descripcion": "El agente de contraste definitivo que mejora dramáticamente las resonancias magnéticas médicas."
   },
   {
     "z": 65,
@@ -1033,11 +1161,13 @@
     "periodo": 6,
     "familia": "Lantánido",
     "estado": "Sólido",
-    "origen": "Minerales de tierras raras.",
-    "propiedades": "Brilla de color verde en fósforos y pantallas, aleado en sistemas de sonar navales.",
+    "origen": "Arcillas y minerales raros.",
+    "propiedades": "Efectos piezoeléctricos.",
     "oxidacion": "+3, +4",
-    "extraccion": "Tierras raras pesadas obtenidas principalmente de arcillas de adsorción iónica, geográficamente concentradas en China.",
-    "descripcion": "Un metal de transición raro que brilla intensamente de color verde al recibir láseres, siendo el otro pilar fosforescente que ilumina a las bombillas fluorescentes compactas y pantallas."
+    "extraccion": "Extracción de arcillas iónicas en el sur de Asia.",
+    "abundancia": "1.2 ppm",
+    "produccion": "China",
+    "descripcion": "Elemento exótico responsable de emitir el penetrante color verde fosforescente de los tubos y láseres."
   },
   {
     "z": 66,
@@ -1049,11 +1179,13 @@
     "periodo": 6,
     "familia": "Lantánido",
     "estado": "Sólido",
-    "origen": "Minerales de tierras raras.",
-    "propiedades": "Su susceptibilidad magnética es altísima; mejora la respuesta de imanes potentes al calor.",
+    "origen": "Menas de tierras raras.",
+    "propiedades": "Refuerzo magnético extremo.",
     "oxidacion": "+3",
-    "extraccion": "Extracción de bastnasita y arcillas iónicas chinas; altamente demandado para tecnologías limpias.",
-    "descripcion": "Traducido literalmente del griego como 'difícil de conseguir', es codiciado ecológicamente por las turbinas eólicas e híbridas debido a sus incomparables defensas magnéticas frente al calor extremo."
+    "extraccion": "Purificación de solventes multietapa.",
+    "abundancia": "5.2 ppm",
+    "produccion": "China",
+    "descripcion": "Elemento imprescindible agregado a motores híbridos y eólicos para aguantar altas temperaturas."
   },
   {
     "z": 67,
@@ -1065,11 +1197,13 @@
     "periodo": 6,
     "familia": "Lantánido",
     "estado": "Sólido",
-    "origen": "Minerales de tierras raras.",
-    "propiedades": "Tiene el mayor momento magnético de cualquier elemento natural, usado en fuertes imanes artificiales.",
+    "origen": "Minerales raros.",
+    "propiedades": "La fuerza magnética más alta elemental.",
     "oxidacion": "+3",
-    "extraccion": "Extracción y purificación comercial menor en China a partir de monacita comercial.",
-    "descripcion": "De nombre en homenaje a la región de Estocolmo; concentra la máxima fuerza magnética teórica del cosmos natural, utilizada en la extrema calibración de piezas médicas delicadas."
+    "extraccion": "Aislado de arenas de monacita comercial.",
+    "abundancia": "1.3 ppm",
+    "produccion": "China",
+    "descripcion": "Posee la mayor fuerza magnética del mundo; usado para fabricar polos magnéticos extremos."
   },
   {
     "z": 68,
@@ -1081,11 +1215,13 @@
     "periodo": 6,
     "familia": "Lantánido",
     "estado": "Sólido",
-    "origen": "Minerales de tierras raras.",
-    "propiedades": "Colorea vidrios de rosa y dopa fibras ópticas para amplificar señales de internet largas distancias.",
+    "origen": "Arcillas y xenotima.",
+    "propiedades": "Absorbedor infrarrojo.",
     "oxidacion": "+3",
-    "extraccion": "Aislado del mineral xenotima e iterbita; operaciones de separación líquida en minas chinas.",
-    "descripcion": "El héroe invisible de internet: el erbio se inyecta en los cables transoceánicos submarinos como amplificador, rebotando la luz infrarroja láser de tus descargas a todo el planeta."
+    "extraccion": "Minería química de arcillas chinas.",
+    "abundancia": "3.5 ppm",
+    "produccion": "China",
+    "descripcion": "Mantiene vivo el internet mundial sirviendo de amplificador de luz láser en la fibra óptica submarina."
   },
   {
     "z": 69,
@@ -1097,11 +1233,13 @@
     "periodo": 6,
     "familia": "Lantánido",
     "estado": "Sólido",
-    "origen": "Minerales de tierras raras (el lantánido natural más raro).",
-    "propiedades": "Blando y plateado, emisor de rayos X para equipos portátiles al ser bombardeado.",
-    "oxidacion": "+2, +3",
-    "extraccion": "Es uno de los menos abundantes; extraído de monacita (procesada en China) mediante costosos métodos químicos.",
-    "descripcion": "El lantánido estable más escaso y raro de la Tierra, que al ser irradiado forma el minúsculo corazón portátil de una máquina de Rayos X de tamaño de bolsillo para densitómetros óseos."
+    "origen": "Tierras raras.",
+    "propiedades": "El lantánido estable más escaso.",
+    "oxidacion": "+3",
+    "extraccion": "Separación de iterbita y monacita.",
+    "abundancia": "0.52 ppm",
+    "produccion": "China",
+    "descripcion": "Raro metal que, irradiado, sirve como tubo de Rayos X de tamaño de bolsillo."
   },
   {
     "z": 70,
@@ -1113,11 +1251,13 @@
     "periodo": 6,
     "familia": "Lantánido",
     "estado": "Sólido",
-    "origen": "Minerales de tierras raras.",
-    "propiedades": "Blando y reacciona al agua, usado en láseres para cortar acero y relojes atómicos extremos.",
+    "origen": "Minerales raros.",
+    "propiedades": "Mejora cristales y acero inoxidable.",
     "oxidacion": "+2, +3",
-    "extraccion": "Subproducto del procesamiento de monacita (arenas pesadas) concentrado en la cuenca asiática.",
-    "descripcion": "Metal pesado cuya aplicación predilecta son los sofisticados 'relojes atómicos de red óptica', tan absurdamente precisos que no se retrasarían un solo segundo desde el origen del universo."
+    "extraccion": "Procesado multietapa en refinerías de Asia.",
+    "abundancia": "3.2 ppm",
+    "produccion": "China",
+    "descripcion": "El corazón cuántico de los relojes atómicos de red óptica más ridículamente exactos."
   },
   {
     "z": 71,
@@ -1129,11 +1269,13 @@
     "periodo": 6,
     "familia": "Lantánido",
     "estado": "Sólido",
-    "origen": "El más raro de procesar comercialmente de los lantánidos.",
-    "propiedades": "El más duro y denso de los lantánidos; útil en tomografía por emisión de positrones (PET).",
+    "origen": "Trazas minerales.",
+    "propiedades": "El lantánido más denso y duro.",
     "oxidacion": "+3",
-    "extraccion": "Extraído de tierras raras. Requiere técnicas muy exhaustivas de separación, siendo uno de los metales más costosos a granel.",
-    "descripcion": "Rindiendo honores al nombre romano de la ciudad de París, es la tierra rara más cara, pesada y dura; codiciada para rastreadores radiactivos del PET contra el cáncer."
+    "extraccion": "Extracción y purificación extremadamente costosa.",
+    "abundancia": "0.8 ppm",
+    "produccion": "China",
+    "descripcion": "La tierra rara más pesada y costosa, usada como emisor clave en tomografías PET contra el cáncer."
   },
   {
     "z": 72,
@@ -1145,11 +1287,13 @@
     "periodo": 6,
     "familia": "Metal de transición",
     "estado": "Sólido",
-    "origen": "Se encuentra siempre junto al circonio.",
-    "propiedades": "Excelente absorbente de neutrones térmicos, por lo que regula reactores nucleares.",
+    "origen": "Minas de circón.",
+    "propiedades": "Capta neutrones masivamente.",
     "oxidacion": "+4",
-    "extraccion": "Imposible de hallar solo; se separa comercialmente del circonio con extracciones químicas líquido-líquido (Australia, Sudáfrica).",
-    "descripcion": "Compañero inseparable del Circonio, tiene la paradójica propiedad de devorar neutrones reactivos; por tanto es el controlador de freno absoluto usado en los reactores de submarinos nucleares."
+    "extraccion": "Compleja separación líquido-líquido del circonio.",
+    "abundancia": "3.0 ppm",
+    "produccion": "Francia, EE. UU., Rusia",
+    "descripcion": "Controlador de freno absoluto que regula el poder en los reactores nucleares de submarinos."
   },
   {
     "z": 73,
@@ -1161,11 +1305,13 @@
     "periodo": 6,
     "familia": "Metal de transición",
     "estado": "Sólido",
-    "origen": "Minerales tantalita, columbita.",
-    "propiedades": "Totalmente inmune al ataque de los líquidos corporales, clave en condensadores de móviles e implantes.",
+    "origen": "Mineral coltán.",
+    "propiedades": "Totalmente inmune al tejido corporal humano.",
     "oxidacion": "+5",
-    "extraccion": "Minería a cielo abierto/artesanal de coltán. Fuentes masivas se hallan en República Democrática del Congo, Ruanda y Brasil.",
-    "descripcion": "Llamado así por Tántalo dada la frustración de extraerlo y su nula reactividad: no oxida ni irrita la sangre, por lo que se utiliza en implantes de prótesis y en absolutamente todo teléfono celular."
+    "extraccion": "Minería directa del coltán en África y Sudamérica.",
+    "abundancia": "2 ppm",
+    "produccion": "RDC, Ruanda, Brasil",
+    "descripcion": "Indispensable para crear los condensadores miniatura sin los que ningún smartphone podría funcionar."
   },
   {
     "z": 74,
@@ -1177,11 +1323,13 @@
     "periodo": 6,
     "familia": "Metal de transición",
     "estado": "Sólido",
-    "origen": "Wolframita y scheelita.",
-    "propiedades": "Tiene el punto de fusión más alto de todos los metales (3422°C), usado en filamentos y herramientas.",
+    "origen": "Wolframita, scheelita.",
+    "propiedades": "Mayor punto de fusión de cualquier metal (3422°C).",
     "oxidacion": "+4, +6",
-    "extraccion": "Minas subterráneas de wolframita/scheelita; China concentra abrumadoramente más del 80% de la oferta, seguida de Vietnam y Rusia.",
-    "descripcion": "El rey indomable del calor; tiene el punto de fusión más alto de todos los elementos metálicos e iluminó la revolución eléctrica desde el corazón ardiente de la bombilla incandescente de Edison."
+    "extraccion": "Minería subterránea y purificación ácida.",
+    "abundancia": "1.25 ppm",
+    "produccion": "China, Vietnam, Rusia",
+    "descripcion": "El rey del calor, formó el filamento brillante que hizo posible la bombilla eléctrica original."
   },
   {
     "z": 75,
@@ -1193,11 +1341,13 @@
     "periodo": 6,
     "familia": "Metal de transición",
     "estado": "Sólido",
-    "origen": "Extremadamente raro, subproducto del molibdeno.",
-    "propiedades": "Uno de los más densos, soporta el calor excepcionalmente bien para motores a reacción.",
+    "origen": "Molibdeno.",
+    "propiedades": "Extrema resistencia mecánica al calor.",
     "oxidacion": "+4, +6, +7",
-    "extraccion": "Recuperado de los gases de tostación del molibdeno asociado al cobre; Chile y EE. UU. dominan el mercado.",
-    "descripcion": "El último elemento estable y natural descubierto en el planeta Tierra (1925); sus extraordinarias defensas contra el calor y tensión se forjan en las palas de los reactores de aviones de combate supersónicos."
+    "extraccion": "Capturado de los gases de tostación del molibdeno.",
+    "abundancia": "0.0007 ppm",
+    "produccion": "Chile, Polonia, EE. UU.",
+    "descripcion": "Metal sumamente escaso forjado hoy en las turbinas de aviones de combate militares supersónicos."
   },
   {
     "z": 76,
@@ -1209,11 +1359,13 @@
     "periodo": 6,
     "familia": "Metal de transición",
     "estado": "Sólido",
-    "origen": "En aleaciones naturales de metales platinoides.",
-    "propiedades": "El elemento natural más denso (22.59 g/cm³), duro y quebradizo, sus óxidos son altamente tóxicos.",
-    "oxidacion": "+3, +4, +6, +8",
-    "extraccion": "Separación de los concentrados de las minas de platino; los principales exportadores son Rusia y Sudáfrica.",
-    "descripcion": "El campeón invicto de la densidad elemental del universo físico terrestre: un cubo del tamaño de una caja de zapatos pesaría más que un elefante pequeño adulto. A menudo apesta a rábano o ceniza venenosa."
+    "origen": "Menas de platino.",
+    "propiedades": "El metal más denso conocido, muy tóxico oxidado.",
+    "oxidacion": "+3, +4, +8",
+    "extraccion": "Separación de residuos de minas platinoides.",
+    "abundancia": "0.0015 ppm",
+    "produccion": "Sudáfrica, Rusia",
+    "descripcion": "El indiscutido peso pesado de la tabla: la masa natural de mayor densidad y dureza de la Tierra."
   },
   {
     "z": 77,
@@ -1225,11 +1377,13 @@
     "periodo": 6,
     "familia": "Metal de transición",
     "estado": "Sólido",
-    "origen": "Minas de platino y en meteoritos (su anomalía probó la extinción de dinosaurios).",
-    "propiedades": "Es el metal más resistente a la corrosión del mundo, usado en bujías de larga duración.",
+    "origen": "Platino y meteoritos.",
+    "propiedades": "Inmune extremo a la corrosión y calor.",
     "oxidacion": "+3, +4",
-    "extraccion": "Procesado químico de menas de platino y níquel-cobre primario en Sudáfrica y Rusia.",
-    "descripcion": "El metal más duro a la corrosión imaginable; su huella extraterrestre por el mundo fue la llave principal que demostró la extinción de los dinosaurios por un impacto masivo de asteroide."
+    "extraccion": "Residuo anódico insoluble en lodos mineros.",
+    "abundancia": "0.001 ppm",
+    "produccion": "Sudáfrica, Rusia",
+    "descripcion": "El héroe anticorrosivo que delató el impacto del asteroide asesino de los dinosaurios hace eones."
   },
   {
     "z": 78,
@@ -1241,11 +1395,13 @@
     "periodo": 6,
     "familia": "Metal de transición",
     "estado": "Sólido",
-    "origen": "Nativo o en depósitos de mineral en Sudáfrica y Rusia.",
-    "propiedades": "Valioso metal precioso no reactivo, catalizador irremplazable en vehículos y procesos químicos.",
+    "origen": "Minas terrestres puras.",
+    "propiedades": "Precioso, inerte, catalizador fenomenal.",
     "oxidacion": "+2, +4",
-    "extraccion": "Minería profunda concentrada en el complejo Bushveld de Sudáfrica (más del 70%) y minas norilska en Rusia.",
-    "descripcion": "Significando despreciativamente 'platita' (poca plata) por los colonizadores por error; en verdad, es inmaculadamente puro, base irremplazable de catalizadores automotrices y drogas oncológicas que salvan millones de vidas."
+    "extraccion": "Minería profunda compleja de metales preciosos.",
+    "abundancia": "0.005 ppm",
+    "produccion": "Sudáfrica, Rusia, Zimbabue",
+    "descripcion": "Metal puro esencial que purga las toxinas vehiculares y arma las más eficaces drogas oncológicas."
   },
   {
     "z": 79,
@@ -1257,11 +1413,13 @@
     "periodo": 6,
     "familia": "Metal de transición",
     "estado": "Sólido",
-    "origen": "Estado nativo y asociado al cuarzo.",
-    "propiedades": "Altamente inerte, el más maleable de los metales, conductor excepcional y base económica.",
+    "origen": "Minas y aluviones de cuarzo nativo.",
+    "propiedades": "Alta maleabilidad, inerte, belleza brillante.",
     "oxidacion": "+1, +3",
-    "extraccion": "Minas subterráneas y a cielo abierto y recuperación secundaria. Principales productores: China, Australia, Rusia, EE. UU. y Canadá.",
-    "descripcion": "Deslumbrante metal noble resistente a todo ácido ordinario y tiempo mortal; su espectacular maleabilidad permite batir un minúsculo miligramo suyo en un hilo fino e infinito y forrar satélites que exploran las estrellas."
+    "extraccion": "Lixiviación con cianuro de grandes canteras.",
+    "abundancia": "0.004 ppm",
+    "produccion": "China, Australia, Rusia",
+    "descripcion": "El metal inmutable y eterno que soporta toda la microelectrónica espacial y economía humana."
   },
   {
     "z": 80,
@@ -1273,11 +1431,13 @@
     "periodo": 6,
     "familia": "Metal de transición",
     "estado": "Líquido",
-    "origen": "Se extrae casi puramente de calentar el cinabrio (sulfuro rojo).",
-    "propiedades": "Único metal líquido a temperatura ambiente normal, tóxico y forma amalgamas con muchos metales.",
+    "origen": "Cinabrio.",
+    "propiedades": "Tóxico, único metal líquido normal.",
     "oxidacion": "+1, +2",
-    "extraccion": "Tostación del mineral de cinabrio en hornos; minería muy reducida por su toxicidad, líderes China y Tayikistán.",
-    "descripcion": "Bautizado azogue o líquido plateado; el único metal que gotea y oscila a temperatura ambiente, hipnotizador visualmente e infamemente neurotóxico, causando históricos desastres neurológicos a sombrereros antiguos."
+    "extraccion": "Tostado intenso del cinabrio natural.",
+    "abundancia": "0.085 ppm",
+    "produccion": "China, Tayikistán, México",
+    "descripcion": "Fascinante, resbaladizo e hipnotizante metal plateado líquido que esconde un veneno neurotóxico agudo."
   },
   {
     "z": 81,
@@ -1289,11 +1449,13 @@
     "periodo": 6,
     "familia": "Metal del bloque p",
     "estado": "Sólido",
-    "origen": "En minerales de sulfuros de metales pesados.",
-    "propiedades": "Extremadamente tóxico (historicamente raticida y veneno), blando, parecido al plomo.",
+    "origen": "Subproducto del cobre/plomo.",
+    "propiedades": "Blando, pesadísimo y sumamente venenoso.",
     "oxidacion": "+1, +3",
-    "extraccion": "Recuperado primariamente en los vapores del polvo de chimenea de las fundiciones de cobre, plomo y zinc.",
-    "descripcion": "El siniestro hermano del plomo. Su historia está llena de oscuro misterio: insípido e incoloro, el veneno de elección de Agatha Christie y criminales victorianos contra roedores y desafortunadas víctimas."
+    "extraccion": "Purificación del hollín de chimeneas mineras.",
+    "abundancia": "0.85 ppm",
+    "produccion": "Kazajistán, China",
+    "descripcion": "Incoloro e insípido; fue el infame y silencioso veneno letal favorito de la era victoriana."
   },
   {
     "z": 82,
@@ -1305,11 +1467,13 @@
     "periodo": 6,
     "familia": "Metal del bloque p",
     "estado": "Sólido",
-    "origen": "Mineral de galena.",
-    "propiedades": "Denso, blando, tóxico, excelente aislante de radiación y base de baterías de vehículos.",
+    "origen": "Galena.",
+    "propiedades": "Denso, blando, aísla radiación pero neurotóxico.",
     "oxidacion": "+2, +4",
-    "extraccion": "Minería convencional de galena (mezclada con zinc y plata); enormes extracciones en China, Australia, EE. UU. y Perú.",
-    "descripcion": "Elemento de gloria constructiva para los techos del Imperio Romano, pero cuyo uso moderno bajó dramáticamente al descubrir su daño a niños; hoy sobrevive como principal blindaje universal anti-radiación y corazón de baterías robustas."
+    "extraccion": "Tostación comercial y fundición de minas grandes.",
+    "abundancia": "14 ppm",
+    "produccion": "China, Australia, EE. UU.",
+    "descripcion": "El mejor escudo físico, barato y denso que protege a los humanos y médicos de letales radiaciones X."
   },
   {
     "z": 83,
@@ -1321,11 +1485,13 @@
     "periodo": 6,
     "familia": "Metal del bloque p",
     "estado": "Sólido",
-    "origen": "Nativo o en la bismutinita.",
-    "propiedades": "Curiosamente no tóxico frente al plomo, cristales de óxido arcoíris, diamagnético fuerte.",
-    "oxidacion": "+3, +5",
-    "extraccion": "Subproducto derivado del refinado de metales como plomo, cobre y estaño; refinado principalmente en China, México y Japón.",
-    "descripcion": "El penúltimo elemento no mortífero y el más inofensivo de los metales pesados; al fundirlo crea impresionantes, perfectas e intrincadas escaleras de cristal de variopintos colores psicodélicos debido a la suave oxidación de sus aristas."
+    "origen": "Bismutinita y refinerías de plomo.",
+    "propiedades": "No tóxico, forma cristales iridiscentes, diamagnético.",
+    "oxidacion": "+3",
+    "extraccion": "Recuperado y fundido de escoria y hollín plúmbeo.",
+    "abundancia": "0.008 ppm",
+    "produccion": "China, Laos, México",
+    "descripcion": "Cristaliza en fantásticas escaleras arcoíris y se usa hoy en medicamentos estomacales inofensivos."
   },
   {
     "z": 84,
@@ -1337,11 +1503,13 @@
     "periodo": 6,
     "familia": "Metaloide",
     "estado": "Sólido",
-    "origen": "Mineral de pechblenda (uranio) en cantidades minúsculas.",
-    "propiedades": "Primer elemento descubierto por Marie Curie, radiactivo en extremo, letalmente tóxico.",
+    "origen": "Decaimiento natural de uranio.",
+    "propiedades": "Radiactividad extrema y mortífera.",
     "oxidacion": "+2, +4",
-    "extraccion": "En lugar de extraerlo de minerales de uranio por su escasez, se sintetiza industrialmente bombardeando bismuto en reactores.",
-    "descripcion": "Histórico y ominoso al extremo: es el letal e inestable elemento descubierto a sudor por Marie y Pierre Curie, nombrado en honor del país de nacimiento de la polaca científica heroica, que lo mató gradualmente."
+    "extraccion": "Producido en reactores nucleares bombardeando bismuto.",
+    "abundancia": "Trazas (casi nulo)",
+    "produccion": "Rusia (reactores)",
+    "descripcion": "Letal elemento radiactivo bautizado heroicamente por la patria de su descubridora, Marie Curie."
   },
   {
     "z": 85,
@@ -1353,11 +1521,13 @@
     "periodo": 6,
     "familia": "Halógeno",
     "estado": "Sólido",
-    "origen": "Elemento más raro en la corteza terrestre, decae de uranio.",
-    "propiedades": "Altamente radiactivo, vida media cortísima, se presume un sólido negro-metálico.",
-    "oxidacion": "-1, +1, +3, +5",
-    "extraccion": "Sintético absoluto. Creado en trazas minúsculas en ciclotrones bombardeando bismuto con partículas alfa.",
-    "descripcion": "El elemento natural más raro existente del planeta Tierra. Debido a que decae en horas, se calcula que nunca en ningún momento de la historia hay más de un puñado de gramos (como mucho 25) naturales en toda nuestra esfera mundial."
+    "origen": "Subproducto natural exótico radiactivo.",
+    "propiedades": "Se desintegra velozmente por su radiactividad.",
+    "oxidacion": "-1, +1, +5",
+    "extraccion": "Puramente sintético, por bombardeo a nivel miligramo.",
+    "abundancia": "Trazas (< 1 gramo global)",
+    "produccion": "Laboratorios aceleradores (Global)",
+    "descripcion": "El elemento natural más raro y escaso del globo entero; en todo el planeta apenas existen unos gramos."
   },
   {
     "z": 86,
@@ -1369,11 +1539,13 @@
     "periodo": 6,
     "familia": "Gas noble",
     "estado": "Gas",
-    "origen": "Decaimiento del radio natural en los suelos terrestres.",
-    "propiedades": "Gas radiactivo pesado, segunda causa de cáncer de pulmón si se acumula en sótanos.",
+    "origen": "Emanación natural de rocas y uranio.",
+    "propiedades": "Gas radiactivo y silente.",
     "oxidacion": "0",
-    "extraccion": "No se extrae comercialmente a gran escala, se bombea de pozos de decaimiento de radio o aire subterráneo de uranio.",
-    "descripcion": "Un fantasma geológico: un mortífero y peligroso gas incoloro radiactivo que se filtra silente de la propia roca base de las casas al sótano y que es infame por causar un severo daño ambiental sin humo a nuestros pulmones."
+    "extraccion": "Capturado de los gases de cuevas radiactivas.",
+    "abundancia": "Trazas",
+    "produccion": "Natural (no comercial)",
+    "descripcion": "El peligroso gas fantasma incoloro de los sótanos; causante infame de daños severos pulmonares."
   },
   {
     "z": 87,
@@ -1385,11 +1557,13 @@
     "periodo": 7,
     "familia": "Metal alcalino",
     "estado": "Sólido",
-    "origen": "Decaimiento de actinio.",
-    "propiedades": "El metal más inestable tras el astato, de existir en masa sería absurdamente explosivo y radiactivo.",
+    "origen": "Decaimiento radiactivo de uranio.",
+    "propiedades": "Ridículamente inestable y explosivo.",
     "oxidacion": "+1",
-    "extraccion": "Sintético a nivel de laboratorio, fabricado por bombardeo de oro u otros transmutaciones; se desintegra en minutos.",
-    "descripcion": "El último metal estable teóricamente alcalino, tan ridículamente inestable y fugazmente radiactivo (durando unos ínfimos minutos) que nunca se pudo lograr fabricar siquiera suficiente para formar un minúsculo pedazo de masa metálica continua sólida visible a plena luz del ojo."
+    "extraccion": "Aislado temporalmente irradiando actinio o rutenio.",
+    "abundancia": "Trazas (pocos gramos globales)",
+    "produccion": "Instalaciones de investigación",
+    "descripcion": "Tan rápido se desintegra radiactivamente que nunca se ha logrado acumular un trozo visible para el ojo."
   },
   {
     "z": 88,
@@ -1401,11 +1575,13 @@
     "periodo": 7,
     "familia": "Metal alcalinotérreo",
     "estado": "Sólido",
-    "origen": "Pechblenda.",
-    "propiedades": "Brilla con luz débil azulada, sumamente radiactivo, pionero histórico en curas (y envenenamientos) de cáncer.",
+    "origen": "Menas de uranio.",
+    "propiedades": "Fluorescente radiactivo y mortal.",
     "oxidacion": "+2",
-    "extraccion": "Solía extraerse purificando pechblenda (minas de Canadá y RDC); hoy se extrae de desechos de combustible nuclear usado.",
-    "descripcion": "Un espectacular elemento mágico en el albor del 1900, brillaba incesante de tono verdoso radio-luminoso, pintando oscuros diales nocturnos de relojes de las fatídicas e inocentes chicas que envenenaba horriblemente antes que su radiación ionizante letal se conociese de sobra."
+    "extraccion": "Extraído antiguamente de pechblenda a un coste enorme.",
+    "abundancia": "0.0000009 ppm",
+    "produccion": "Reciclaje nuclear",
+    "descripcion": "Mágico y letal en los años 1920; su pavoroso resplandor verde pintó los infames diales de relojes."
   },
   {
     "z": 89,
@@ -1417,11 +1593,13 @@
     "periodo": 7,
     "familia": "Actínido",
     "estado": "Sólido",
-    "origen": "Minerales de uranio como trazas naturales.",
-    "propiedades": "Emite luz azul intenso en la oscuridad total por su altísima radiactividad.",
+    "origen": "Minas de uranio.",
+    "propiedades": "Radiactividad emite fulgor azul.",
     "oxidacion": "+3",
-    "extraccion": "Fabricado principalmente bombardeando radio con neutrones en reactores nucleares especiales.",
-    "descripcion": "El fundador glorioso de los últimos elementos inmensos en masa atómica ('la serie de los actínidos'); un mortífero y luminoso elemento que de verse libre emanaría un fulgurante resplandor azul eléctrico misterioso derivado directamente de la intensa excitación del aire por los estallidos que exudan su altísima radiactividad ionizante destructiva celular."
+    "extraccion": "Se obtiene hoy día purificando radio bombardeado.",
+    "abundancia": "0.0000000005 ppm",
+    "produccion": "Reactores de isótopos",
+    "descripcion": "Elemento que brilla en la oscuridad por excitar el aire circundante con su mortífera energía atómica."
   },
   {
     "z": 90,
@@ -1433,11 +1611,13 @@
     "periodo": 7,
     "familia": "Actínido",
     "estado": "Sólido",
-    "origen": "Minerales de monacita, relativamente abundante para ser un actínido.",
-    "propiedades": "Radiactivo leve, candidato para el futuro del poder nuclear al ser más seguro que el uranio.",
+    "origen": "Arenas de monacita.",
+    "propiedades": "Radiactivo leve, muy denso.",
     "oxidacion": "+4",
-    "extraccion": "Extracción a partir de arenas minerales pesadas ricas en monacita y torita en India, Brasil y Australia.",
-    "descripcion": "El hermano dócil, gris y estable del coloso nuclear destructivo (Uranio); el Torio se perfila como un futuro mesías de la verde y pura energía atómica experimental civil de reactores líquidos debido a una radiactividad natural leve, imposible de utilizar por sí mismo para armas termonucleares pero pilar crucial en generar segura la vida y potenciar los vuelos de cohetes lunares y satélites mundiales a altísimas seguridades toleradas."
+    "extraccion": "Minería a cielo abierto de arenas de playas minerales.",
+    "abundancia": "9.6 ppm",
+    "produccion": "India, Brasil, Australia",
+    "descripcion": "El hermano pacífico del uranio, la promesa indiscutible del futuro verde y seguro del poder nuclear."
   },
   {
     "z": 91,
@@ -1449,11 +1629,13 @@
     "periodo": 7,
     "familia": "Actínido",
     "estado": "Sólido",
-    "origen": "Extraído laboriosamente de pechblenda (mineral de uranio).",
-    "propiedades": "Altamente radiactivo y tóxico, sin aplicación comercial moderna fuera de lo científico.",
-    "oxidacion": "+4, +5",
-    "extraccion": "Recuperado exclusivamente como un producto residual en las minas de uranio o a través de irradiación sintética.",
-    "descripcion": "Un escurridizo, denso y plateado actínido increíblemente complicado de separar incluso para laboratorios pioneros del pasado, y tan sumamente radioactivo natural y peligroso biológicamente por ingerirse que carece deliberadamente de aplicación e industria alguna fuera del estudio más teórico cuántico reservado y puro que realiza a diario el conocimiento mundial."
+    "origen": "Residuos de uranio.",
+    "propiedades": "Escasísimo y radiactivo tóxico.",
+    "oxidacion": "+5",
+    "extraccion": "Residuo purificado meticulosamente del uranio natural.",
+    "abundancia": "Trazas (0.000001 ppm)",
+    "produccion": "Reactores de física exótica",
+    "descripcion": "Metal pesado sin aplicaciones comerciales modernas, reservado a investigaciones atómicas teóricas."
   },
   {
     "z": 92,
@@ -1465,11 +1647,13 @@
     "periodo": 7,
     "familia": "Actínido",
     "estado": "Sólido",
-    "origen": "Uraninita, carnotita (es más común que el estaño).",
-    "propiedades": "El elemento natural más pesado, su isótopo U-235 fisiona, siendo la base primaria de bombas y reactores nucleares.",
-    "oxidacion": "+3, +4, +5, +6",
-    "extraccion": "Minería a gran escala subterránea, de cielo abierto y lixiviación in situ (ISL). Kazajistán, Canadá y Australia dominan.",
-    "descripcion": "El elemento original más pesado forjado de forma natural en las estrellas moribundas. Como portador indiscutido de todo un insospechado inmenso poder interior oculto y latente de la mismísima materia, transformó nuestra civilización de cuajo siendo el indomable combustible pionero vital y central masivo que nutre toda la vasta y pujante energía y bombas nucleares creadas y dominadas exitosamente por la era de todo el hombre moderno."
+    "origen": "Minerales esparcidos como uraninita.",
+    "propiedades": "Metal inmensamente pesado y fisionable.",
+    "oxidacion": "+4, +6",
+    "extraccion": "Minería intensiva convencional y disolución química.",
+    "abundancia": "2.7 ppm",
+    "produccion": "Kazajistán, Canadá, Australia",
+    "descripcion": "El monstruo primigenio forjado en supernovas que iluminó la era de energía y bombas atómicas humanas."
   },
   {
     "z": 93,
@@ -1481,11 +1665,13 @@
     "periodo": 7,
     "familia": "Actínido",
     "estado": "Sólido",
-    "origen": "Sintético (bombardeo de uranio en reactores), trazas naturales en minas de U.",
-    "propiedades": "Metal reactivo, radiactivo, producto de desecho significativo en reactores que puede generar Plutonio.",
-    "oxidacion": "+3, +4, +5, +6, +7",
-    "extraccion": "Sintético a gran escala; recuperado del reprocesamiento de combustible de uranio quemado en plantas nucleares.",
-    "descripcion": "Nombrado astutamente en honor del remoto e inaccesible planeta Neptuno. Primer metal transuránico (los elementos enteramente sintetizados en masa, pesados y de origen netamente artificial en fábricas y laboratorios humanos y que sobrepasan o van 'más allá' atómicamente al mítico elemento base masivo uranio planetario natural descubierto)."
+    "origen": "Plantas nucleares.",
+    "propiedades": "Sintético inicial, subproducto reactivo.",
+    "oxidacion": "+5",
+    "extraccion": "Recuperación de varillas de uranio gastado.",
+    "abundancia": "Sintético (0 ppm)",
+    "produccion": "EE. UU., Rusia (Reactores)",
+    "descripcion": "El primer elemento transuránico pesado bautizado en honor al planeta que transcurre más allá de Urano."
   },
   {
     "z": 94,
@@ -1497,11 +1683,13 @@
     "periodo": 7,
     "familia": "Actínido",
     "estado": "Sólido",
-    "origen": "Principalmente sintético transuránico producido a gran escala en reactores nucleares.",
-    "propiedades": "Notoriamente tóxico, fisionable (Pu-239), combustible ideal de armas nucleares modernas y sondas espaciales.",
-    "oxidacion": "+3, +4, +5, +6, +7",
-    "extraccion": "Producido exclusivamente en reactores nucleares (EE. UU., Rusia, Francia, China) y extraído separándolo químicamente del uranio gastado.",
-    "descripcion": "Probablemente el metal sintetizado artificial e infamemente célebre, mortal y destructivo más discutido de toda la turbulenta historia y política nuclear; un mortífero y peligroso metal caliente e inflamable, centro indiscutible del armamento atómico balístico avanzado y fuente de vida calórica radiante persistente a largo plazo utilizada por todos los majestuosos y silenciosos robots exploradores y sondas y vehículos y misiones en profundos y vastos viajes planetarios helados interplanetarios de todas las agencias astrofísicas mundiales pioneras."
+    "origen": "Sintético industrial.",
+    "propiedades": "Letalmente tóxico y fisionable armamental.",
+    "oxidacion": "+4, +6",
+    "extraccion": "Procesamiento de combustible atómico irradiado a escala.",
+    "abundancia": "Sintético (0 ppm)",
+    "produccion": "Rusia, EE. UU., Francia",
+    "descripcion": "Metal radiactivo usado para las bombas atómicas y energía persistente en las sondas espaciales marcianas."
   },
   {
     "z": 95,
@@ -1513,11 +1701,13 @@
     "periodo": 7,
     "familia": "Actínido",
     "estado": "Sólido",
-    "origen": "Sintético fabricado en reactores a partir de plutonio.",
-    "propiedades": "Radiactivo, el único elemento sintético hallado en los hogares: clave de los detectores de humo ionizantes.",
-    "oxidacion": "+3, +4, +5, +6",
-    "extraccion": "Sintético; se elabora mediante prolongado bombardeo neutrónico del plutonio en reactores atómicos.",
-    "descripcion": "Aquel rarísimo elemento radiactivo mortal enteramente fabricado a mano en reactores y colisionadores y nombrado por nuestro majestuoso continente americano, que asombrosa, oculta e irónicamente resguarda día tras día, en dosis micrométricas ínfimas minúsculas e ionizantes seguras para nosotros los ciudadanos y seres humanos globales, a absolutamente incontables casas, apartamentos, hogares familiares, industrias, comercios y hoteles del mortífero e implacable fuego vivo gracias al infalible uso de los vitales detectores del humo."
+    "origen": "Sintético de laboratorio.",
+    "propiedades": "Fuerte radiactividad ionizante local.",
+    "oxidacion": "+3",
+    "extraccion": "Obtenido bombardeando pacientemente núcleos de plutonio.",
+    "abundancia": "Sintético (0 ppm)",
+    "produccion": "Reactores de alta potencia",
+    "descripcion": "El inusual material radiactivo heroico que protege cada hogar mundial salvando vidas en detectores de humo."
   },
   {
     "z": 96,
@@ -1529,11 +1719,13 @@
     "periodo": 7,
     "familia": "Actínido",
     "estado": "Sólido",
-    "origen": "Sintético (bombardeo de plutonio con partículas alfa).",
-    "propiedades": "Llamado así por los esposos Curie, muy radiactivo (brilla en la oscuridad), fuente alfa de espectrómetros de rovers de Marte.",
+    "origen": "Sintético masivo.",
+    "propiedades": "Radiactividad emite resplandor calorífico.",
     "oxidacion": "+3",
-    "extraccion": "Sintético; purificado a nivel de gramos/miligramos de desechos reactivos en EE. UU. y Rusia.",
-    "descripcion": "El elemento homenaje definitivo eterno a la pareja Curie que de seguro jamás hubiesen creído que su propio metal letal actínido puramente sintetizado y que al rojo vivo resplandece oscuro al estar tan colmado y henchido calurosamente de radiación, hoy explora asombrosamente incansable la remota faz rocosa y alienígena misma y rojiza inexplorada del lejano planeta Marte propulsando la tecnología X-ray pionera y a bordo interno dentro del gran astromóvil todoterreno robótico planetario y laboratorio terrestre científico exploratorio espacial del astromóvil explorador marciano robótico Curiosity Rover."
+    "extraccion": "Sintetizado capturando neutrones de americio artificial.",
+    "abundancia": "Sintético (0 ppm)",
+    "produccion": "EE. UU., Rusia",
+    "descripcion": "Sintético nombrado en honor al legado de Curie que hoy equipa espectrómetros y exploradores marcianos."
   },
   {
     "z": 97,
@@ -1545,11 +1737,13 @@
     "periodo": 7,
     "familia": "Actínido",
     "estado": "Sólido",
-    "origen": "Sintético (bombardeo de americio).",
-    "propiedades": "Radiactivo, extremadamente raro, sirve para sintetizar otros elementos superpesados.",
-    "oxidacion": "+3, +4",
-    "extraccion": "Sintético; fabricado en reactores de alto flujo isotópico (HFIR) como en Oak Ridge, EE. UU.",
-    "descripcion": "Suave, quebradizo y letal actínido sintético nombrado honoríficamente tras la renombrada casa universitaria de la histórica ciudad americana de Berkeley; la existencia completa artificial en el mundo y laboratorio se resume escasamente apenas a ínfimos gramos contados o puros miligramos en total sintetizados ex profesamente en la historia del avance nuclear, a ser destruidos colisionándolo exclusivamente como mero combustible exótico primario y costoso de transición obligatoria insustituible para crear más monstruos elementos efímeros inmensos posteriores y superpesados colosales a continuación de él mismo de la inmensa tabla periódica completa."
+    "origen": "Sintético puro.",
+    "propiedades": "Altamente inestable y radiactivo.",
+    "oxidacion": "+3",
+    "extraccion": "Sintetizado en Oak Ridge o Rusia para investigaciones.",
+    "abundancia": "Sintético (0 ppm)",
+    "produccion": "EE. UU., Rusia",
+    "descripcion": "Homenaje a Berkeley; metal creado a cuentagotas y destruido para fabricar elementos aún más superpesados."
   },
   {
     "z": 98,
@@ -1561,11 +1755,13 @@
     "periodo": 7,
     "familia": "Actínido",
     "estado": "Sólido",
-    "origen": "Sintético en ciclotrones.",
-    "propiedades": "Fuente increíblemente potente de emisión de neutrones, utilísimo en iniciar reactores y detectar fatiga de metales.",
-    "oxidacion": "+2, +3, +4",
-    "extraccion": "Sintético comercializado en microgramos/miligramos en EE. UU. (Oak Ridge) y Rusia (Dimitrovgrado).",
-    "descripcion": "Increíble y potentísimo transuránico, posiblemente valorado con cifras exóticamente ridículas (rozando el ser probablemente el metal transuránico útil material fabricado sintéticamente muchísimo más caro monetariamente, letalmente costoso y útil y extremadamente valioso sintético existente en la historia material creada de la faz de esta vasta Tierra por el mismo hombre) valorizado literalmente casi siempre tasado astronómicamente y estratosféricamente muy ampliamente por inmensos varios e inconmensurables puros incontables de millones íntegros absolutos económicos de billetes verdes de oro puro y neto o dólares absolutos limpios puros estadounidenses por solo gramo pesado físico creado debido justamente a que posee increíblemente y exuda milagrosamente y emite imparablemente de su pequeño corazón la más potentísima inmensurable y monstruosa lluvia gigantesca pesada pura exótica radiactiva mortal de continuos bombardeos e imparables rayos calientes rápidos destructivos puros exóticos neutrónicos calientes constantes penetrantes para arrancar el primer chispazo inicial ignitor gigante y despertar e iniciar físicamente todo un vastísimo reactor enorme colosal dormido industrial y frío paralizado o nuclear letal."
+    "origen": "Sintético puro.",
+    "propiedades": "Fuente inmensa de emisión brutal de neutrones.",
+    "oxidacion": "+3",
+    "extraccion": "Síntesis masiva mediante flujos magnéticos extremos.",
+    "abundancia": "Sintético (0 ppm)",
+    "produccion": "EE. UU. (Oak Ridge), Rusia",
+    "descripcion": "El increíble y potentísimo material más caro del planeta, su poder enciende reactores inactivos del mundo."
   },
   {
     "z": 99,
@@ -1577,11 +1773,13 @@
     "periodo": 7,
     "familia": "Actínido",
     "estado": "Sólido",
-    "origen": "Se descubrió en los restos de la explosión de la primera bomba de hidrógeno.",
-    "propiedades": "Nombrado en honor a Einstein. Extremadamente radiactivo y de vida muy corta.",
-    "oxidacion": "+2, +3",
-    "extraccion": "Sintético; producción en cadena sumamente compleja en aceleradores de partículas de uso de investigación.",
-    "descripcion": "El elemento sintético radiactivo que hizo un merecido eco inmortal y reconocimiento perenne a la figura del físico Albert Einstein; fue descubierto irónica y sorpresivamente de forma furtiva en las cenizas dispersas microscópicas radiactivas de polvo mortal tras detonar letalmente el hombre su primer terrorífico y pavoroso y devastador y pionero dispositivo gigante armado destructivo de guerra letal atómico monstruoso pionero y catastrófico experimento destructivo humano masivo armamentístico puro nuclear histórico ('Bomba de Hidrógeno o Ivy Mike')."
+    "origen": "Sintético.",
+    "propiedades": "Altísima radiación e inestabilidad.",
+    "oxidacion": "+3",
+    "extraccion": "Creado colisionando núcleos a gran velocidad energética.",
+    "abundancia": "Sintético (0 ppm)",
+    "produccion": "Aceleradores atómicos globales",
+    "descripcion": "Hallado espeluznantemente puro en las cenizas mortales de la primera explosión termonuclear destructiva."
   },
   {
     "z": 100,
@@ -1593,11 +1791,13 @@
     "periodo": 7,
     "familia": "Actínido",
     "estado": "Sólido",
-    "origen": "Sintético. También descubierto en polvo del primer ensayo termonuclear de EE.UU.",
-    "propiedades": "No tiene usos conocidos fuera de la pura investigación.",
-    "oxidacion": "+2, +3",
-    "extraccion": "Sintético; no se extrae de la tierra. Requiere bombardeo de actínidos más ligeros en laboratorios especializados.",
-    "descripcion": "Bautizado así por el arquitecto del primer reactor nuclear puro de la historia física, el genio Enrico Fermi; un coloso actínido transuránico efímero de laboratorio el cual carga también y lleva tristemente consigo mismo a la vez y la irónica enorme colosal carga técnica científica especial de figurar permanentemente oficializado en libros como el supremo e indiscutido pesadísimo elemento sintético máximo gigante final de la tabla general última que el propio e ingenioso científico ser humano todavía aún en la historia puede físicamente llegar a engordar crear artificialmente formar e ir engordando de alguna íntegra y minuciosa y precisa pesada enorme forma bombardeando paulatinamente isótopos exóticos enormes más chicos con neutrones sin usar a gran escala una colisión pura."
+    "origen": "Sintético atómico.",
+    "propiedades": "El último metal que se puede crear engordando isótopos.",
+    "oxidacion": "+3",
+    "extraccion": "Fabricado bombardeando californio laboriosamente.",
+    "abundancia": "Sintético (0 ppm)",
+    "produccion": "Laboratorios de física de iones",
+    "descripcion": "El titán inestable, tributo al inventor del reactor atómico, que sella el fin de la síntesis ordinaria."
   },
   {
     "z": 101,
@@ -1609,11 +1809,13 @@
     "periodo": 7,
     "familia": "Actínido",
     "estado": "Sólido",
-    "origen": "Sintético (bombardeo de einstenio con partículas alfa).",
-    "propiedades": "Tributo al creador de la tabla periódica, Mendeléyev.",
-    "oxidacion": "+2, +3",
-    "extraccion": "Sintético; creado exclusivamente en aceleradores atómicos con fines puramente experimentales.",
-    "descripcion": "Digno y solemne tributo elemental y actínido sintético a la prodigiosa figura de la vida creadora inicial de todos los demás nombres que observamos enlistados, rindiendo un gran respeto a Dmitri Mendeléyev; elemento exótico, increíble y masivo inestable en esencia pura formado solo átomo tras escaso átomo pesado e ínfimo minúsculo tras otro aislado puramente colisionando o golpeando átomos minúsculos con iones cargados calientes en ciclotrones inmensos de todo el globo experimental."
+    "origen": "Sintético.",
+    "propiedades": "Decae espontáneamente muy rápido.",
+    "oxidacion": "+3",
+    "extraccion": "Requiere impacto y fusión de iones complejos pesados.",
+    "abundancia": "Sintético (0 ppm)",
+    "produccion": "Laboratorios atómicos aislados",
+    "descripcion": "Digno y respetuoso tributo pesado dedicado a Dmitri Mendeléyev, creador padre de la Tabla Periódica."
   },
   {
     "z": 102,
@@ -1626,10 +1828,12 @@
     "familia": "Actínido",
     "estado": "Sólido",
     "origen": "Sintético.",
-    "propiedades": "Nombrado tras Alfred Nobel. Muy escaso, se conoce sumamente poco por su veloz decaimiento.",
+    "propiedades": "Mortalmente inestable y muy pesado.",
     "oxidacion": "+2, +3",
-    "extraccion": "Sintético. Obtenido fusionando isótopos artificiales (ejemplo bombardeando actínidos con iones de carbono).",
-    "descripcion": "Dedicado solemnemente a Alfred Nobel; se trata de un elemento superpesado tan inmensamente volátil e intensamente frágil e inestable y masivo colosalmente grande de la historia de los núcleos que estalla o decae mortalmente dividiéndose por radiactividad pavorosamente violenta interna en fragmentos isótopos menores tras tan escasos suspiros o fugaces e inestables minúsculos minutos escasos luego mismo después apenas transcurrir velozmente y sin piedad ninguna toda su efímera creación teórica atómica oficial artificial tras toda pura gigantesca de la colisión física."
+    "extraccion": "Impacto atómico en ciclotrones especializados pesados.",
+    "abundancia": "Sintético (0 ppm)",
+    "produccion": "Aceleradores (Rusia, EE. UU.)",
+    "descripcion": "Superpesado que rinde homenaje a Alfred Nobel; estalla velozmente dividiéndose por enorme inestabilidad."
   },
   {
     "z": 103,
@@ -1641,11 +1845,13 @@
     "periodo": 7,
     "familia": "Actínido",
     "estado": "Sólido",
-    "origen": "Sintético (en ciclotrones de la Universidad de Berkeley).",
-    "propiedades": "Último de la serie de los actínidos.",
+    "origen": "Sintético de laboratorio.",
+    "propiedades": "Último bloque transuránico actínido conocido.",
     "oxidacion": "+3",
-    "extraccion": "Sintético; fabricado átomo a átomo en ciclotrones especializados de alta gama.",
-    "descripcion": "El último y grandioso y masivo integrante honorífico gigante artificial superpesado transuránico colosal sintético fugaz de la grandísima hilera masiva pesada oficial total elemental denominada y agrupada de actínidos inferior; rinde especial tributo homenaje al gran inventor clave de la máquina gigantesca giratoria que los hace en verdad a base física posible de todo lo artificial: el propio gigante colosal ciclotrón inventor histórico pionero acelerador nuclear Ernest O. Lawrence."
+    "extraccion": "Creado bombardeando californio con boro puro.",
+    "abundancia": "Sintético (0 ppm)",
+    "produccion": "Ciclotrones Berkeley, Rusia",
+    "descripcion": "Último coloso de la serie de los actínidos honrando al propio gran inventor clave del poderoso ciclotrón."
   },
   {
     "z": 104,
@@ -1657,11 +1863,13 @@
     "periodo": 7,
     "familia": "Metal de transición",
     "estado": "Sintético",
-    "origen": "Sintético.",
-    "propiedades": "Primer metal transactínido, no tiene aplicación fuera del laboratorio debido a su extrema vida media (minutos).",
+    "origen": "Sintético transactínido.",
+    "propiedades": "Se disuelve a nivel cuántico en segundos.",
     "oxidacion": "+4",
-    "extraccion": "Sintético; aceleradores atómicos en Dubna (Rusia) y Berkeley (EE. UU.) lo crean en porciones traza.",
-    "descripcion": "Rutherfordio, el primer metal 'transactínido' y un brillante reconocimiento monumental a un gran coloso de toda la pionera radiación radiactiva, lord neozelandés atómico pionero Ernest Rutherford; una maravilla atómica súper inestable sintética de existencia casi espectral que se esfuma veloz y estalla fisionándose natural mortalmente letal sola en minutos a temperaturas elevadas colosales de pura emisión desintegradora fugaz natural."
+    "extraccion": "Impacto altísimo entre núcleos de neón y plutonio.",
+    "abundancia": "Sintético (0 ppm)",
+    "produccion": "Dubna (Rusia), LBNL (EE. UU.)",
+    "descripcion": "El primer 'transactínido' y maravilla nuclear que emana calor fisionándose sin piedad al poco tiempo."
   },
   {
     "z": 105,
@@ -1673,11 +1881,13 @@
     "periodo": 7,
     "familia": "Metal de transición",
     "estado": "Sintético",
-    "origen": "Sintético (Instituto en Dubná, Rusia).",
-    "propiedades": "Sintetizado artificialmente, se espera que sus propiedades imiten a las del tantalio.",
+    "origen": "Sintético de Rusia/EE.UU.",
+    "propiedades": "Extremadamente denso e invisible natural.",
     "oxidacion": "+5",
-    "extraccion": "Sintético, derivado de fusionar californio/americio en aceleradores de iones pesados.",
-    "descripcion": "El orgullo científico ruso forjado en metal efímero: el elemento toma su noble apelativo honorario sintético permanente e internacional puro como Dubnio, tras la cuna del legendario Instituto Conjunto gigantesco colosal atómico soviético ruso pionero para inmensas de puras Investigaciones y centros exóticos mundiales puras transuránicas colosales avanzadas secretas de inmenso alto e internacional nivel nucleares atómicas y radiológicas de toda la grandísima fría y secreta Rusia localizada y asentada fijamente ubicada estratégicamente monumental en la inmensa purísima misteriosa urbe de ciencia colosal secreta soviética histórica que domina el lugar que lo creó, Dubná."
+    "extraccion": "Fusión cuántica pesada.",
+    "abundancia": "Sintético (0 ppm)",
+    "produccion": "Dubna, GSI (Alemania)",
+    "descripcion": "Orgullo ruso científico, bautizado por el histórico Instituto Conjunto atómico pionero soviético de Dubná."
   },
   {
     "z": 106,
@@ -1690,10 +1900,12 @@
     "familia": "Metal de transición",
     "estado": "Sintético",
     "origen": "Sintético.",
-    "propiedades": "Lleva el nombre de Glenn Seaborg aún cuando él estaba vivo, siendo muy radiactivo.",
+    "propiedades": "Decae espontáneamente en milisegundos.",
     "oxidacion": "+6",
-    "extraccion": "Sintético; no natural. Generado en ciclotrones chocando isotopos de plomo o curio.",
-    "descripcion": "Famoso no solo por su fugacidad inmensa o radiactividad sino más bien por ser increíblemente el insólito el grandioso el único e insospechado primer coloso gigante grandísimo puro gran enorme exótico o grandísimo de todos los primeros honorables pesadísimos materiales metálicos transuránicos masivos sintetizados históricamente de toda tabla en ganar ser otorgado polémicamente bautizado oficialmente en viva inmensa pura figura humana física o presente real carne activa científica natural y huesos mientras toda respiraba pura y latía y oía su grandioso químico gigante histórico e inmenso gran inventor natural Glenn T. Seaborg vivo en vida terrenal pura."
+    "extraccion": "Colisionador de iones pesados artificiales.",
+    "abundancia": "Sintético (0 ppm)",
+    "produccion": "Rusia, EE. UU. (Berkeley)",
+    "descripcion": "Histórico y único elemento en ganar el polémico bautizo honrando a un científico atómico vivo."
   },
   {
     "z": 107,
@@ -1706,10 +1918,12 @@
     "familia": "Metal de transición",
     "estado": "Sintético",
     "origen": "Sintético.",
-    "propiedades": "Nombrado tras Niels Bohr.",
+    "propiedades": "Completamente inestable y masivo.",
     "oxidacion": "+7",
-    "extraccion": "Sintético; obtenido en GSI (Alemania) mediante fusión en frío nuclear (bismuto/cromo).",
-    "descripcion": "El elemento transuránico, colosal y fugaz radiactivo inmenso e inestable nombrado oficial y póstumamente tras el brillante investigador, inventor padre y gigante legendario puro y eminente gran descubridor físico atómico cuántico Niels Bohr puro brillante."
+    "extraccion": "Fusión nuclear en frío usando bismuto e iones.",
+    "abundancia": "Sintético (0 ppm)",
+    "produccion": "GSI (Alemania)",
+    "descripcion": "Elemento fugaz transactínido rindiendo eterno homenaje póstumo al gran descubridor danés Niels Bohr."
   },
   {
     "z": 108,
@@ -1721,11 +1935,13 @@
     "periodo": 7,
     "familia": "Metal de transición",
     "estado": "Sintético",
-    "origen": "Sintético.",
-    "propiedades": "Extremadamente inestable; el Hassio-269 posee una vida útil de escasos segundos.",
+    "origen": "Sintético alemán.",
+    "propiedades": "Se disgrega en una ráfaga atómica letal.",
     "oxidacion": "+8",
-    "extraccion": "Sintético; se crea literalmente de a puñado de átomos en colisionadores atómicos internacionales.",
-    "descripcion": "Fugaz, frágil e inmenso a niveles de átomos casi ridículos atómicamente, y llamado exóticamente puro y honorífico o bautizado como 'Hassio' como un mero honor perenne mundial químico internacional para un histórico y puro homenaje territorial de nombre del estado de todo lugar a Hesse inmensamente en Alemania entera, hogar de un colosal gran GSI gigante."
+    "extraccion": "Laborioso bombardeo atómico en colisionadores.",
+    "abundancia": "Sintético (0 ppm)",
+    "produccion": "GSI Darmstadt, Alemania",
+    "descripcion": "Fugaz pero honorífico, nominado por el estado grandioso de Hesse en Alemania donde opera el centro GSI."
   },
   {
     "z": 109,
@@ -1738,10 +1954,12 @@
     "familia": "Metal de transición",
     "estado": "Sintético",
     "origen": "Sintético.",
-    "propiedades": "Tributo a la científica nuclear Lise Meitner, un reconocimiento a su brillante trabajo con isótopos.",
+    "propiedades": "Superpesado, inestable.",
     "oxidacion": "+9 (teórico)",
-    "extraccion": "Sintético; producido al bombardear bismuto con iones de hierro en centros científicos especializados.",
-    "descripcion": "Un ínfimo, efímero y ultra masivo átomo grandísimo pero increíble e inestable radiactivo gigante de laboratorio sintetizado artificialmente tras colisión y honrando pura oficialmente merecidamente la injusta ignorada mente física austriaca gigante mundial colosal investigadora grande brillante o mujer inmensa creadora teórica base física principal puramente grande Lise Meitner tras ella comprender de modo teóricamente claro puramente sola todo el terrorífico gigantesco evento físico exótico oscuro destructivo letal poderoso brillante secreto físico inmenso enorme llamado exótico el destructivo histórico grande fenómeno de colisión de fisión monstruosa física puro nuclear mundial."
+    "extraccion": "Impactos físicos extremos transitorios.",
+    "abundancia": "Sintético (0 ppm)",
+    "produccion": "Laboratorios europeos atómicos",
+    "descripcion": "Moles gigantes que honran finalmente a Lise Meitner, madre injustamente ignorada de la fisión nuclear."
   },
   {
     "z": 110,
@@ -1753,11 +1971,13 @@
     "periodo": 7,
     "familia": "Metal de transición",
     "estado": "Sintético",
-    "origen": "Sintético (creado en el GSI en Darmstadt, Alemania).",
-    "propiedades": "Su química real es desconocida aunque matemáticamente es del grupo del platino.",
+    "origen": "Sintético europeo.",
+    "propiedades": "Metálico teóricamente y explosivo atómico.",
     "oxidacion": "Desconocido",
-    "extraccion": "Sintético; creado fundiendo núcleos de plomo con isótopos de níquel a velocidades altísimas.",
-    "descripcion": "Inmensa proeza germana científica, una mole atómica gigante que antes de disolverse rinde orgulloso tributo oficial puro a su rincón de génesis histórico químico artificial exótico europeo, la prestigiosa cuna europea ciudad física colosal alemana grande de toda Darmstadt."
+    "extraccion": "Creado bombardeando plomo y níquel a cota cuántica.",
+    "abundancia": "Sintético (0 ppm)",
+    "produccion": "Darmstadt (Alemania)",
+    "descripcion": "Proeza científica germana inmensa tributando en forma de metal atómico a la ilustre ciudad de Darmstadt."
   },
   {
     "z": 111,
@@ -1770,10 +1990,12 @@
     "familia": "Metal de transición",
     "estado": "Sintético",
     "origen": "Sintético.",
-    "propiedades": "Lleva su nombre por el descubridor de los rayos X. Un isotopo dura décimas de segundo.",
+    "propiedades": "Destructivo rápido, superpesado.",
     "oxidacion": "Desconocido",
-    "extraccion": "Sintético; no minado. Bombardeo minucioso de iones en aceleradores pesados en Alemania y Rusia.",
-    "descripcion": "Misterio sintético metálico ultrarrápido grandísimo inmenso y destructivo inestable colosal purísimo o un relámpago inmenso gigante físico gigante de átomo y radiactividad masiva grandiosa inestable fugaz de vida y conmemorado gigante exótico nombre histórico de puro gran brillante reconocimiento póstumo inmortal gigante en eterno homenaje al inventor grande alemán que dio origen mundial exótico radiológico invisible penetrante pionero esquelético brillante de luz grande médica o pioneros en todo inmensa grande mundo, al grande gigante científico puro y puro los brillantes Rayos invisibles los X: el señor Wilhelm gigante brillante C. Röntgen."
+    "extraccion": "Solo en laboratorios de muy alta energía atómica.",
+    "abundancia": "Sintético (0 ppm)",
+    "produccion": "GSI y RIKEN (Japón)",
+    "descripcion": "Tributo al gigante científico pionero creador de los vitales Rayos X invisibles: Wilhelm Röntgen."
   },
   {
     "z": 112,
@@ -1786,10 +2008,12 @@
     "familia": "Metal de transición",
     "estado": "Sintético",
     "origen": "Sintético.",
-    "propiedades": "Los modelos cuánticos sugieren que podría ser un líquido súper volátil a temperatura ambiente.",
+    "propiedades": "Teóricamente gas noble pesado o líquido.",
     "oxidacion": "+2 (teórico)",
-    "extraccion": "Sintético; fabricado impactando plomo con zinc en centros de investigación nuclear.",
-    "descripcion": "Un gas pesado super extraño colosal que en teoría podría fluir o fluir volátilmente o esfumarse y honra inmortalmente brillante al colosal gran gigante pionero brillante del propio centro modelo y universo gigantesco grande el científico Nicolás o modelo de todo Copérnico puro inmenso brillante estelar planetario."
+    "extraccion": "Fusionado átomo por átomo por zinc en plomo.",
+    "abundancia": "Sintético (0 ppm)",
+    "produccion": "Aceleradores europeos de fisión",
+    "descripcion": "Homenaje cósmico elemental que fluye en honor al grandioso maestro planetario espacial Nicolás Copérnico."
   },
   {
     "z": 113,
@@ -1801,11 +2025,13 @@
     "periodo": 7,
     "familia": "Metal del bloque p",
     "estado": "Sintético",
-    "origen": "Sintético (primer elemento descubierto en un país asiático, RIKEN en Japón).",
-    "propiedades": "Pura radiactividad inestable.",
+    "origen": "Sintético de origen asiático.",
+    "propiedades": "Fugacidad extrema en desintegración.",
     "oxidacion": "+1, +3 (teórico)",
-    "extraccion": "Sintético absoluto; institutos nipones lo aislaron empujando iones de zinc sobre átomos de bismuto.",
-    "descripcion": "La primera presea exótica de los transactínidos en haber sido descubierta artificial y enteramente y bautizada por los lejanos gigantes institutos exóticos orientales asiáticos o Japón, por lo puro que es Nihon la tierra y puro nombre nipón gigante y honor al 'país donde el Sol Nace puro brillante inmenso brillante brillante' en gran asiático idioma natal."
+    "extraccion": "Forjado arduamente tras incontables pruebas iónicas.",
+    "abundancia": "Sintético (0 ppm)",
+    "produccion": "Instituto RIKEN (Japón)",
+    "descripcion": "Primer transuránico descubierto y nombrado por científicos en Japón, significando 'Tierra del Sol Naciente'."
   },
   {
     "z": 114,
@@ -1817,11 +2043,13 @@
     "periodo": 7,
     "familia": "Metal del bloque p",
     "estado": "Sintético",
-    "origen": "Sintético.",
-    "propiedades": "Se teoriza que en lugar de un metal sólido, se comporte como un gas noble dadas las leyes relativas de su inmenso núcleo.",
+    "origen": "Sintético ruso.",
+    "propiedades": "Efectos relativistas desafían su metalicidad.",
     "oxidacion": "+2, +4 (teórico)",
-    "extraccion": "Sintético; laboratorios en Dubna crearon los primeros átomos usando isótopos ricos de calcio y plutonio.",
-    "descripcion": "El titán elemental gigante superpesado de laboratorio artificial exótico puramente gigante que por asombroso inmenso efecto de la relatividad atómica misma gigantesca pesada su núcleo desafiaría las leyes comportándose probablemente no como inmenso exótico metal pesado grande sino asombrosa y fugazmente como o de un propio brillante perezoso perezosísimo raro denso o raro gas noble inerte pesado gaseoso exótico y raro exótico inerte como y misterioso en lugar gas físico natural inerte raro químico extraño."
+    "extraccion": "Creación experimental masiva de calcio sobre plutonio.",
+    "abundancia": "Sintético (0 ppm)",
+    "produccion": "Dubna, Rusia e Institutos EE. UU.",
+    "descripcion": "Mole tan grande que debido a la intensa gravedad cuántica interior actuaría misteriosamente como un gas."
   },
   {
     "z": 115,
@@ -1833,11 +2061,13 @@
     "periodo": 7,
     "familia": "Metal del bloque p",
     "estado": "Sintético",
-    "origen": "Sintético (colaboración entre Dubna y laboratorios estadounidenses).",
-    "propiedades": "Completamente radiactivo; sus propiedades se desconocen en la práctica.",
+    "origen": "Sintético transuránico.",
+    "propiedades": "Radiactividad y colapso masivo en milésimas.",
     "oxidacion": "+1, +3 (teórico)",
-    "extraccion": "Sintético; fabricado mediante la costosa colisión de isótopos superpesados en aceleradores internacionales.",
-    "descripcion": "Metal superpesado increíblemente escaso, radiactivo inmenso gigante que no existe de forma pura natural y de inmensa fama conspirativa que un día supo inmensamente de exótico gran culto gigante y se bautiza honrosamente y de verdad y en forma de gigante oficial hoy rindiendo pleitesía exótica oficial brillante gigante exótico oficial de puro y honor a gigante nombre gigante físico a la gigantesca e inmensa histórica monumental vieja metrópolis sede ciudad brillante grande física colosal monumental urbana la enorme gigante antigua brillante e inmensa de puras ciudades como histórica grandiosa capital rusa exótica Moscú."
+    "extraccion": "Aislado tras colisiones violentas experimentales.",
+    "abundancia": "Sintético (0 ppm)",
+    "produccion": "Rusia, EE. UU.",
+    "descripcion": "Bautizado oficialmente rindiendo gigante pleitesía oficial histórica a la histórica metrópolis rusa de Moscú."
   },
   {
     "z": 116,
@@ -1849,11 +2079,13 @@
     "periodo": 7,
     "familia": "Metal del bloque p",
     "estado": "Sintético",
-    "origen": "Sintético.",
-    "propiedades": "Solo se han producido unos pocos átomos mediante el bombardeo de curio con calcio.",
+    "origen": "Sintético colosal.",
+    "propiedades": "Inmenso, extremadamente efímero.",
     "oxidacion": "+2, +4 (teórico)",
-    "extraccion": "Sintético; se crea en aceleradores nucleares avanzados tras colisionar artificialmente curio y calcio.",
-    "descripcion": "Mole gigante de pura materia exótica sintética que estalla tan inestable al puro crearse grandiosa y honra al colosal complejo inmenso gran grandísimo estadounidense laboratorio pionero exótico enorme pionero o puro laboratorio grande brillante laboratorio gigante en física transuránica de punta brillante gigante oficial mundial pionero en toda inmensamente grande y ciudad oficial colosal gigantesca enorme estadounidense de y de nombre oficial la grandísima de grandiosa California, llamada brillante Livermore."
+    "extraccion": "Forjado chocando curio con calcio sintético.",
+    "abundancia": "Sintético (0 ppm)",
+    "produccion": "EE. UU., Rusia",
+    "descripcion": "Sintetizado en honor oficial al monumental laboratorio pionero estadounidense instalado en Livermore, California."
   },
   {
     "z": 117,
@@ -1866,10 +2098,12 @@
     "familia": "Halógeno",
     "estado": "Sintético",
     "origen": "Sintético.",
-    "propiedades": "Tributo al estado de Tennessee, aunque se encuentra en el grupo halógeno, se cree que será un metal sólido.",
-    "oxidacion": "-1, +1, +3, +5 (teórico)",
-    "extraccion": "Sintético; un par de átomos producidos bombardeando el escaso berkelio con calcio en Rusia/EE. UU.",
-    "descripcion": "El inmenso gigante super pesado y segundo halógeno penúltimo de toda la lista de los últimos creados por grandísima física exótica moderna nuclear; oficialmente y para honrar todos los inmensos grandes pioneros de centros inmensos físicos transuránicos instalados como lo es Oak Ridge gigantesco de y de y de gigantesco y todo de gran estado brillante sureño inmenso de grandísimo gigante oficial inmenso estadounidense histórico y puro llamado de y de Tennessee de purísimo grandísimo y oficial estado norteamericano gigante oficial grande."
+    "propiedades": "El halógeno artificial más destructivo y pesado.",
+    "oxidacion": "-1, +1, +3, +5",
+    "extraccion": "Resultado efímero de complejas fusiones exóticas.",
+    "abundancia": "Sintético (0 ppm)",
+    "produccion": "Aceleradores internacionales en Dubna/Oak Ridge",
+    "descripcion": "El penúltimo elemento artificial de la tabla; nominado en reverencia científica por el estado de Tennessee."
   },
   {
     "z": 118,
@@ -1881,10 +2115,12 @@
     "periodo": 7,
     "familia": "Gas noble",
     "estado": "Sintético",
-    "origen": "Sintético.",
-    "propiedades": "El último elemento, el más pesado de todos. Irónicamente, dadas las fuerzas relativistas, los cálculos muestran que en realidad sería sólido en lugar de un gas noble clásico.",
-    "oxidacion": "0, +2, +4, +6 (teórico)",
-    "extraccion": "Sintético; creado fusionando californio con iones de calcio; extremadamente caro y de vida efímera en laboratorio.",
-    "descripcion": "El límite gigantesco inmenso final hasta hoy inmenso de purísima ciencia colosal actual oficial pura sintética conocida mundial química colosal: el grandísimo pesado último de toda y monstruoso grandioso y puro récord pesado de todo colosal material artificial o grandísimo gas artificial sólido super pesado que colosal de modo grande puro fue en forma de y para honorífico a grande o nombre oficial para nombrar puramente a vida y honores en vida física pura grandiosa honrando puramente por su nombre oficial vivo grandioso grande e inmenso inventor legendario maestro gigante atómico en gigante de pura investigación o transuránico gigante colosal ruso grandioso vivo o físico colosal genio internacional Oganessian brillante purísimo pionero."
+    "origen": "Sintético final actual.",
+    "propiedades": "Teóricamente sólido en vez de gas, pesado al extremo.",
+    "oxidacion": "0, +2, +4, +6",
+    "extraccion": "La cima atómica obtenida colisionando el inestable californio.",
+    "abundancia": "Sintético (0 ppm)",
+    "produccion": "Rusia",
+    "descripcion": "El monstruo elemental superpesado y cúspide de la física humana, coronado por el genio vivo Yuri Oganessian."
   }
 ]
