@@ -316,7 +316,7 @@ class _TablaPeriodicaState extends State<TablaPeriodica> {
                             );
                           }
                           if (row == 6 && col == 3) {
-                            // Es la celda de los lanquimidos
+                            // Es la celda de los lantánidos
                             return _placeholderCell(
                               '57–71\nLa→Lu',
                               const Color(0xFF27AE60),

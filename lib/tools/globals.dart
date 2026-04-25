@@ -194,6 +194,7 @@ Widget _infoRow(String label, String value) {
             ),
           ),
         ),
+        const SizedBox(width: 5),
         Expanded(
           child: Text(
             value,
