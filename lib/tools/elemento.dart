@@ -14,11 +14,26 @@ class Elemento {
   late String estado;
   late String descripcion;
   late String origen;
-  late String oxidacion;
   late String propiedades;
   late String abundancia;
   late String produccion;
   late String extraccion;
+  late String nombre_tradicional;
+
+  late String tipo;
+  late List<int> oxidaciones;
+  late List<int> valencias_comunes;
+  late bool usa_tradicional;
+  late String? nombre_anion;
+  late String? nombre_sistematico;
+  late double electronegatividad;
+  late bool es_diatomico;
+  late bool forma_cation;
+  late bool forma_anion;
+  late bool puede_formar_oxoacidos;
+  late bool puede_ser_anhidrido;
+  late int prioridad_formula;
+  late List<String> excepciones;
 
   Elemento.fromJson(Map<String, dynamic> json) {
     z = json['z'];
@@ -26,17 +41,40 @@ class Elemento {
     s = json['s'];
     cc = json['cc'];
     cr = json['cr'];
-    grupo = json['grupo'];
+    grupo = json['grupo']?.toString() ?? 'N/A';
     periodo = json['periodo'];
     familia = json['familia'];
     estado = json['estado'];
     descripcion = json['descripcion'];
     origen = json['origen'];
-    oxidacion = json['oxidacion'];
     propiedades = json['propiedades'];
     abundancia = json['abundancia'];
     produccion = json['produccion'];
     extraccion = json['extraccion'];
+    nombre_tradicional = json['nombre_tradicional'] ?? "";
+    tipo = json['tipo'] ?? 'metal';
+    oxidaciones = (json['oxidaciones'] as List<dynamic>?)
+            ?.map((e) => (e as num).toInt())
+            .toList() ??
+        [];
+    valencias_comunes = (json['valencias_comunes'] as List<dynamic>?)
+            ?.map((e) => (e as num).toInt())
+            .toList() ??
+        [];
+    usa_tradicional = json['usa_tradicional'] ?? false;
+    nombre_anion = json['nombre_anion'];
+    nombre_sistematico = json['nombre_sistematico'];
+    electronegatividad = (json['electronegatividad'] as num?)?.toDouble() ?? 0;
+    es_diatomico = json['es_diatomico'] ?? false;
+    forma_cation = json['forma_cation'] ?? false;
+    forma_anion = json['forma_anion'] ?? false;
+    puede_formar_oxoacidos = json['puede_formar_oxoacidos'] ?? false;
+    puede_ser_anhidrido = json['puede_ser_anhidrido'] ?? false;
+    prioridad_formula = json['prioridad_formula'] ?? 5;
+    excepciones = (json['excepciones'] as List<dynamic>?)
+            ?.map((e) => e.toString())
+            .toList() ??
+        [];
   }
 
   Elemento({
@@ -51,53 +89,38 @@ class Elemento {
     required this.estado,
     required this.descripcion,
     required this.origen,
-    required this.oxidacion,
     required this.propiedades,
     required this.abundancia,
     required this.produccion,
     required this.extraccion,
+    required this.nombre_tradicional,
+    this.tipo = 'metal',
+    this.oxidaciones = const [],
+    this.valencias_comunes = const [],
+    this.usa_tradicional = false,
+    this.nombre_anion,
+    this.nombre_sistematico,
+    this.electronegatividad = 0,
+    this.es_diatomico = false,
+    this.forma_cation = false,
+    this.forma_anion = false,
+    this.puede_formar_oxoacidos = false,
+    this.puede_ser_anhidrido = false,
+    this.prioridad_formula = 5,
+    this.excepciones = const [],
   });
+  String get oxidacionesDisplay {
+    if (oxidaciones.isEmpty) return '0';
+    return oxidaciones.map((v) => v > 0 ? '+$v' : '$v').join(', ');
+  }
 }
 
 Widget buildElementoItem({
   required BuildContext context,
-  required int z,
-  required String n,
-  required String s,
-  required String cc,
-  required String cr,
-  required String grupo,
-  required int periodo,
-  required String familia,
-  required String estado,
-  required String descripcion,
-  required String origen,
-  required String oxidacion,
-  required String propiedades,
-  required String abundancia,
-  required String produccion,
-  required String extraccion,
+  required Elemento el,
 }) {
   return PlatformListTile(
     onTap: () {
-      final el = Elemento(
-        z: z,
-        n: n,
-        s: s,
-        cc: cc,
-        cr: cr,
-        grupo: grupo,
-        periodo: periodo,
-        familia: familia,
-        estado: estado,
-        descripcion: descripcion,
-        origen: origen,
-        oxidacion: oxidacion,
-        propiedades: propiedades,
-        abundancia: abundancia,
-        produccion: produccion,
-        extraccion: extraccion,
-      );
       mostrarDetalleElemento(context, el);
     },
     leading: Container(
@@ -109,7 +132,7 @@ Widget buildElementoItem({
       child: const Icon(Icons.map_outlined, color: Colors.blueGrey, size: 20),
     ),
     title: Text(
-      n,
+      el.n,
       style: TextStyle(
         fontWeight: FontWeight.w600,
         color: darkMode ? Colors.white : const Color(0xFF374151),
@@ -122,7 +145,7 @@ Widget buildElementoItem({
         borderRadius: BorderRadius.circular(8),
       ),
       child: Text(
-        z.toString(),
+        el.z.toString(),
         style: const TextStyle(
           color: Colors.green,
           fontWeight: FontWeight.bold,

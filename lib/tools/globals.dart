@@ -3,7 +3,7 @@ library;
 import 'package:flutter/material.dart';
 import 'package:quimica/tools/elemento.dart';
 
-bool darkMode = false;
+bool darkMode = true;
 ValueNotifier<String> querySearch = ValueNotifier<String>("");
 
 Color colorElemento(int z) {
@@ -156,7 +156,7 @@ void mostrarDetalleElemento(BuildContext context, Elemento el) {
                   _infoRow('Símbolo', el.s),
                   _infoRow('Config. compacta', el.cr),
                   _infoRow('Config. completa', el.cc),
-                  _infoRow('Números de oxidación', el.oxidacion),
+                  _infoRow('Números de oxidación', el.oxidacionesDisplay),
                   _infoRow('Familia', el.familia),
                   _infoRow('Grupo', el.grupo),
                   _infoRow('Periodo', el.periodo.toString()),

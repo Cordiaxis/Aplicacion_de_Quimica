@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_platform_widgets/flutter_platform_widgets.dart';
 import 'package:quimica/json/leer_json.dart';
 import 'package:quimica/screen/aufbau.dart';
+import 'package:quimica/screen/compuestos_inorganicos.dart';
 import 'package:quimica/screen/creditos.dart';
 import 'package:quimica/screen/tabla_periodica.dart';
 import 'package:quimica/tools/elemento.dart';
@@ -65,6 +66,15 @@ class _MainPageState extends State<MainPage> {
             onPressed: () => Navigator.push(
               context,
               MaterialPageRoute(builder: (_) => const Creditos()),
+            ),
+          ),
+          IconButton(
+            icon: const Icon(Icons.calculate),
+            tooltip: 'Compuestos inorgánicos',
+            color: Colors.white,
+            onPressed: () => Navigator.push(
+              context,
+              MaterialPageRoute(builder: (_) => const CompuestosInorganicos()),
             ),
           ),
         ],
@@ -257,22 +267,7 @@ class _MainPageState extends State<MainPage> {
               children: [
                 buildElementoItem(
                   context: context,
-                  z: el.z,
-                  n: el.n,
-                  s: el.s,
-                  cc: el.cc,
-                  cr: el.cr,
-                  grupo: el.grupo,
-                  periodo: el.periodo,
-                  familia: el.familia,
-                  estado: el.estado,
-                  descripcion: el.descripcion,
-                  origen: el.origen,
-                  oxidacion: el.oxidacion,
-                  propiedades: el.propiedades,
-                  abundancia: el.abundancia,
-                  produccion: el.produccion,
-                  extraccion: el.extraccion,
+                  el: el,
                 ),
                 if (index < filtrados.length - 1)
                   Divider(

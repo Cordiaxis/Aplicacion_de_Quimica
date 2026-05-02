@@ -81,6 +81,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.19.1"
+  count_button:
+    dependency: "direct main"
+    description:
+      name: count_button
+      sha256: e6d6fde1ae34b2d99e400733bd504a9b981e2599c59d49d7007a84327e573e90
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.0.1"
   cupertino_icons:
     dependency: "direct main"
     description:
