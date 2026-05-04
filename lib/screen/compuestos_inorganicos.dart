@@ -1,10 +1,10 @@
 import 'package:count_button/count_button.dart';
 import 'package:flutter/material.dart';
 import 'package:quimica/json/leer_json.dart';
+import 'package:quimica/models/compuestos.dart';
 import 'package:quimica/tools/calcular_compuesto.dart';
 import 'package:quimica/tools/elemento.dart';
 import 'package:quimica/tools/globals.dart';
-import 'package:quimica/tools/helpers/sufijos.dart';
 
 class CompuestosInorganicos extends StatefulWidget {
   const CompuestosInorganicos({super.key});
@@ -16,9 +16,7 @@ class CompuestosInorganicos extends StatefulWidget {
 class CompuestosInorganicosState extends State<CompuestosInorganicos> {
   List<Elemento> elementos = [];
 
-  // Parallel lists: each index = one box
-  final List<Elemento?> _selecciones = [null]; // selected element per box
-  final List<int> _contadores = [0]; // atom count per box
+  final List<CompuestoInput> _selecciones = [CompuestoInput()];
   List<CompuestoResult> resultados = [];
   @override
   void initState() {
@@ -95,8 +93,7 @@ class CompuestosInorganicosState extends State<CompuestosInorganicos> {
                   ElevatedButton.icon(
                     onPressed: () {
                       setState(() {
-                        _selecciones.add(null);
-                        _contadores.add(0);
+                        _selecciones.add(CompuestoInput());
                       });
                     },
                     icon: const Icon(Icons.add),
@@ -113,16 +110,7 @@ class CompuestosInorganicosState extends State<CompuestosInorganicos> {
                   ),
                   ElevatedButton.icon(
                     onPressed: () {
-                      print(_contadores[0]);
-                      print(_contadores[1]);
-                      final formula = construirFormulaDesdeUI(
-                        _selecciones,
-                        _contadores,
-                      );
-                      for (var el in formula.entries) {
-                        print(el.key.s);
-                      }
-                      final res = resolver(formula);
+                      final res = resolver(_selecciones);
 
                       setState(() {
                         resultados = [res];
@@ -154,6 +142,12 @@ class CompuestosInorganicosState extends State<CompuestosInorganicos> {
                       ),
                     ),
                   ),
+                  // ElevatedButton.icon(
+                  //   onPressed: () {
+                  //     print("${_selecciones.map((e) => e.toString())}");
+                  //   },
+                  //   label: const Text("Log"),
+                  // ),
                   if (resultados.isNotEmpty)
                     Column(
                       children: resultados.map((r) {
@@ -303,7 +297,6 @@ class CompuestosInorganicosState extends State<CompuestosInorganicos> {
 
   Widget buildBoxAtomos(int index) {
     final selected = _selecciones[index];
-    final counter = _contadores[index];
 
     return Container(
       decoration: BoxDecoration(
@@ -335,7 +328,6 @@ class CompuestosInorganicosState extends State<CompuestosInorganicos> {
                     onPressed: () {
                       setState(() {
                         _selecciones.removeAt(index);
-                        _contadores.removeAt(index);
                       });
                     },
                   ),
@@ -348,7 +340,7 @@ class CompuestosInorganicosState extends State<CompuestosInorganicos> {
                 Expanded(
                   child: DropdownButton<int>(
                     isExpanded: true,
-                    value: selected?.z,
+                    value: selected.elemento?.z,
                     items: elementos
                         .map(
                           (e) => DropdownMenuItem<int>(
@@ -365,8 +357,14 @@ class CompuestosInorganicosState extends State<CompuestosInorganicos> {
                       if (value != null) {
                         var a = _byZ(value);
                         if (a != null) {
+                          print("Actualizando: ${a.s}");
                           setState(() {
-                            _selecciones[index] = a;
+                            selected.elemento = a;
+                            if (a.oxidaciones.isNotEmpty) {
+                              selected.estadoOxidacion = a.oxidaciones.first;
+                            } else {
+                              selected.estadoOxidacion = null;
+                            }
                           });
                         }
                       }
@@ -402,9 +400,51 @@ class CompuestosInorganicosState extends State<CompuestosInorganicos> {
                     color: Color.fromARGB(255, 112, 111, 111),
                   ),
                 ),
-                const Spacer(),
+                if (selected.elemento != null && selected.elemento!.n != "")
+                  Expanded(
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                      child: DropdownButton<int>(
+                        isExpanded: true,
+                        value: selected.estadoOxidacion,
+                        items: selected.elemento!.oxidaciones.map((e) {
+                          return DropdownMenuItem<int>(
+                            value: e,
+                            child: Text(e.toString()),
+                          );
+                        }).toList(),
+
+                        onChanged: (int? value) {
+                          if (value != null) {
+                            setState(() {
+                              selected.estadoOxidacion = value;
+                            });
+                          }
+                        },
+                        hint: const Text(
+                          "Selecciona oxidación",
+                          style: TextStyle(color: Colors.black54),
+                        ),
+                        borderRadius: BorderRadius.circular(12),
+                        padding: const EdgeInsets.symmetric(horizontal: 12),
+                        style: const TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.black,
+                        ),
+                        underline: Container(height: 1, color: Colors.black26),
+                        dropdownColor: Colors.white,
+                        icon: const Icon(
+                          Icons.arrow_drop_down,
+                          color: Colors.grey,
+                        ),
+                      ),
+                    ),
+                  ),
+                if (selected.elemento == null || selected.elemento!.n == "")
+                  const Spacer(),
                 CountButton(
-                  selectedValue: counter,
+                  selectedValue: selected.cantidad,
                   minValue: 0,
                   maxValue: 99,
                   backgroundColor: darkMode
@@ -413,7 +453,7 @@ class CompuestosInorganicosState extends State<CompuestosInorganicos> {
                   foregroundColor: darkMode ? Colors.white : Colors.black,
                   onChanged: (value) {
                     setState(() {
-                      _contadores[index] = value;
+                      selected.cantidad = value;
                     });
                   },
                   borderRadius: 16,

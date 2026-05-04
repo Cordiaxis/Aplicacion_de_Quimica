@@ -34,6 +34,11 @@ class Elemento {
   late bool puede_ser_anhidrido;
   late int prioridad_formula;
   late List<String> excepciones;
+  bool get esMetal =>
+      tipo.toLowerCase().contains('metal') &&
+      !tipo.toLowerCase().contains('no');
+  bool get esNoMetal =>
+      tipo.toLowerCase().contains('no metal') || s == 'Cl' || s == 'Br'; // etc
 
   Elemento.fromJson(Map<String, dynamic> json) {
     z = json['z'];
@@ -53,11 +58,13 @@ class Elemento {
     extraccion = json['extraccion'];
     nombre_tradicional = json['nombre_tradicional'] ?? "";
     tipo = json['tipo'] ?? 'metal';
-    oxidaciones = (json['oxidaciones'] as List<dynamic>?)
+    oxidaciones =
+        (json['oxidaciones'] as List<dynamic>?)
             ?.map((e) => (e as num).toInt())
             .toList() ??
         [];
-    valencias_comunes = (json['valencias_comunes'] as List<dynamic>?)
+    valencias_comunes =
+        (json['valencias_comunes'] as List<dynamic>?)
             ?.map((e) => (e as num).toInt())
             .toList() ??
         [];
@@ -71,7 +78,8 @@ class Elemento {
     puede_formar_oxoacidos = json['puede_formar_oxoacidos'] ?? false;
     puede_ser_anhidrido = json['puede_ser_anhidrido'] ?? false;
     prioridad_formula = json['prioridad_formula'] ?? 5;
-    excepciones = (json['excepciones'] as List<dynamic>?)
+    excepciones =
+        (json['excepciones'] as List<dynamic>?)
             ?.map((e) => e.toString())
             .toList() ??
         [];

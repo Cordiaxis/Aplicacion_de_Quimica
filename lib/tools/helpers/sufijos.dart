@@ -1,3 +1,4 @@
+import 'package:quimica/models/compuestos.dart';
 import 'package:quimica/tools/elemento.dart';
 
 String romano(int n) {
@@ -35,69 +36,63 @@ String prefijo(int n) {
   return prefijos[n] ?? "$n";
 }
 
-int mcd(int a, int b) {
-  while (b != 0) {
-    int temp = b;
-    b = a % b;
-    a = temp;
+String getNomenclaturaTradicional(Elemento el, int oxUsada) {
+  List<int> posibles = el.oxidaciones.where((n) => n > 0).toList()..sort();
+
+  int total = posibles.length;
+  int indice = posibles.indexOf(oxUsada);
+
+  if (total <= 1) return "${el.nombre_tradicional}ico";
+
+  if (total == 2) {
+    return indice == 0
+        ? "${el.nombre_tradicional}oso"
+        : "${el.nombre_tradicional}ico";
   }
-  return a;
+
+  if (total == 3) {
+    if (indice == 0) return "hipo${el.nombre_tradicional}oso";
+    if (indice == 1) return "${el.nombre_tradicional}oso";
+    return "${el.nombre_tradicional}ico";
+  }
+
+  if (total == 4) {
+    if (indice == 0) return "hipo${el.nombre_tradicional}oso";
+    if (indice == 1) return "${el.nombre_tradicional}oso";
+    if (indice == 2) return "${el.nombre_tradicional}ico";
+    return "per${el.nombre_tradicional}ico";
+  }
+
+  return el.nombre_tradicional;
 }
 
-/// Deriva la raíz de nomenclatura tradicional de un elemento.
-/// Si tiene nombre_tradicional en el JSON, lo usa directamente.
-/// Si no, corta las terminaciones comunes del español:
-///   sodio → sod, calcio → calc, hidrógeno → hidr, carbono → carbon, etc.
-String getRaiz(Elemento e) {
-  if (e.nombre_tradicional.isNotEmpty) return e.nombre_tradicional;
-  String n = e.n.toLowerCase();
-  if (n.endsWith('ígeno')) {
-    return n.substring(0, n.length - 5); // hidrógeno→hidr
-  }
-  if (n.endsWith('geno')) {
-    return n.substring(0, n.length - 4);
-  }
-  if (n.endsWith('io')) {
-    return n.substring(0, n.length - 2); // sodio→sod, calcio→calc
-  }
-  if (n.endsWith('o')) {
-    return n.substring(0, n.length - 1); // cloro→clor
-  }
-  return n; // zinc, níquel, etc.
-}
-
-enum TipoCompuesto {
-  oxido,
-  anhidrido,
-  hidruro,
-  hidracido,
-  hidroxido,
-  oxoacido,
-  oxisal,
-  salBinaria,
-  covalente,
-  otro,
-}
-
-class CompuestoResult {
-  final String formula;
-  final String tipoCompuesto;
-  final String tradicional;
-  final String stock;
-  final String sistematica;
-
-  CompuestoResult({
-    required this.formula,
-    required this.tipoCompuesto,
-    required this.tradicional,
-    required this.stock,
-    required this.sistematica,
+String construirFormulaDesdeUI(List<CompuestoInput?> selecciones) {
+  selecciones.sort((a, b) {
+    int cmp = a!.elemento!.prioridad_formula.compareTo(
+      b!.elemento!.prioridad_formula,
+    );
+    if (cmp == 0) {
+      return a.elemento!.electronegatividad.compareTo(
+        b.elemento!.electronegatividad,
+      );
+    }
+    return cmp;
   });
+
+  String formulaTexto = selecciones
+      .map((e) => "${e!.elemento!.s}${e.cantidad > 1 ? e.cantidad : ''}")
+      .join();
+  return formulaTexto;
 }
 
-class ResultadoValidacion {
-  final bool valido;
-  final Map<String, int> oxidaciones;
+bool validarCompuesto(List<CompuestoInput?> selecciones) {
+  int sumaTotal = 0;
 
-  ResultadoValidacion(this.valido, this.oxidaciones);
+  for (var element in selecciones) {
+    if (element == null) continue;
+
+    sumaTotal += element.cantidad * (element.estadoOxidacion as int);
+  }
+
+  return sumaTotal == 0;
 }

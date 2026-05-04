@@ -1,421 +1,251 @@
-import 'package:quimica/tools/elemento.dart';
+import 'package:quimica/models/compuestos.dart';
 import 'package:quimica/tools/helpers/sufijos.dart';
 
-String nombreStock(Map<Elemento, int> formula, Map<String, int> oxidaciones) {
-  TipoCompuesto tipo = clasificar(formula);
-  var elems = formula.keys.toList()
-    ..sort((a, b) => a.prioridad_formula.compareTo(b.prioridad_formula));
+// --- CLASIFICACIÓN DINÁMICA ---
+TipoCompuesto clasificar(List<CompuestoInput?> selecciones) {
+  final tieneOxigeno = selecciones.any((e) => e!.elemento!.s == 'O');
+  final tieneHidrogeno = selecciones.any((e) => e!.elemento!.s == 'H');
+  final metales = selecciones
+      .where((e) => e!.elemento!.tipo == 'metal')
+      .toList();
+  final noMetales = selecciones.where((e) {
+    final tipo = e!.elemento!.tipo.toLowerCase();
+    return tipo.contains('no') && tipo.contains('metal');
+  }).toList();
 
-  if (tipo == TipoCompuesto.hidroxido) {
-    var metal = elems.firstWhere((e) => e.s != 'O' && e.s != 'H');
-    var ox = oxidaciones[metal.s]!;
-    var oxsPositivos = metal.oxidaciones.where((o) => o > 0).toList();
-    if (oxsPositivos.length > 1) {
-      return "hidróxido de ${metal.n.toLowerCase()} (${romano(ox.abs())})";
+  final totalElementos = selecciones.length;
+
+  if (totalElementos == 2) {
+    if (tieneOxigeno) {
+      if (metales.isNotEmpty) return TipoCompuesto.oxido;
+      if (noMetales.isNotEmpty) return TipoCompuesto.anhidrido;
     }
-    return "hidróxido de ${metal.n.toLowerCase()}";
-  }
 
-  if (tipo == TipoCompuesto.oxoacido) {
-    var noMetal = elems.firstWhere((e) => e.s != 'H' && e.s != 'O');
-    var elO = elems.firstWhere((e) => e.s == 'O');
-    var ox = oxidaciones[noMetal.s]!;
-    int cantO = formula[elO]!;
-    String preO = (cantO == 1) ? "mono" : prefijo(cantO);
-    String raiz = getRaiz(noMetal);
-    return "ácido ${preO}oxo${raiz}ico (${romano(ox.abs())})";
-  }
-
-  if (tipo == TipoCompuesto.oxisal) {
-    var elO = elems.firstWhere((e) => e.s == 'O');
-    var metal = elems.firstWhere((e) => e.forma_cation);
-    var noMetal = elems.firstWhere((e) => e.s != 'O' && e.s != metal.s);
-    var oxM = oxidaciones[metal.s]!;
-    var oxNM = oxidaciones[noMetal.s]!;
-    int cantO = formula[elO]!;
-
-    String preO = (cantO == 1) ? "mono" : prefijo(cantO);
-    String raizNM = getRaiz(noMetal);
-    String parteAnion = "${preO}oxo${raizNM}ato (${romano(oxNM.abs())})";
-
-    var oxsPosM = metal.oxidaciones.where((o) => o > 0).toList();
-    if (oxsPosM.length > 1) {
-      return "$parteAnion de ${metal.n.toLowerCase()} (${romano(oxM.abs())})";
+    if (tieneHidrogeno) {
+      if (metales.isNotEmpty) return TipoCompuesto.hidruro;
+      return TipoCompuesto.hidracido;
     }
-    return "$parteAnion de ${metal.n.toLowerCase()}";
-  }
 
-  if (elems.length != 2) return "-";
-
-  var cat = elems.cast<Elemento?>().firstWhere(
-    (e) => e!.forma_cation,
-    orElse: () => null,
-  );
-  var an = elems.cast<Elemento?>().firstWhere(
-    (e) => e!.forma_anion,
-    orElse: () => null,
-  );
-
-  if (tipo == TipoCompuesto.hidracido) {
-    var noMetal = elems.firstWhere((e) => e.s != 'H');
-    String anion = noMetal.nombre_anion ?? noMetal.n.toLowerCase();
-    return "$anion de hidrógeno";
-  }
-
-  if (cat == null && elems.any((e) => e.s == 'O')) {
-    var positivo = elems.firstWhere((e) => e.s != 'O');
-    var ox = oxidaciones[positivo.s]!;
-    String anion = "óxido";
-    var oxsPositivos = positivo.oxidaciones.where((o) => o > 0).toList();
-    if (oxsPositivos.length > 1) {
-      return "$anion de ${positivo.n.toLowerCase()} (${romano(ox.abs())})";
+    if (selecciones.any((e) => e!.elemento!.esMetal) &&
+        selecciones.any((e) => e!.elemento!.esNoMetal)) {
+      return TipoCompuesto.salBinaria;
     }
-    return "$anion de ${positivo.n.toLowerCase()}";
-  }
 
-  if (cat == null || an == null) return "-";
-
-  var ox = oxidaciones[cat.s]!;
-  String anion = an.nombre_anion ?? an.n.toLowerCase();
-  var oxsMetal = cat.oxidaciones.where((o) => o > 0).toList();
-  if (oxsMetal.length > 1) {
-    return "$anion de ${cat.n.toLowerCase()} (${romano(ox.abs())})";
-  }
-  return "$anion de ${cat.n.toLowerCase()}";
-}
-
-String nombreSistematica(
-  Map<Elemento, int> formula,
-  Map<String, int> oxidaciones,
-) {
-  TipoCompuesto tipo = clasificar(formula);
-  var elems = formula.keys.toList()
-    ..sort((a, b) => a.prioridad_formula.compareTo(b.prioridad_formula));
-
-  if (tipo == TipoCompuesto.hidroxido) {
-    var elO = elems.firstWhere((e) => e.s == 'O');
-    int cantOH = formula[elO]!;
-    var metal = elems.firstWhere((e) => e.s != 'O' && e.s != 'H');
-    String preOH = (cantOH == 1) ? "mono" : prefijo(cantOH);
-    return "${preOH}hidróxido de ${metal.n.toLowerCase()}";
-  }
-
-  if (tipo == TipoCompuesto.oxoacido) {
-    var noMetal = elems.firstWhere((e) => e.s != 'H' && e.s != 'O');
-    var elO = elems.firstWhere((e) => e.s == 'O');
-    var ox = oxidaciones[noMetal.s]!;
-    int cantO = formula[elO]!;
-    String preO = (cantO == 1) ? "mono" : prefijo(cantO);
-    String raiz = getRaiz(noMetal);
-    return "${preO}oxo${raiz}ato (${romano(ox.abs())}) de hidrógeno";
-  }
-
-  if (tipo == TipoCompuesto.oxisal) {
-    var elO = elems.firstWhere((e) => e.s == 'O');
-    var metal = elems.firstWhere((e) => e.forma_cation);
-    var noMetal = elems.firstWhere((e) => e.s != 'O' && e.s != metal.s);
-    var oxM = oxidaciones[metal.s]!;
-    var oxNM = oxidaciones[noMetal.s]!;
-    int cantO = formula[elO]!;
-
-    String preO = (cantO == 1) ? "mono" : prefijo(cantO);
-    String raizNM = getRaiz(noMetal);
-    String parteAnion = "${preO}oxo${raizNM}ato (${romano(oxNM.abs())})";
-
-    return "$parteAnion de ${metal.n.toLowerCase()} (${romano(oxM.abs())})";
-  }
-
-  if (elems.length != 2) return "-";
-
-  var e1 = elems[0];
-  var e2 = elems[1];
-
-  int c1 = formula[e1]!;
-  int c2 = formula[e2]!;
-
-  String pref1 = prefijo(c1);
-  String pref2 = prefijo(c2);
-  if (c2 == 1) pref2 = "mono";
-
-  String nombreAnion = e2.nombre_anion ?? e2.n.toLowerCase();
-
-  return "${pref2}${nombreAnion} de ${pref1}${e1.n.toLowerCase()}";
-}
-
-String nombreTradicional(
-  Map<Elemento, int> formula,
-  Map<String, int> oxidaciones,
-) {
-  TipoCompuesto tipo = clasificar(formula);
-  var elems = formula.keys.toList()
-    ..sort((a, b) => a.prioridad_formula.compareTo(b.prioridad_formula));
-
-  String obtenerSufijo(
-    int ox,
-    List<int> oxs,
-    String raiz, [
-    bool esAnion = false,
-  ]) {
-    String suf = "";
-    String pre = "";
-    if (oxs.length == 1) {
-      return esAnion ? "${raiz}ato" : "${raiz}ico";
-    } else if (oxs.length == 2) {
-      suf = (ox == oxs.first)
-          ? (esAnion ? "ito" : "oso")
-          : (esAnion ? "ato" : "ico");
-    } else if (oxs.length == 3) {
-      if (ox == oxs.first) {
-        pre = "hipo";
-        suf = esAnion ? "ito" : "oso";
-      } else if (ox == oxs.last) {
-        suf = esAnion ? "ato" : "ico";
-      } else {
-        suf = esAnion ? "ito" : "oso";
-      }
-    } else if (oxs.length >= 4) {
-      if (ox == oxs.first) {
-        pre = "hipo";
-        suf = esAnion ? "ito" : "oso";
-      } else if (ox == oxs.last) {
-        pre = "per";
-        suf = esAnion ? "ato" : "ico";
-      } else if (ox == oxs[1]) {
-        suf = esAnion ? "ito" : "oso";
-      } else {
-        suf = esAnion ? "ato" : "ico";
-      }
+    if (noMetales.length == 2) {
+      return TipoCompuesto.covalente;
     }
-    return "$pre$raiz$suf";
   }
 
-  if (tipo == TipoCompuesto.hidroxido) {
-    var metal = elems.firstWhere((e) => e.s != 'O' && e.s != 'H');
-    var ox = oxidaciones[metal.s]!;
-    String raiz = getRaiz(metal);
-    List<int> oxsPos = metal.oxidaciones.where((o) => o > 0).toList()..sort();
-    String sufMetal = obtenerSufijo(ox, oxsPos, raiz);
-    return "hidróxido $sufMetal";
-  }
-
-  if (tipo == TipoCompuesto.oxoacido) {
-    var noMetal = elems.firstWhere((e) => e.s != 'H' && e.s != 'O');
-    var ox = oxidaciones[noMetal.s]!;
-    String raiz = getRaiz(noMetal);
-    List<int> oxsPos = noMetal.oxidaciones.where((o) => o > 0).toList()..sort();
-    String sufNM = obtenerSufijo(ox, oxsPos, raiz);
-    return "ácido $sufNM";
-  }
-
-  if (tipo == TipoCompuesto.oxisal) {
-    var metal = elems.firstWhere((e) => e.forma_cation);
-    var noMetal = elems.firstWhere((e) => e.s != 'O' && e.s != metal.s);
-    var oxM = oxidaciones[metal.s]!;
-    var oxNM = oxidaciones[noMetal.s]!;
-
-    String raizNM = getRaiz(noMetal);
-    List<int> oxsPosNM = noMetal.oxidaciones.where((o) => o > 0).toList()
-      ..sort();
-    String parteAnion = obtenerSufijo(oxNM, oxsPosNM, raizNM, true);
-
-    String raizM = getRaiz(metal);
-    List<int> oxsPosM = metal.oxidaciones.where((o) => o > 0).toList()..sort();
-    String parteCation = obtenerSufijo(oxM, oxsPosM, raizM);
-
-    if (oxsPosM.length == 1) {
-      return "$parteAnion de ${metal.n.toLowerCase()}";
-    }
-    return "$parteAnion $parteCation";
-  }
-
-  if (elems.length != 2) return "-";
-
-  var metal = elems.cast<Elemento?>().firstWhere(
-    (e) => e!.forma_cation,
-    orElse: () => null,
-  );
-  var noMetal = elems.cast<Elemento?>().firstWhere(
-    (e) => e!.forma_anion,
-    orElse: () => null,
-  );
-
-  if (tipo == TipoCompuesto.hidracido) {
-    var nM = elems.firstWhere((e) => e.s != 'H');
-    String raiz = getRaiz(nM);
-    return "ácido ${raiz}hídrico";
-  }
-
-  if (metal == null && elems.any((e) => e.s == 'O')) {
-    var positivo = elems.firstWhere((e) => e.s != 'O');
-    var ox = oxidaciones[positivo.s]!;
-    String raiz = getRaiz(positivo);
-    List<int> oxs = positivo.oxidaciones.where((o) => o > 0).toList()..sort();
-    String suf = obtenerSufijo(ox, oxs, raiz);
-    return "anhídrido $suf";
-  }
-
-  if (metal == null || noMetal == null) return "-";
-
-  var ox = oxidaciones[metal.s]!;
-  String raiz = getRaiz(metal);
-  String nombreAnion = noMetal.nombre_anion ?? noMetal.n.toLowerCase();
-  List<int> oxs = metal.oxidaciones.where((o) => o > 0).toList()..sort();
-
-  if (oxs.length == 1) return "$nombreAnion ${raiz}ico";
-  String sufMetal = obtenerSufijo(ox, oxs, raiz);
-  return "$nombreAnion $sufMetal";
-}
-
-CompuestoResult resolver(Map<Elemento, int> formula) {
-  formula = simplificarFormula(formula);
-
-  var validacion = validarCompuesto(formula);
-
-  if (!validacion.valido) {
-    return CompuestoResult(
-      formula: construirFormula(formula),
-      tipoCompuesto: "Inválido",
-      tradicional: "-",
-      stock: "-",
-      sistematica: "-",
-    );
-  }
-
-  var tipo = clasificar(formula);
-
-  return CompuestoResult(
-    formula: construirFormula(formula),
-    tipoCompuesto: tipo.name,
-    tradicional: nombreTradicional(formula, validacion.oxidaciones),
-    stock: nombreStock(formula, validacion.oxidaciones),
-    sistematica: nombreSistematica(formula, validacion.oxidaciones),
-  );
-}
-
-Map<Elemento, int> simplificarFormula(Map<Elemento, int> formula) {
-  if (formula.isEmpty) return formula;
-
-  int divisor = formula.values.reduce((a, b) => mcd(a, b));
-
-  if (divisor <= 1) return formula;
-
-  return {for (var e in formula.entries) e.key: e.value ~/ divisor};
-}
-
-TipoCompuesto clasificar(Map<Elemento, int> formula) {
-  var elems = formula.keys.toList();
-
-  bool tieneO = elems.any((e) => e.s == "O");
-  bool tieneH = elems.any((e) => e.s == "H");
-  bool hayMetal = elems.any((e) => e.forma_cation);
-  bool hayNoMetal = elems.any((e) => e.forma_anion);
-
-  if (tieneO && elems.length == 2 && hayMetal) {
-    return TipoCompuesto.oxido;
-  }
-
-  // Anhídrido: no-metal + O (sin metal)
-  if (tieneO && elems.length == 2 && !hayMetal) {
-    var otro = elems.firstWhere((e) => e.s != 'O');
-    if (otro.puede_ser_anhidrido) return TipoCompuesto.anhidrido;
-  }
-
-  if (tieneH && elems.length == 2 && hayMetal) {
-    return TipoCompuesto.hidruro;
-  }
-
-  // Hidrácido: H + no-metal (sin O)
-  if (tieneH && elems.length == 2 && !hayMetal && !tieneO) {
-    return TipoCompuesto.hidracido;
-  }
-
-  if (hayMetal && hayNoMetal && elems.length == 2) {
-    return TipoCompuesto.salBinaria;
-  }
-
-  // TERNARIOS
-  if (elems.length == 3) {
-    if (tieneO && tieneH && hayMetal) {
-      var elO = elems.firstWhere((e) => e.s == 'O');
-      var elH = elems.firstWhere((e) => e.s == 'H');
-      // En los hidróxidos, el número de O y H suele ser igual.
-      if (formula[elO] == formula[elH]) {
+  if (totalElementos == 3) {
+    if (tieneHidrogeno && tieneOxigeno) {
+      if (metales.isNotEmpty) {
         return TipoCompuesto.hidroxido;
       }
-    }
-
-    if (tieneO && tieneH && !hayMetal) {
-      return TipoCompuesto.oxoacido;
-    }
-
-    if (tieneO && !tieneH && hayMetal) {
-      bool hayNoMetalExtra = elems.any((e) => e.s != 'O' && e.forma_anion);
-      if (hayNoMetalExtra) {
-        return TipoCompuesto.oxisal;
+      if (noMetales.isNotEmpty) {
+        return TipoCompuesto.oxoacido;
       }
+    }
+
+    if (tieneOxigeno && metales.isNotEmpty && noMetales.isNotEmpty) {
+      return TipoCompuesto.oxisal;
     }
   }
 
   return TipoCompuesto.otro;
 }
 
-Map<Elemento, int> construirFormulaDesdeUI(
-  List<Elemento?> selecciones,
-  List<int> contadores,
+// --- NOMENCLATURA DE STOCK ---
+String nombreStock(List<CompuestoInput?> selecciones, TipoCompuesto tipo) {
+  final componentes = selecciones.whereType<CompuestoInput>().toList();
+  if (componentes.length < 2) return "-";
+
+  final principal = componentes.firstWhere(
+    (e) => e.elemento!.s != 'O' && e.elemento!.s != 'H',
+    orElse: () => componentes.first,
+  );
+
+  final bool tieneMultiplesValencias =
+      principal.elemento!.oxidaciones.where((o) => o > 0).length > 1;
+  final String romanoStr = tieneMultiplesValencias
+      ? " (${romano(principal.estadoOxidacion!.abs())})"
+      : "";
+
+  final String nombreEl = principal.elemento!.n;
+
+  switch (tipo) {
+    case TipoCompuesto.oxido:
+    case TipoCompuesto.anhidrido:
+      return "Óxido de $nombreEl$romanoStr";
+    case TipoCompuesto.hidruro:
+      return "Hidruro de $nombreEl$romanoStr";
+    case TipoCompuesto.hidroxido:
+      return "Hidróxido de $nombreEl$romanoStr";
+    case TipoCompuesto.salBinaria:
+      final noMetal = componentes.firstWhere(
+        (e) => e.elemento!.tipo == 'no metal' || e.elemento!.forma_anion,
+      );
+      String anion =
+          noMetal.elemento!.nombre_anion ?? "${noMetal.elemento!.n}uro";
+      return "$anion de $nombreEl$romanoStr";
+    case TipoCompuesto.hidracido:
+      return "${principal.elemento!.nombre_anion ?? principal.elemento!.n + 'uro'} de hidrógeno";
+    default:
+      return "Pendiente de lógica para $tipo";
+  }
+}
+
+// --- NOMENCLATURA SISTEMÁTICA ---
+String nombreSistematica(
+  List<CompuestoInput?> selecciones,
+  TipoCompuesto tipo,
 ) {
-  final formula = <Elemento, int>{};
+  final componentes = selecciones.whereType<CompuestoInput>().toList();
+  if (componentes.length < 2) return "-";
 
-  for (int i = 0; i < selecciones.length; i++) {
-    final el = selecciones[i];
-    final cant = contadores[i];
+  final cat = componentes.first;
+  final an = componentes.last;
 
-    if (el == null || cant <= 0) continue;
-
-    formula[el] = (formula[el] ?? 0) + cant;
+  String getPrefijo(int cant) {
+    if (cant == 1) return "mono";
+    return prefijo(cant);
   }
 
-  return formula;
-}
-
-ResultadoValidacion validarCompuesto(Map<Elemento, int> formula) {
-  List<Elemento> elementos = formula.keys.toList();
-
-  Map<String, int> mejorSolucion = {};
-
-  bool encontrado = false;
-
-  void backtrack(int index, int suma, Map<String, int> asignados) {
-    if (index == elementos.length) {
-      if (suma == 0) {
-        mejorSolucion = Map.from(asignados);
-        encontrado = true;
-      }
-      return;
-    }
-
-    var el = elementos[index];
-    int cantidad = formula[el]!;
-
-    for (var ox in el.oxidaciones) {
-      asignados[el.s] = ox;
-
-      backtrack(index + 1, suma + (ox * cantidad), asignados);
-
-      asignados.remove(el.s);
-    }
+  if (tipo == TipoCompuesto.hidroxido) {
+    final hidrogeno = componentes.firstWhere((e) => e.elemento!.s == 'H');
+    int cantOH = hidrogeno.cantidad;
+    String preOH = getPrefijo(cantOH);
+    return "${preOH}hidróxido de ${cat.elemento!.n.toLowerCase()}";
   }
 
-  backtrack(0, 0, {});
+  if (tipo == TipoCompuesto.oxoacido) {
+    final oxigeno = componentes.firstWhere((e) => e.elemento!.s == 'O');
+    final noMetal = componentes.firstWhere(
+      (e) => e.elemento!.s != 'O' && e.elemento!.s != 'H',
+    );
 
-  return ResultadoValidacion(encontrado, mejorSolucion);
+    String preO = getPrefijo(oxigeno.cantidad);
+    String raiz = noMetal.elemento!.nombre_tradicional;
+    int oxNM = noMetal.estadoOxidacion!;
+
+    return "${preO}oxo${raiz}ato (${romano(oxNM.abs())}) de hidrógeno";
+  }
+
+  if (tipo == TipoCompuesto.oxisal) {
+    final oxigeno = componentes.firstWhere((e) => e.elemento!.s == 'O');
+    final noMetal = componentes.firstWhere(
+      (e) => e.elemento!.s != 'O' && e.elemento!.tipo != 'metal',
+    );
+    final metal = componentes.firstWhere((e) => e.elemento!.tipo == 'metal');
+
+    String preO = getPrefijo(oxigeno.cantidad);
+    String raizNM = noMetal.elemento!.nombre_tradicional;
+    String parteAnion =
+        "${preO}oxo${raizNM}ato (${romano(noMetal.estadoOxidacion!.abs())})";
+
+    String preCat = metal.cantidad > 1 ? prefijo(metal.cantidad) : "";
+    return "$parteAnion de $preCat${metal.elemento!.n.toLowerCase()}";
+  }
+
+  String prefAn = getPrefijo(an.cantidad);
+  String prefCat = cat.cantidad > 1 ? prefijo(cat.cantidad) : "";
+
+  String nombreBaseAnion;
+  if (an.elemento!.s == 'O') {
+    nombreBaseAnion = "óxido";
+  } else if (an.elemento!.s == 'H') {
+    nombreBaseAnion = "hidruro";
+  } else {
+    nombreBaseAnion =
+        an.elemento!.nombre_anion ?? "${an.elemento!.n.toLowerCase()}uro";
+  }
+  String prefijoFinal = (prefAn == "mono" && nombreBaseAnion == "óxido")
+      ? "mon"
+      : prefAn;
+
+  return "${prefijoFinal}${nombreBaseAnion} de $prefCat${cat.elemento!.n.toLowerCase()}";
 }
 
-String construirFormula(Map<Elemento, int> formula) {
-  var elems = formula.keys.toList()
-    ..sort((a, b) => a.prioridad_formula.compareTo(b.prioridad_formula));
+// --- NOMENCLATURA TRADICIONAL ---
+String nombreTradicional(
+  List<CompuestoInput?> selecciones,
+  TipoCompuesto tipo,
+) {
+  final componentes = selecciones.whereType<CompuestoInput>().toList();
+  if (componentes.length < 2) return "-";
 
-  return elems.map((e) {
-    int c = formula[e]!;
-    return "${e.s}${c > 1 ? c : ""}";
-  }).join();
+  final principal = componentes.firstWhere(
+    (e) => e.elemento!.s != 'O' && e.elemento!.s != 'H',
+    orElse: () => componentes.first,
+  );
+
+  String raizModificada = getNomenclaturaTradicional(
+    principal.elemento!,
+    principal.estadoOxidacion!,
+  );
+
+  switch (tipo) {
+    case TipoCompuesto.oxido:
+      return "Óxido $raizModificada";
+    case TipoCompuesto.anhidrido:
+      return "Anhídrido $raizModificada";
+    case TipoCompuesto.hidruro:
+      return "Hidruro $raizModificada";
+    case TipoCompuesto.hidroxido:
+      return "Hidróxido $raizModificada";
+    case TipoCompuesto.hidracido:
+      return "Ácido ${principal.elemento!.nombre_tradicional}hídrico";
+    case TipoCompuesto.oxoacido:
+      return "Ácido $raizModificada";
+    case TipoCompuesto.salBinaria:
+      final metal = componentes.firstWhere(
+        (e) =>
+            e.elemento!.tipo.toLowerCase().contains('metal') &&
+            !e.elemento!.tipo.toLowerCase().contains('no'),
+        orElse: () => componentes.first,
+      );
+
+      final noMetal = componentes.firstWhere(
+        (e) =>
+            e.elemento!.tipo.toLowerCase().contains('no metal') ||
+            e.elemento!.tipo.toLowerCase().contains('halógeno'),
+        orElse: () => componentes.last,
+      );
+      String raizMetal = getNomenclaturaTradicional(
+        metal.elemento!,
+        metal.estadoOxidacion!,
+      );
+      String anion =
+          noMetal.elemento!.nombre_anion ??
+          "${noMetal.elemento!.nombre_tradicional}uro";
+
+      return "${noMetal.elemento!.nombre_anion ?? noMetal.elemento!.nombre_tradicional + 'uro'} $raizMetal";
+    default:
+      return "Pendiente";
+  }
+}
+
+// --- MAIN Y HELPERS ---
+CompuestoResult resolver(List<CompuestoInput?> selecciones) {
+  var formula = construirFormulaDesdeUI(selecciones);
+  var validacion = validarCompuesto(selecciones);
+
+  if (!validacion) {
+    return CompuestoResult(
+      formula: formula,
+      tipoCompuesto: "INVÁLIDO",
+      tradicional: "-",
+      stock: "-",
+      sistematica: "-",
+    );
+  }
+
+  var tipo = clasificar(selecciones);
+
+  return CompuestoResult(
+    formula: formula,
+    tipoCompuesto: tipo.name.toUpperCase(),
+    tradicional: nombreTradicional(selecciones, tipo),
+    stock: nombreStock(selecciones, tipo),
+    sistematica: nombreSistematica(selecciones, tipo),
+  );
 }
