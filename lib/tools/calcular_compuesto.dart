@@ -5,13 +5,8 @@ import 'package:quimica/tools/helpers/sufijos.dart';
 TipoCompuesto clasificar(List<CompuestoInput?> selecciones) {
   final tieneOxigeno = selecciones.any((e) => e!.elemento!.s == 'O');
   final tieneHidrogeno = selecciones.any((e) => e!.elemento!.s == 'H');
-  final metales = selecciones
-      .where((e) => e!.elemento!.tipo == 'metal')
-      .toList();
-  final noMetales = selecciones.where((e) {
-    final tipo = e!.elemento!.tipo.toLowerCase();
-    return tipo.contains('no') && tipo.contains('metal');
-  }).toList();
+  final metales = selecciones.where((e) => e!.elemento!.esMetal).toList();
+  final noMetales = selecciones.where((e) => e!.elemento!.esNoMetal).toList();
 
   final totalElementos = selecciones.length;
 
@@ -82,13 +77,43 @@ String nombreStock(List<CompuestoInput?> selecciones, TipoCompuesto tipo) {
       return "Hidróxido de $nombreEl$romanoStr";
     case TipoCompuesto.salBinaria:
       final noMetal = componentes.firstWhere(
-        (e) => e.elemento!.tipo == 'no metal' || e.elemento!.forma_anion,
+        (e) => e.elemento!.esNoMetal || e.elemento!.forma_anion,
       );
+      
       String anion =
           noMetal.elemento!.nombre_anion ?? "${noMetal.elemento!.n}uro";
       return "$anion de $nombreEl$romanoStr";
     case TipoCompuesto.hidracido:
       return "${principal.elemento!.nombre_anion ?? principal.elemento!.n + 'uro'} de hidrógeno";
+    case TipoCompuesto.oxoacido:
+      final oxigeno = componentes.firstWhere((e) => e.elemento!.s == 'O');
+      final noMetal = componentes.firstWhere(
+        (e) => e.elemento!.s != 'O' && e.elemento!.s != 'H',
+      );
+      String preO = oxigeno.cantidad == 1
+          ? "oxo"
+          : "${prefijo(oxigeno.cantidad)}oxo";
+      String raiz = noMetal.elemento!.nombre_tradicional;
+      int oxNM = noMetal.estadoOxidacion!.abs();
+      return "Ácido $preO${raiz}ico (${romano(oxNM)})";
+    case TipoCompuesto.oxisal:
+      final cation = componentes.firstWhere((e) => e.elemento!.s != 'O');
+      final central = componentes.firstWhere(
+        (e) => e.elemento!.s != 'O' && e.elemento!.s != cation.elemento!.s,
+        orElse: () => componentes.last,
+      );
+      String raizAnion = getNomenclaturaTradicional(
+        central.elemento!,
+        central.estadoOxidacion!,
+      );
+      String anion = raizAnion
+          .replaceAll('oso', 'ito')
+          .replaceAll('ico', 'ato')
+          .replaceAll('sulfurato', 'sulfato')
+          .replaceAll('sulfurito', 'sulfito')
+          .replaceAll('fosforato', 'fosfato')
+          .replaceAll('fosforito', 'fosfito');
+      return "$anion de $nombreEl$romanoStr";
     default:
       return "Pendiente de lógica para $tipo";
   }
@@ -106,7 +131,7 @@ String nombreSistematica(
   final an = componentes.last;
 
   String getPrefijo(int cant) {
-    if (cant == 1) return "mono";
+    if (cant == 1) return "";
     return prefijo(cant);
   }
 
@@ -132,18 +157,26 @@ String nombreSistematica(
 
   if (tipo == TipoCompuesto.oxisal) {
     final oxigeno = componentes.firstWhere((e) => e.elemento!.s == 'O');
-    final noMetal = componentes.firstWhere(
-      (e) => e.elemento!.s != 'O' && e.elemento!.tipo != 'metal',
+    final cation = componentes.firstWhere((e) => e.elemento!.s != 'O');
+    final central = componentes.firstWhere(
+      (e) => e.elemento!.s != 'O' && e.elemento!.s != cation.elemento!.s,
     );
-    final metal = componentes.firstWhere((e) => e.elemento!.tipo == 'metal');
 
-    String preO = getPrefijo(oxigeno.cantidad);
-    String raizNM = noMetal.elemento!.nombre_tradicional;
-    String parteAnion =
-        "${preO}oxo${raizNM}ato (${romano(noMetal.estadoOxidacion!.abs())})";
+    int divisor = mcd(central.cantidad, oxigeno.cantidad);
+    int oxt = oxigeno.cantidad ~/ divisor;
+    int cent = central.cantidad ~/ divisor;
 
-    String preCat = metal.cantidad > 1 ? prefijo(metal.cantidad) : "";
-    return "$parteAnion de $preCat${metal.elemento!.n.toLowerCase()}";
+    String preO = getPrefijo(oxt);
+    String preCent = cent > 1 ? prefijo(cent) : "";
+    String raizNM = central.elemento!.nombre_tradicional;
+    
+    String baseAnion = "${preO}oxo${preCent}${raizNM}ato"
+        .replaceAll('sulfurato', 'sulfato')
+        .replaceAll('fosforato', 'fosfato');
+    String parteAnion = "$baseAnion (${romano(central.estadoOxidacion!.abs())})";
+
+    String preCat = cation.cantidad > 1 ? prefijo(cation.cantidad) : "";
+    return "$parteAnion de $preCat${cation.elemento!.n}";
   }
 
   String prefAn = getPrefijo(an.cantidad);
@@ -196,18 +229,36 @@ String nombreTradicional(
       return "Ácido ${principal.elemento!.nombre_tradicional}hídrico";
     case TipoCompuesto.oxoacido:
       return "Ácido $raizModificada";
+    case TipoCompuesto.oxisal:
+      final cation = componentes.firstWhere((e) => e.elemento!.s != 'O');
+      final central = componentes.firstWhere(
+        (e) => e.elemento!.s != 'O' && e.elemento!.s != cation.elemento!.s,
+        orElse: () => componentes.last,
+      );
+      String raizAnion = getNomenclaturaTradicional(
+        central.elemento!,
+        central.estadoOxidacion!,
+      );
+      String anion = raizAnion
+          .replaceAll('oso', 'ito')
+          .replaceAll('ico', 'ato')
+          .replaceAll('sulfurato', 'sulfato')
+          .replaceAll('sulfurito', 'sulfito')
+          .replaceAll('fosforato', 'fosfato')
+          .replaceAll('fosforito', 'fosfito');
+      String raizMetal = getNomenclaturaTradicional(
+        cation.elemento!,
+        cation.estadoOxidacion!,
+      );
+      return "${anion.toLowerCase()} $raizMetal";
     case TipoCompuesto.salBinaria:
       final metal = componentes.firstWhere(
-        (e) =>
-            e.elemento!.tipo.toLowerCase().contains('metal') &&
-            !e.elemento!.tipo.toLowerCase().contains('no'),
+        (e) => e.elemento!.esMetal,
         orElse: () => componentes.first,
       );
 
       final noMetal = componentes.firstWhere(
-        (e) =>
-            e.elemento!.tipo.toLowerCase().contains('no metal') ||
-            e.elemento!.tipo.toLowerCase().contains('halógeno'),
+        (e) => e.elemento!.esNoMetal,
         orElse: () => componentes.last,
       );
       String raizMetal = getNomenclaturaTradicional(
@@ -224,8 +275,13 @@ String nombreTradicional(
   }
 }
 
-// --- MAIN Y HELPERS ---
+// --- LA FUNCION PRINCIPAL W 🗣️🗣️🗣️🗣️🗣️🗣️🗣️ ---
 CompuestoResult resolver(List<CompuestoInput?> selecciones) {
+  bool tumbalacasamami = selecciones.every((e) => e != null && e.estadoOxidacion != null && e.estadoOxidacion != 0);
+  if (!tumbalacasamami) {
+    deducirOxidaciones(selecciones);
+  }
+
   var formula = construirFormulaDesdeUI(selecciones);
   var validacion = validarCompuesto(selecciones);
 

@@ -34,11 +34,20 @@ class Elemento {
   late bool puede_ser_anhidrido;
   late int prioridad_formula;
   late List<String> excepciones;
-  bool get esMetal =>
-      tipo.toLowerCase().contains('metal') &&
-      !tipo.toLowerCase().contains('no');
-  bool get esNoMetal =>
-      tipo.toLowerCase().contains('no metal') || s == 'Cl' || s == 'Br'; // etc
+  bool get esMetal => tipo == 'metal';
+  bool get esNoMetal => tipo == 'no_metal' || tipo == 'metaloide';
+
+  String _toTitleCase(String? text) {
+    if (text == null || text.isEmpty) return text ?? "";
+    return text
+        .split(' ')
+        .map(
+          (word) => word.isEmpty
+              ? word
+              : word[0].toUpperCase() + word.substring(1).toLowerCase(),
+        )
+        .join(' ');
+  }
 
   Elemento.fromJson(Map<String, dynamic> json) {
     z = json['z'];
@@ -56,7 +65,7 @@ class Elemento {
     abundancia = json['abundancia'];
     produccion = json['produccion'];
     extraccion = json['extraccion'];
-    nombre_tradicional = json['nombre_tradicional'] ?? "";
+    nombre_tradicional = _toTitleCase(json['nombre_tradicional']);
     tipo = json['tipo'] ?? 'metal';
     oxidaciones =
         (json['oxidaciones'] as List<dynamic>?)
@@ -70,7 +79,7 @@ class Elemento {
         [];
     usa_tradicional = json['usa_tradicional'] ?? false;
     nombre_anion = json['nombre_anion'];
-    nombre_sistematico = json['nombre_sistematico'];
+    nombre_sistematico = _toTitleCase(json['nombre_sistematico']);
     electronegatividad = (json['electronegatividad'] as num?)?.toDouble() ?? 0;
     es_diatomico = json['es_diatomico'] ?? false;
     forma_cation = json['forma_cation'] ?? false;

@@ -87,7 +87,7 @@
     "valencias_comunes": [
       1
     ],
-    "nombre_tradicional": "liti",
+    "nombre_tradicional": "lit",
     "usa_tradicional": true,
     "nombre_anion": null,
     "nombre_sistematico": null,
@@ -123,7 +123,7 @@
     "valencias_comunes": [
       2
     ],
-    "nombre_tradicional": "berili",
+    "nombre_tradicional": "beril",
     "usa_tradicional": true,
     "nombre_anion": null,
     "nombre_sistematico": null,
@@ -409,7 +409,7 @@
     "valencias_comunes": [
       2
     ],
-    "nombre_tradicional": "magnesi",
+    "nombre_tradicional": "magnes",
     "usa_tradicional": true,
     "nombre_anion": null,
     "nombre_sistematico": null,
@@ -484,7 +484,7 @@
       2,
       4
     ],
-    "nombre_tradicional": "silici",
+    "nombre_tradicional": "silic",
     "usa_tradicional": true,
     "nombre_anion": "siliciuro",
     "nombre_sistematico": null,
@@ -711,11 +711,11 @@
     "valencias_comunes": [
       2
     ],
-    "nombre_tradicional": "calci",
+    "nombre_tradicional": "calc",
     "usa_tradicional": true,
     "nombre_anion": null,
     "nombre_sistematico": null,
-    "electronegatividad": 1.0,
+    "electronegatividad": 1,
     "es_diatomico": false,
     "forma_cation": true,
     "forma_anion": false,
@@ -747,7 +747,7 @@
     "valencias_comunes": [
       3
     ],
-    "nombre_tradicional": "escandi",
+    "nombre_tradicional": "escand",
     "usa_tradicional": true,
     "nombre_anion": null,
     "nombre_sistematico": null,
@@ -787,7 +787,7 @@
       3,
       4
     ],
-    "nombre_tradicional": "titani",
+    "nombre_tradicional": "titan",
     "usa_tradicional": true,
     "nombre_anion": null,
     "nombre_sistematico": null,
@@ -1137,7 +1137,7 @@
     "valencias_comunes": [
       3
     ],
-    "nombre_tradicional": "gali",
+    "nombre_tradicional": "gal",
     "usa_tradicional": true,
     "nombre_anion": null,
     "nombre_sistematico": null,
@@ -1175,7 +1175,7 @@
       2,
       4
     ],
-    "nombre_tradicional": "germani",
+    "nombre_tradicional": "german",
     "usa_tradicional": true,
     "nombre_anion": null,
     "nombre_sistematico": null,
@@ -1253,7 +1253,7 @@
       4,
       6
     ],
-    "nombre_tradicional": "seleni",
+    "nombre_tradicional": "selen",
     "usa_tradicional": true,
     "nombre_anion": "seleniuro",
     "nombre_sistematico": null,
@@ -1332,7 +1332,7 @@
     "usa_tradicional": false,
     "nombre_anion": null,
     "nombre_sistematico": null,
-    "electronegatividad": 3.0,
+    "electronegatividad": 3,
     "es_diatomico": false,
     "forma_cation": false,
     "forma_anion": false,
@@ -1364,7 +1364,7 @@
     "valencias_comunes": [
       1
     ],
-    "nombre_tradicional": "rubidi",
+    "nombre_tradicional": "rubid",
     "usa_tradicional": true,
     "nombre_anion": null,
     "nombre_sistematico": null,
@@ -1400,7 +1400,7 @@
     "valencias_comunes": [
       2
     ],
-    "nombre_tradicional": "estronci",
+    "nombre_tradicional": "estronc",
     "usa_tradicional": true,
     "nombre_anion": null,
     "nombre_sistematico": null,
@@ -1436,7 +1436,7 @@
     "valencias_comunes": [
       3
     ],
-    "nombre_tradicional": "itri",
+    "nombre_tradicional": "itr",
     "usa_tradicional": true,
     "nombre_anion": null,
     "nombre_sistematico": null,
@@ -1472,7 +1472,7 @@
     "valencias_comunes": [
       4
     ],
-    "nombre_tradicional": "circoni",
+    "nombre_tradicional": "circon",
     "usa_tradicional": true,
     "nombre_anion": null,
     "nombre_sistematico": null,
@@ -1510,7 +1510,7 @@
       3,
       5
     ],
-    "nombre_tradicional": "niobi",
+    "nombre_tradicional": "niob",
     "usa_tradicional": true,
     "nombre_anion": null,
     "nombre_sistematico": null,
@@ -1590,7 +1590,7 @@
       4,
       7
     ],
-    "nombre_tradicional": "tecneci",
+    "nombre_tradicional": "tecnec",
     "usa_tradicional": true,
     "nombre_anion": null,
     "nombre_sistematico": null,
@@ -1630,7 +1630,7 @@
       4,
       8
     ],
-    "nombre_tradicional": "ruteni",
+    "nombre_tradicional": "ruten",
     "usa_tradicional": true,
     "nombre_anion": null,
     "nombre_sistematico": null,
@@ -1661,12 +1661,16 @@
     "origen": "Menas de platino y níquel.",
     "propiedades": "Altamente inerte y extremadamente caro.",
     "oxidaciones": [
-      3
+      2,
+      3,
+      4
     ],
     "valencias_comunes": [
-      3
+      2,
+      3,
+      4
     ],
-    "nombre_tradicional": "rodi",
+    "nombre_tradicional": "rod",
     "usa_tradicional": true,
     "nombre_anion": null,
     "nombre_sistematico": null,
@@ -1704,7 +1708,7 @@
       2,
       4
     ],
-    "nombre_tradicional": "paladi",
+    "nombre_tradicional": "palad",
     "usa_tradicional": true,
     "nombre_anion": null,
     "nombre_sistematico": null,
@@ -1776,7 +1780,7 @@
     "valencias_comunes": [
       2
     ],
-    "nombre_tradicional": "cadmi",
+    "nombre_tradicional": "cadm",
     "usa_tradicional": true,
     "nombre_anion": null,
     "nombre_sistematico": null,
@@ -1812,7 +1816,7 @@
     "valencias_comunes": [
       3
     ],
-    "nombre_tradicional": "indi",
+    "nombre_tradicional": "ind",
     "usa_tradicional": true,
     "nombre_anion": null,
     "nombre_sistematico": null,
@@ -2036,7 +2040,7 @@
     "valencias_comunes": [
       1
     ],
-    "nombre_tradicional": "cesi",
+    "nombre_tradicional": "ces",
     "usa_tradicional": true,
     "nombre_anion": null,
     "nombre_sistematico": null,
@@ -2072,7 +2076,7 @@
     "valencias_comunes": [
       2
     ],
-    "nombre_tradicional": "bari",
+    "nombre_tradicional": "bar",
     "usa_tradicional": true,
     "nombre_anion": null,
     "nombre_sistematico": null,
@@ -2146,7 +2150,7 @@
       3,
       4
     ],
-    "nombre_tradicional": "ceri",
+    "nombre_tradicional": "cer",
     "usa_tradicional": true,
     "nombre_anion": null,
     "nombre_sistematico": null,
@@ -2182,7 +2186,7 @@
     "valencias_comunes": [
       3
     ],
-    "nombre_tradicional": "praseodimi",
+    "nombre_tradicional": "praseodim",
     "usa_tradicional": true,
     "nombre_anion": null,
     "nombre_sistematico": null,
@@ -2218,7 +2222,7 @@
     "valencias_comunes": [
       3
     ],
-    "nombre_tradicional": "neodimi",
+    "nombre_tradicional": "neodim",
     "usa_tradicional": true,
     "nombre_anion": null,
     "nombre_sistematico": null,
@@ -2254,7 +2258,7 @@
     "valencias_comunes": [
       3
     ],
-    "nombre_tradicional": "prometi",
+    "nombre_tradicional": "promet",
     "usa_tradicional": true,
     "nombre_anion": null,
     "nombre_sistematico": null,
@@ -2292,7 +2296,7 @@
       2,
       3
     ],
-    "nombre_tradicional": "samari",
+    "nombre_tradicional": "samar",
     "usa_tradicional": true,
     "nombre_anion": null,
     "nombre_sistematico": null,
@@ -2330,7 +2334,7 @@
       2,
       3
     ],
-    "nombre_tradicional": "europi",
+    "nombre_tradicional": "europ",
     "usa_tradicional": true,
     "nombre_anion": null,
     "nombre_sistematico": null,
@@ -2366,7 +2370,7 @@
     "valencias_comunes": [
       3
     ],
-    "nombre_tradicional": "gadelini",
+    "nombre_tradicional": "gadelin",
     "usa_tradicional": true,
     "nombre_anion": null,
     "nombre_sistematico": null,
@@ -2404,7 +2408,7 @@
       3,
       4
     ],
-    "nombre_tradicional": "terbi",
+    "nombre_tradicional": "terb",
     "usa_tradicional": true,
     "nombre_anion": null,
     "nombre_sistematico": null,
@@ -2440,7 +2444,7 @@
     "valencias_comunes": [
       3
     ],
-    "nombre_tradicional": "disprosi",
+    "nombre_tradicional": "dispros",
     "usa_tradicional": true,
     "nombre_anion": null,
     "nombre_sistematico": null,
@@ -2476,7 +2480,7 @@
     "valencias_comunes": [
       3
     ],
-    "nombre_tradicional": "holmi",
+    "nombre_tradicional": "holm",
     "usa_tradicional": true,
     "nombre_anion": null,
     "nombre_sistematico": null,
@@ -2512,7 +2516,7 @@
     "valencias_comunes": [
       3
     ],
-    "nombre_tradicional": "erbi",
+    "nombre_tradicional": "erb",
     "usa_tradicional": true,
     "nombre_anion": null,
     "nombre_sistematico": null,
@@ -2548,7 +2552,7 @@
     "valencias_comunes": [
       3
     ],
-    "nombre_tradicional": "tuli",
+    "nombre_tradicional": "tul",
     "usa_tradicional": true,
     "nombre_anion": null,
     "nombre_sistematico": null,
@@ -2586,7 +2590,7 @@
       2,
       3
     ],
-    "nombre_tradicional": "iterbi",
+    "nombre_tradicional": "iterb",
     "usa_tradicional": true,
     "nombre_anion": null,
     "nombre_sistematico": null,
@@ -2622,7 +2626,7 @@
     "valencias_comunes": [
       3
     ],
-    "nombre_tradicional": "luteci",
+    "nombre_tradicional": "lutec",
     "usa_tradicional": true,
     "nombre_anion": null,
     "nombre_sistematico": null,
@@ -2658,7 +2662,7 @@
     "valencias_comunes": [
       4
     ],
-    "nombre_tradicional": "hafni",
+    "nombre_tradicional": "hafn",
     "usa_tradicional": true,
     "nombre_anion": null,
     "nombre_sistematico": null,
@@ -2732,7 +2736,7 @@
       4,
       6
     ],
-    "nombre_tradicional": "wolframi",
+    "nombre_tradicional": "wolfram",
     "usa_tradicional": true,
     "nombre_anion": null,
     "nombre_sistematico": null,
@@ -2772,7 +2776,7 @@
       6,
       7
     ],
-    "nombre_tradicional": "reni",
+    "nombre_tradicional": "ren",
     "usa_tradicional": true,
     "nombre_anion": null,
     "nombre_sistematico": null,
@@ -2812,7 +2816,7 @@
       4,
       8
     ],
-    "nombre_tradicional": "osmi",
+    "nombre_tradicional": "osm",
     "usa_tradicional": true,
     "nombre_anion": null,
     "nombre_sistematico": null,
@@ -2850,7 +2854,7 @@
       3,
       4
     ],
-    "nombre_tradicional": "iridi",
+    "nombre_tradicional": "irid",
     "usa_tradicional": true,
     "nombre_anion": null,
     "nombre_sistematico": null,
@@ -2964,11 +2968,11 @@
       1,
       2
     ],
-    "nombre_tradicional": "mercuri",
+    "nombre_tradicional": "mercur",
     "usa_tradicional": true,
     "nombre_anion": null,
     "nombre_sistematico": null,
-    "electronegatividad": 2.0,
+    "electronegatividad": 2,
     "es_diatomico": false,
     "forma_cation": true,
     "forma_anion": false,
@@ -3002,7 +3006,7 @@
       1,
       3
     ],
-    "nombre_tradicional": "tali",
+    "nombre_tradicional": "tal",
     "usa_tradicional": true,
     "nombre_anion": null,
     "nombre_sistematico": null,
@@ -3116,11 +3120,11 @@
       2,
       4
     ],
-    "nombre_tradicional": "poloni",
+    "nombre_tradicional": "polon",
     "usa_tradicional": true,
     "nombre_anion": null,
     "nombre_sistematico": null,
-    "electronegatividad": 2.0,
+    "electronegatividad": 2,
     "es_diatomico": false,
     "forma_cation": false,
     "forma_anion": true,
@@ -3223,7 +3227,7 @@
     "valencias_comunes": [
       1
     ],
-    "nombre_tradicional": "franci",
+    "nombre_tradicional": "franc",
     "usa_tradicional": true,
     "nombre_anion": null,
     "nombre_sistematico": null,
@@ -3259,7 +3263,7 @@
     "valencias_comunes": [
       2
     ],
-    "nombre_tradicional": "radi",
+    "nombre_tradicional": "rad",
     "usa_tradicional": true,
     "nombre_anion": null,
     "nombre_sistematico": null,
@@ -3295,7 +3299,7 @@
     "valencias_comunes": [
       3
     ],
-    "nombre_tradicional": "actini",
+    "nombre_tradicional": "actin",
     "usa_tradicional": true,
     "nombre_anion": null,
     "nombre_sistematico": null,
@@ -3331,7 +3335,7 @@
     "valencias_comunes": [
       4
     ],
-    "nombre_tradicional": "tori",
+    "nombre_tradicional": "tor",
     "usa_tradicional": true,
     "nombre_anion": null,
     "nombre_sistematico": null,
@@ -3367,7 +3371,7 @@
     "valencias_comunes": [
       5
     ],
-    "nombre_tradicional": "protactini",
+    "nombre_tradicional": "protactin",
     "usa_tradicional": true,
     "nombre_anion": null,
     "nombre_sistematico": null,
@@ -3441,7 +3445,7 @@
     "valencias_comunes": [
       5
     ],
-    "nombre_tradicional": "neptuni",
+    "nombre_tradicional": "neptun",
     "usa_tradicional": true,
     "nombre_anion": null,
     "nombre_sistematico": null,
@@ -3479,7 +3483,7 @@
       4,
       6
     ],
-    "nombre_tradicional": "plutoni",
+    "nombre_tradicional": "pluton",
     "usa_tradicional": true,
     "nombre_anion": null,
     "nombre_sistematico": null,
@@ -3515,7 +3519,7 @@
     "valencias_comunes": [
       3
     ],
-    "nombre_tradicional": "americi",
+    "nombre_tradicional": "americ",
     "usa_tradicional": true,
     "nombre_anion": null,
     "nombre_sistematico": null,
@@ -3551,7 +3555,7 @@
     "valencias_comunes": [
       3
     ],
-    "nombre_tradicional": "curi",
+    "nombre_tradicional": "cur",
     "usa_tradicional": true,
     "nombre_anion": null,
     "nombre_sistematico": null,
@@ -3587,7 +3591,7 @@
     "valencias_comunes": [
       3
     ],
-    "nombre_tradicional": "berkeli",
+    "nombre_tradicional": "berkel",
     "usa_tradicional": true,
     "nombre_anion": null,
     "nombre_sistematico": null,
@@ -3623,7 +3627,7 @@
     "valencias_comunes": [
       3
     ],
-    "nombre_tradicional": "californi",
+    "nombre_tradicional": "californ",
     "usa_tradicional": true,
     "nombre_anion": null,
     "nombre_sistematico": null,
@@ -3659,7 +3663,7 @@
     "valencias_comunes": [
       3
     ],
-    "nombre_tradicional": "einsteni",
+    "nombre_tradicional": "einsten",
     "usa_tradicional": true,
     "nombre_anion": null,
     "nombre_sistematico": null,
@@ -3695,7 +3699,7 @@
     "valencias_comunes": [
       3
     ],
-    "nombre_tradicional": "fermi",
+    "nombre_tradicional": "ferm",
     "usa_tradicional": true,
     "nombre_anion": null,
     "nombre_sistematico": null,
@@ -3731,7 +3735,7 @@
     "valencias_comunes": [
       3
     ],
-    "nombre_tradicional": "mendelevi",
+    "nombre_tradicional": "mendelev",
     "usa_tradicional": true,
     "nombre_anion": null,
     "nombre_sistematico": null,
@@ -3769,7 +3773,7 @@
       2,
       3
     ],
-    "nombre_tradicional": "nobeli",
+    "nombre_tradicional": "nobel",
     "usa_tradicional": true,
     "nombre_anion": null,
     "nombre_sistematico": null,
@@ -3805,7 +3809,7 @@
     "valencias_comunes": [
       3
     ],
-    "nombre_tradicional": "lawrenci",
+    "nombre_tradicional": "lawrenc",
     "usa_tradicional": true,
     "nombre_anion": null,
     "nombre_sistematico": null,
@@ -3841,7 +3845,7 @@
     "valencias_comunes": [
       4
     ],
-    "nombre_tradicional": "rutherfordi",
+    "nombre_tradicional": "rutherford",
     "usa_tradicional": true,
     "nombre_anion": null,
     "nombre_sistematico": null,
@@ -3877,7 +3881,7 @@
     "valencias_comunes": [
       5
     ],
-    "nombre_tradicional": "dubni",
+    "nombre_tradicional": "dubn",
     "usa_tradicional": true,
     "nombre_anion": null,
     "nombre_sistematico": null,
@@ -3913,7 +3917,7 @@
     "valencias_comunes": [
       6
     ],
-    "nombre_tradicional": "seaborgi",
+    "nombre_tradicional": "seaborg",
     "usa_tradicional": true,
     "nombre_anion": null,
     "nombre_sistematico": null,
@@ -3949,7 +3953,7 @@
     "valencias_comunes": [
       7
     ],
-    "nombre_tradicional": "bohri",
+    "nombre_tradicional": "bohr",
     "usa_tradicional": true,
     "nombre_anion": null,
     "nombre_sistematico": null,
@@ -3985,7 +3989,7 @@
     "valencias_comunes": [
       8
     ],
-    "nombre_tradicional": "hassi",
+    "nombre_tradicional": "hass",
     "usa_tradicional": true,
     "nombre_anion": null,
     "nombre_sistematico": null,
@@ -4017,7 +4021,7 @@
     "propiedades": "Superpesado, inestable.",
     "oxidaciones": [],
     "valencias_comunes": [],
-    "nombre_tradicional": "meitneri",
+    "nombre_tradicional": "meitner",
     "usa_tradicional": true,
     "nombre_anion": null,
     "nombre_sistematico": null,
@@ -4049,7 +4053,7 @@
     "propiedades": "Metálico teóricamente y explosivo atómico.",
     "oxidaciones": [],
     "valencias_comunes": [],
-    "nombre_tradicional": "darmstadti",
+    "nombre_tradicional": "darmstadt",
     "usa_tradicional": true,
     "nombre_anion": null,
     "nombre_sistematico": null,
@@ -4081,7 +4085,7 @@
     "propiedades": "Destructivo rápido, superpesado.",
     "oxidaciones": [],
     "valencias_comunes": [],
-    "nombre_tradicional": "roentgeni",
+    "nombre_tradicional": "roentgen",
     "usa_tradicional": true,
     "nombre_anion": null,
     "nombre_sistematico": null,
@@ -4113,7 +4117,7 @@
     "propiedades": "Teóricamente gas noble pesado o líquido.",
     "oxidaciones": [],
     "valencias_comunes": [],
-    "nombre_tradicional": "copernici",
+    "nombre_tradicional": "copernic",
     "usa_tradicional": true,
     "nombre_anion": null,
     "nombre_sistematico": null,
@@ -4145,7 +4149,7 @@
     "propiedades": "Fugacidad extrema en desintegración.",
     "oxidaciones": [],
     "valencias_comunes": [],
-    "nombre_tradicional": "nihoni",
+    "nombre_tradicional": "nihon",
     "usa_tradicional": true,
     "nombre_anion": null,
     "nombre_sistematico": null,
@@ -4177,7 +4181,7 @@
     "propiedades": "Efectos relativistas desafían su metalicidad.",
     "oxidaciones": [],
     "valencias_comunes": [],
-    "nombre_tradicional": "flerovi",
+    "nombre_tradicional": "flerov",
     "usa_tradicional": true,
     "nombre_anion": null,
     "nombre_sistematico": null,
@@ -4209,7 +4213,7 @@
     "propiedades": "Radiactividad y colapso masivo en milésimas.",
     "oxidaciones": [],
     "valencias_comunes": [],
-    "nombre_tradicional": "moscovi",
+    "nombre_tradicional": "moscov",
     "usa_tradicional": true,
     "nombre_anion": null,
     "nombre_sistematico": null,
@@ -4241,7 +4245,7 @@
     "propiedades": "Inmenso, extremadamente efímero.",
     "oxidaciones": [],
     "valencias_comunes": [],
-    "nombre_tradicional": "livermori",
+    "nombre_tradicional": "livermor",
     "usa_tradicional": true,
     "nombre_anion": null,
     "nombre_sistematico": null,

@@ -360,11 +360,7 @@ class CompuestosInorganicosState extends State<CompuestosInorganicos> {
                           print("Actualizando: ${a.s}");
                           setState(() {
                             selected.elemento = a;
-                            if (a.oxidaciones.isNotEmpty) {
-                              selected.estadoOxidacion = a.oxidaciones.first;
-                            } else {
-                              selected.estadoOxidacion = null;
-                            }
+                            selected.estadoOxidacion = 0;
                           });
                         }
                       }
@@ -400,13 +396,13 @@ class CompuestosInorganicosState extends State<CompuestosInorganicos> {
                     color: Color.fromARGB(255, 112, 111, 111),
                   ),
                 ),
-                if (selected.elemento != null && selected.elemento!.n != "")
+                /* if (selected.elemento != null && selected.elemento!.n != "")
                   Expanded(
                     child: Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 8.0),
                       child: DropdownButton<int>(
                         isExpanded: true,
-                        value: selected.estadoOxidacion,
+                        value: selected.estadoOxidacion == 0 ? null : selected.estadoOxidacion,
                         items: selected.elemento!.oxidaciones.map((e) {
                           return DropdownMenuItem<int>(
                             value: e,
@@ -440,8 +436,10 @@ class CompuestosInorganicosState extends State<CompuestosInorganicos> {
                         ),
                       ),
                     ),
-                  ),
+                  ), */
                 if (selected.elemento == null || selected.elemento!.n == "")
+                  const Spacer()
+                else
                   const Spacer(),
                 CountButton(
                   selectedValue: selected.cantidad,

@@ -1,6 +1,15 @@
 import 'package:quimica/models/compuestos.dart';
 import 'package:quimica/tools/elemento.dart';
 
+int mcd(int a, int b) {
+  while (b != 0) {
+    int t = b;
+    b = a % b;
+    a = t;
+  }
+  return a.abs();
+}
+
 String romano(int n) {
   const romanos = {
     1: 'I',
@@ -30,6 +39,16 @@ String prefijo(int n) {
     8: 'octa',
     9: 'nona',
     10: 'deca',
+    11: 'undeca',
+    12: 'dodeca',
+    13: 'trideca',
+    14: 'tetradeca',
+    15: 'pentadeca',
+    16: 'hexadeca',
+    17: 'heptadeca',
+    18: 'octadeca',
+    19: 'nonadeca',
+    20: 'icosa',
   };
 
   if (n == 1) return ""; // opcional ocultar "mono"
@@ -63,6 +82,13 @@ String getNomenclaturaTradicional(Elemento el, int oxUsada) {
     return "per${el.nombre_tradicional}ico";
   }
 
+  if (total >= 5) {
+    if (indice == total - 1) return "per${el.nombre_tradicional}ico";
+    if (indice == total - 2) return "${el.nombre_tradicional}ico";
+    if (indice == 0) return "hipo${el.nombre_tradicional}oso";
+    return "${el.nombre_tradicional}oso";
+  }
+
   return el.nombre_tradicional;
 }
 
@@ -89,10 +115,74 @@ bool validarCompuesto(List<CompuestoInput?> selecciones) {
   int sumaTotal = 0;
 
   for (var element in selecciones) {
-    if (element == null) continue;
+    if (element == null || element.estadoOxidacion == null) continue;
 
     sumaTotal += element.cantidad * (element.estadoOxidacion as int);
   }
 
   return sumaTotal == 0;
+}
+
+bool deducirOxidaciones(List<CompuestoInput?> selecciones) {
+  final validInputs = selecciones.whereType<CompuestoInput>().toList();
+  if (validInputs.isEmpty) return false;
+
+  List<List<int>> combinacionesValidas = [];
+
+  void buscar(int index, List<int> actual) {
+    if (index == validInputs.length) {
+      int suma = 0;
+      for (int i = 0; i < validInputs.length; i++) {
+        suma += validInputs[i].cantidad * actual[i];
+      }
+      if (suma == 0) {
+        combinacionesValidas.add(List.from(actual));
+      }
+      return;
+    }
+
+    final elemento = validInputs[index].elemento!;
+    if (elemento.oxidaciones.isEmpty) {
+      actual.add(0);
+      buscar(index + 1, actual);
+      actual.removeLast();
+    } else {
+      for (int ox in elemento.oxidaciones) {
+        actual.add(ox);
+        buscar(index + 1, actual);
+        actual.removeLast();
+      }
+    }
+  }
+
+  buscar(0, []);
+
+  if (combinacionesValidas.isEmpty) return false;
+
+  List<int> mejorCombinacion = combinacionesValidas.first;
+
+  if (combinacionesValidas.length > 1) {
+    for (var comb in combinacionesValidas) {
+      bool prefiereEsta = true;
+      for (int i = 0; i < validInputs.length; i++) {
+        final s = validInputs[i].elemento!.s;
+        if (s == 'O' && comb[i] != -2) {
+          prefiereEsta = false;
+        }
+        if (s == 'H' && comb[i] != 1 && comb[i] != -1) {
+          prefiereEsta = false;
+        }
+      }
+      if (prefiereEsta) {
+        mejorCombinacion = comb;
+        break;
+      }
+    }
+  }
+
+  for (int i = 0; i < validInputs.length; i++) {
+    validInputs[i].estadoOxidacion = mejorCombinacion[i];
+  }
+
+  return true;
 }
